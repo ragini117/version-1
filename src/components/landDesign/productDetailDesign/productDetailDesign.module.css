@@ -1,0 +1,370 @@
+/* .title{
+    color: red;
+} */
+
+.cart_img {
+    border: 1px solid #fff;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cart_img img {
+    width: 100%;
+    height: 300px;
+}
+
+.card_img_box {
+    background-color: transparent !important;
+}
+
+.cart_price_box p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.cart_price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    font-size: 11px;
+    grid-gap: 10px;
+}
+
+.cart_price p {
+    margin-bottom: 0;
+}
+
+.doad_price {
+    display: flex;
+    align-items: center;
+}
+
+.doad_price p {
+    margin-bottom: 0;
+    color: yellow !important;
+}
+
+.doad_price img {
+    width: 15px;
+    height: 15px;
+}
+
+.buy_btn {
+    background-color: #7a62f9;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 12px;
+    border: 0;
+    border-radius: 6px;
+}
+
+.cart_icon {
+    display: flex;
+    grid-gap: 5px;
+    color: #fff;
+}
+
+.cart_icon i:nth-child(1) {
+    color: #fff;
+}
+
+.cart_icon i:nth-child(2) {
+    color: #7a62f9;
+}
+
+.count_box {
+    display: flex;
+    border: 1px solid #fff;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.add_btn {
+    width: 30px;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+
+    cursor: pointer;
+    padding: 0px 5px;
+    text-align: center;
+    transition: all 0.3s;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+/* .add_btn:hover{
+   color: #7a62f9;
+
+    
+} */
+.clr_heart i {
+    color: #7a62f9 !important;
+}
+
+.count_input {
+    width: 25px;
+    background-color: transparent !important;
+    color: #fff;
+    border: 0;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+/* .count_box{
+ display:flex;
+ color: #fff;
+ border: 1px solid #FFF;
+
+}
+ .count_box{
+    width:20px;
+} 
+
+
+
+/* .box_num{
+    width: 50px;
+
+} */
+
+/* #000000 */
+
+.product_details {
+    padding: 10px;
+}
+
+.product_Details h4 {
+    color: #fff;
+}
+
+.within_caption {
+    display: flex;
+    color: #7a62f9;
+    grid-gap: 10px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.within_caption p {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.nft_name_logo {
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+    margin: 10px 0px;
+}
+
+.nft_name_logo img {
+    width: 22px;
+    height: 22px;
+    background-color: #ffff00cc;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.nft_name_logo p {
+    margin-bottom: 0;
+    color: #7a62f9;
+    font-size: 12px;
+}
+
+.nft_within_details {
+    color: #fff;
+    margin: 10px;
+}
+
+.nft_within_details p {
+    margin-bottom: 0;
+    white-space: nowrap;
+    width: 120px;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+}
+
+.caption_details_box {
+    border: 1.3px solid #787878;
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin: 20px 0px;
+    background-color: #7a62f92b;
+    overflow: hidden;
+}
+
+.socail_box_nft i {
+    font-size: 11px;
+}
+
+.socail_box_nft {
+    display: flex;
+    grid-gap: 5px;
+}
+
+.within_socail_box {
+    width: 25px;
+    height: 25px;
+    background-image: linear-gradient(120deg, #512bbf 0%, #3970bdfb 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.heding_nft h4 {
+    font-size: 16px;
+}
+
+.heding_nft {
+    border-bottom: 2px solid #7a62f9;
+    display: inline-block;
+    font-size: 19px;
+    width: 100px;
+    text-align: center;
+}
+
+.caption_details_box2 {
+    border-radius: 5px;
+    /* padding: 10px 0px; */
+    margin: 9px 0px;
+}
+
+.nft_name_logo2 {
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+    margin: 10px 0px;
+}
+
+.nft_name_logo2 img {
+    width: 38px;
+    height: 38px;
+    /* background-color: #ffff00cc; */
+    /* padding: 5px;
+    border-radius: 50px; */
+}
+
+.nft_name_logo2 p {
+    color: #fff !important;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.nft_within_details2 {
+    /* color: #fff; */
+    margin: 10px;
+}
+
+.nft_within_details2 p:nth-child(1) {
+    margin-bottom: 0;
+    color: #787878;
+    /* white-space: nowrap;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+.nft_name_logo2 i {
+    color: #512bbf;
+}
+
+.dot_box {
+    width: 10px;
+    height: 10px;
+    background-color: #512bbf;
+    border-radius: 50px;
+}
+
+.heding_description h4 {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.sec_caption_nft_description p {
+    color: #b9b9b9;
+    font-size: 13px;
+}
+
+.within_socail_box i {
+    color: #fff;
+}
+
+.heding_description1 h4 {
+    font-size: 15px;
+    color: #b1b1b1;
+}
+
+.ApproveBtn {
+    background-color: black;
+    color: lavender;
+    border: 5px solid black;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition:
+        color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}
+
+.ApproveBtn:hover {
+    opacity: 90%;
+}
+
+.ApproveBtn:active {
+    opacity: 80%;
+}
+
+.ProceedBtn:hover {
+    opacity: 90%;
+}
+
+.ProceedBtn:active {
+    opacity: 80%;
+}
+
+.ProceedBtn {
+    background-color: #7a62f9;
+    color: #fff;
+    border: 5px solid #7a62f9;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition:
+        color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}

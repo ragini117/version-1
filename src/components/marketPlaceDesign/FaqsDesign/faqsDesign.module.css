@@ -1,0 +1,39 @@
+/* Update your existing CSS file */
+.faq-container {
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background-color: #000; /* Set background color to black */
+  }
+
+  .faq-list {
+    margin-top: 20px;
+  }
+
+  .faq-item {
+    margin-bottom: 30px;
+  }
+
+  .faq-item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff; /* Set text color to white */
+  }
+
+  .faq-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff; /* Set text color to white */
+  }
+
+  /* Style accordion buttons */
+  .accordion-button {
+    color: #fff; /* Set text color to white */
+    background-color: #000; /* Set background color to black */
+  }
+
+  /* Style accordion button on hover */
+  .accordion-button:hover {
+    color: #fff; /* Set text color to white */
+    background-color: #333; /* Darken background color on hover */
+  }

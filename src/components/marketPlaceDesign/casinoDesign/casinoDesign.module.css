@@ -1,0 +1,27 @@
+.main_profile_bg {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.username_style {
+    color: #7762ff;
+    font-size: 30px;
+
+}
+
+.cus_btn {
+    padding: 2px 22px !important;
+    background-image: linear-gradient(135deg, #0047ff, 10%, #57048a);
+    font-size: 11px;
+    color: #fff !important;
+    border-radius: 7px !important;
+}
+
+.close_btn {
+
+    padding: 2px 22px !important;
+    background-image: linear-gradient(135deg, #6c757d, 10%, #000);
+    font-size: 11px;
+    color: #fff !important;
+    border-radius: 7px !important;
+}

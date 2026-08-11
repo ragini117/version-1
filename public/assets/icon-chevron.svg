@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+  <g id="icon-chevron" opacity="0.8" transform="translate(27.999 8.999) rotate(90)">
+    <rect fill="#fff" height="24" id="frame" opacity="0" transform="translate(-8.999 27.999) rotate(-90)" width="24"/>
+    <g id="icon" transform="translate(-1 23) rotate(-90)">
+      <path d="M5.6,6.666h0L0,1.334,1.4,0,7,5.333,12.6,0,14,1.334,7,8Z" data-name="Union 58" fill="#fff" id="Union_58" transform="translate(0 0)"/>
+    </g>
+  </g>
+</svg>

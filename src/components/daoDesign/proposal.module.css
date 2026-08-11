@@ -1,0 +1,418 @@
+/* ═══════════════════════════════════════════════════════════
+   PAGE WRAPPER — full dark bg matching Decentrawood hero
+   ═══════════════════════════════════════════════════════════ */
+.pageWrapper {
+    background: #0d0d0d;
+    background-image:
+        radial-gradient(circle at 20% 0%, rgba(168, 85, 247, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 80% 100%, rgba(99, 102, 241, 0.08) 0%, transparent 50%);
+    min-height: 100vh;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SECONDARY NAVBAR  (DAO Home / Proposals)
+   ═══════════════════════════════════════════════════════════ */
+.navbar {
+    background: rgba(12, 0, 40, 0.8) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 0.6rem 1.5rem;
+    border-bottom: 1px solid rgba(168, 85, 247, 0.18);
+}
+
+.navbar_cus_item {
+    color: #c084fc !important;
+    font-weight: 600;
+    font-size: 13.5px;
+    letter-spacing: 0.3px;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.navbar_cus_item:hover {
+    color: #fff !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   MAIN CONTAINER
+   ═══════════════════════════════════════════════════════════ */
+.proposalsContainer {
+    padding: 1.5rem 1rem 3rem;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SIDEBAR — Filter by Category
+   ═══════════════════════════════════════════════════════════ */
+.filterCategory {
+    background: rgba(20, 8, 48, 0.75) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 18px;
+    border: 1px solid rgba(168, 85, 247, 0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(168, 85, 247, 0.05) inset;
+    padding: 1.25rem 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.categoryHead {
+    font-size: 10.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: #c084fc;
+    margin-bottom: 1rem;
+    padding-bottom: 0.65rem;
+    border-bottom: 1px solid rgba(168, 85, 247, 0.18);
+}
+
+/* Override Bootstrap list-group-item completely */
+.listItem {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(168, 85, 247, 0.1) !important;
+    border-radius: 10px !important;
+    padding: 0.65rem 0.9rem !important;
+    margin-bottom: 6px !important;
+    cursor: pointer;
+    display: flex !important;
+    align-items: center;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #c4b5fd !important;
+    transition: all 0.22s ease;
+}
+
+.listItem:last-child {
+    margin-bottom: 0 !important;
+}
+
+.listItem span {
+    margin-right: 10px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    transition: color 0.22s;
+}
+
+.listItem:hover {
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.22), rgba(99, 102, 241, 0.14)) !important;
+    border-color: rgba(168, 85, 247, 0.4) !important;
+    color: #fff !important;
+    transform: translateX(3px);
+}
+
+.listItem:hover span {
+    color: #a855f7 !important;
+}
+
+/* Icon colours */
+.listItem .icon_all     { color: #52525b; }
+.listItem .icon_poi     { color: #10b981; }
+.listItem .build_model  { color: #60a5fa; }
+.listItem .ban_name     { color: #f87171; }
+.listItem .hiring       { color: #2dd4bf; }
+.listItem .poll         { color: #fbbf24; }
+.listItem .grant_request{ color: #c084fc; }
+.listItem .governance   { color: #fb923c; }
+.listItem .bidding      { color: #f87171; }
+
+/* ═══════════════════════════════════════════════════════════
+   RIGHT PANEL
+   ═══════════════════════════════════════════════════════════ */
+.rightPanel {
+    background: rgba(20, 8, 48, 0.55) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 18px;
+    border: 1px solid rgba(168, 85, 247, 0.12);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 0.75rem 1.25rem;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   HEADER ROW (count + sort + submit)
+   ═══════════════════════════════════════════════════════════ */
+.header_box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 0.75rem 0.25rem 0.25rem;
+}
+
+/* Sort / Latest dropdown toggle */
+.sortBtn {
+    color: #a78bfa !important;
+    background: rgba(168, 85, 247, 0.08) !important;
+    border: 1.5px solid rgba(168, 85, 247, 0.22) !important;
+    border-radius: 9px !important;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 7px 16px;
+    transition: all 0.2s;
+}
+.sortBtn:hover,
+.sortBtn:focus {
+    background: rgba(168, 85, 247, 0.18) !important;
+    border-color: #a855f7 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+/* Submit a Proposal button */
+.submitBtn {
+    background: linear-gradient(90deg, #a855f7, #6d28d9) !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 9px !important;
+    font-size: 13.5px;
+    font-weight: 700;
+    padding: 8px 20px;
+    box-shadow: 0 4px 16px rgba(168, 85, 247, 0.4);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.submitBtn:hover {
+    box-shadow: 0 6px 22px rgba(168, 85, 247, 0.6) !important;
+    transform: translateY(-1px);
+}
+
+.proposalCount {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #c084fc;
+    padding: 0.3rem 0.85rem;
+    background: rgba(168, 85, 247, 0.12);
+    border: 1px solid rgba(168, 85, 247, 0.25);
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0 0 0.65rem 0.25rem;
+    letter-spacing: 0.3px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   PROPOSAL CARDS — override Bootstrap .card
+   ═══════════════════════════════════════════════════════════ */
+.proposalCard {
+    background: rgba(20, 8, 48, 0.6) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 13px !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    padding: 0 !important;
+    margin: 0 0 10px !important;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Left colour bar */
+.proposalCard::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #a855f7, #6366f1);
+}
+
+.proposalCard .card-body {
+    padding: 14px 18px 14px 22px !important;
+}
+
+.proposalCard:hover {
+    background: rgba(30, 12, 65, 0.75) !important;
+    border-color: rgba(168, 85, 247, 0.35) !important;
+    box-shadow: 0 8px 30px rgba(168, 85, 247, 0.2), 0 0 0 1px rgba(168, 85, 247, 0.08) inset !important;
+    transform: translateY(-2px);
+}
+
+.proposalCard h6 {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #ede9fe;
+    margin-bottom: 3px;
+}
+
+.proposalCard p {
+    font-size: 11.5px;
+    color: #94a3b8;
+    margin-bottom: 0;
+}
+
+.proposalCard span {
+    color: #a78bfa;
+    font-weight: 500;
+}
+
+.proposal_image {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid rgba(168, 85, 247, 0.4);
+    object-fit: cover;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   STATUS BADGE
+   ═══════════════════════════════════════════════════════════ */
+.cus_btn {
+    font-size: 9.5px !important;
+    font-weight: 700 !important;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px !important;
+    border: 1.5px solid;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    background: transparent !important;
+    padding: 3px 10px;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.active   { color: #a78bfa !important; border-color: rgba(168,85,247,0.55) !important; }
+.passed   { color: #34d399 !important; border-color: rgba(16,185,129,0.55) !important; }
+.enacted  { color: #fff    !important; border-color: #059669 !important; background: rgba(5,150,105,0.3) !important; }
+.rejected { color: #f87171 !important; border-color: rgba(239,68,68,0.55) !important; }
+.expired  { color: #9ca3af !important; border-color: rgba(156,163,175,0.45) !important; background: rgba(156,163,175,0.1) !important; }
+
+/* ═══════════════════════════════════════════════════════════
+   TYPE BADGE
+   ═══════════════════════════════════════════════════════════ */
+.cus_btn_2 {
+    border: 0 !important;
+    font-size: 10.5px !important;
+    border-radius: 20px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.type_poll        { background: rgba(251,191,36,0.15)  !important; color: #fbbf24 !important; }
+.type_ban_name        { background: rgba(248,113,113,0.15) !important; color: #f87171 !important; }
+.type_remove_ban_name { background: rgba(251,146,60,0.15)  !important; color: #fb923c !important; }
+.type_poi         { background: rgba(52,211,153,0.15)  !important; color: #34d399 !important; }
+.type_build_model { background: rgba(96,165,250,0.15)  !important; color: #60a5fa !important; }
+.type_hiring      { background: rgba(45,212,191,0.15)  !important; color: #2dd4bf !important; }
+.type_default     { background: rgba(192,132,252,0.15) !important; color: #c084fc !important; }
+
+/* ═══════════════════════════════════════════════════════════
+   BOX ACTIONS
+   ═══════════════════════════════════════════════════════════ */
+.box_btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    flex-wrap: nowrap;
+}
+
+.arrowlink {
+    opacity: 0;
+    transition: opacity 0.2s;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+}
+.arrowlink i { font-size: 18px; color: #a855f7; }
+.proposalCard:hover .arrowlink { opacity: 1; }
+
+/* ═══════════════════════════════════════════════════════════
+   EMPTY STATE
+   ═══════════════════════════════════════════════════════════ */
+.message_container {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.message_text {
+    font-weight: 600;
+    color: #a78bfa;
+    font-size: 14px;
+    background: rgba(168, 85, 247, 0.07);
+    padding: 1.25rem 2rem;
+    border-radius: 12px;
+    border: 1px dashed rgba(168, 85, 247, 0.3);
+    display: inline-block;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   LOADER
+   ═══════════════════════════════════════════════════════════ */
+.loader {
+    border: 4px solid rgba(168, 85, 247, 0.12);
+    border-top: 4px solid #a855f7;
+    border-radius: 50%;
+    width: 44px; height: 44px;
+    animation: spin 0.8s linear infinite;
+    margin: 2.5rem auto 0.75rem;
+}
+
+@keyframes spin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   PAGINATION
+   ═══════════════════════════════════════════════════════════ */
+.paginationWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.pageBtn {
+    min-width: 36px;
+    height: 36px;
+    padding: 0 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #a78bfa;
+    background: rgba(20, 8, 48, 0.7);
+    border: 1.5px solid rgba(168, 85, 247, 0.25);
+    transition: all 0.2s;
+    line-height: 1;
+}
+
+.pageBtn:hover:not(:disabled) {
+    background: rgba(168, 85, 247, 0.18);
+    border-color: #a855f7;
+    color: #fff;
+}
+
+.pageBtnActive {
+    background: linear-gradient(135deg, #7c3aed, #a78bfa) !important;
+    border-color: transparent !important;
+    color: #fff !important;
+    box-shadow: 0 2px 10px rgba(124, 58, 237, 0.45);
+}
+
+.pageBtnDisabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.pageDots {
+    color: #6b7280;
+    font-size: 14px;
+    padding: 0 2px;
+    user-select: none;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+    .proposalsContainer { padding: 0.75rem 0.5rem 2rem; }
+    .rightPanel { margin-top: 1rem; }
+    .box_btn { flex-wrap: wrap; justify-content: flex-start; gap: 4px; margin-top: 6px; }
+}

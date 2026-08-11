@@ -1,0 +1,10 @@
+.inst_div {
+    opacity: 0; /* Start hidden with opacity */
+    visibility: hidden; /* Ensure it's hidden */
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+.speak_btn:hover + .inst_div{
+    opacity: 1; /* Fade in */
+    visibility: visible; /* Make it visible */
+
+}

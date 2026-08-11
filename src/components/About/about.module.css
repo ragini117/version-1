@@ -1,0 +1,190 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #0b0614;
+  color: white;
+  padding: 80px 20px;
+}
+
+/* HERO */
+.hero {
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  background: linear-gradient(90deg, #6d28d9, #a855f7, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.definition {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #e9d5ff;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+}
+
+.section h2 {
+  color: #a855f7;
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.card {
+  background: #12071f;
+  border: 1px solid #4c1d95;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+/* SMALL CATEGORY CARDS */
+.smallCard {
+  background: #160b2a;
+  border: 1px solid #4c1d95;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+}
+
+/* GRIDS */
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* HIGHLIGHT PANEL */
+.highlight {
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+  background: linear-gradient(135deg, #4c1d95, #7c3aed);
+  padding: 25px;
+  border-radius: 16px;
+}
+
+/* ACCORDION FAQ */
+.accordionWrapper {
+  max-width: 900px;
+  margin-top: 20px;
+}
+
+.accordionItem {
+  background: #12071f;
+  border: 1px solid #4c1d95;
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.accordionItem:hover {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordionHeader h3 {
+  color: #d8b4fe;
+  font-size: 18px;
+  margin: 0;
+}
+
+.icon {
+  font-size: 22px;
+  color: #a855f7;
+  font-weight: bold;
+}
+
+.accordionBody {
+  margin-top: 10px;
+  color: #e9d5ff;
+  line-height: 1.6;
+}
+
+/* when open */
+.open {
+  border-color: #a855f7;
+  background: #160b2a;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .definition {
+    font-size: 16px;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .grid3 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .smallCard {
+    padding: 12px;
+  }
+
+  .highlight {
+    padding: 20px;
+  }
+
+  .accordionWrapper {
+    max-width: 100%;
+  }
+
+  .accordionHeader h3 {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .accordionBody {
+    font-size: 14px;
+  }
+}

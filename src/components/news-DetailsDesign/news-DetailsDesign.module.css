@@ -1,0 +1,190 @@
+.news_bg {
+    background-color: #03000a;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.08) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+        linear-gradient(to bottom, #03000a, #0a0518);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 80px 0px;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Futuristic digital grid overlay */
+.news_bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+}
+
+.blog_main_box {
+    max-width: 900px;
+    width: 100%;
+    margin: 20px auto;
+    background: rgba(18, 12, 38, 0.45);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 28px;
+    padding: 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 2;
+}
+
+.blog_img {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 30px;
+}
+
+.blog_img img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.date_box p {
+    font-weight: 600;
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin: 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.heart_icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    position: relative;
+}
+
+.icon_blog {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.blog_caption h4 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    font-family: 'Outfit', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, #ffffff 40%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.left-align {
+    text-align: left !important;
+    color: #cbd5e1;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+}
+
+.left-align p {
+    margin-bottom: 20px;
+}
+
+.left-align img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 16px;
+    margin: 24px 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.socail_box_nft {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.within_socail_box {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.within_socail_box i {
+    font-size: 13px;
+    color: #c084fc;
+    transition: color 0.3s ease;
+}
+
+.within_socail_box:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);
+    border-color: rgba(168, 85, 247, 0.3);
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+.within_socail_box:hover i {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .blog_main_box {
+        width: 100% !important;
+        margin: 10px auto;
+        padding: 24px 16px;
+        border-radius: 20px;
+    }
+
+    .blog_img img {
+        width: 100% !important;
+        max-height: 280px !important;
+        border-radius: 14px;
+    }
+
+    .blog_caption h4 {
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+
+    .left-align {
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+    .icon_blog {
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,1162 @@
+[
+  {
+    "route_id": "home",
+    "title": "Home",
+    "url": "https://decentrawood.com/",
+    "route": "/",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "The Decentrawood homepage introduces it as a trendsetter in Web3 entertainment that is AI-powered and fully immersive. It describes a decentralized universe where gaming, artificial intelligence, and virtual world creation converge.",
+    "aliases": [
+      "decentrawood",
+      "home",
+      "overview"
+    ],
+    "example_queries": [
+      "show me Home",
+      "take me to Home",
+      "where can I find Home",
+      "tell me about Decentrawood",
+      "tell me about Web3 entertainment",
+      "tell me about AI powered"
+    ],
+    "source_document_id": "doc-decentrawood-home",
+    "needs_review": false
+  },
+  {
+    "route_id": "what_is_decentrawood",
+    "title": "What is Decentrawood?",
+    "url": "https://decentrawood.com/what-is-decentrawood",
+    "route": "/what-is-decentrawood",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "Decentrawood is an AI-powered Web3 entertainment ecosystem combining generative AI tools, gaming, music creation, social interaction, and DAO-based governance into a single decentralized platform. Key components include AI Studio, Gaming Hub, TuneHub (music platform), and Social Zone.",
+    "aliases": [
+      "about decentrawood",
+      "component",
+      "decentrawood",
+      "decentrawood info",
+      "explain decentrawood",
+      "overview",
+      "what is decentrawood",
+      "what is decentrawood?",
+      "what's decentrawood"
+    ],
+    "example_queries": [
+      "show me What is Decentrawood?",
+      "take me to What is Decentrawood?",
+      "where can I find What is Decentrawood?",
+      "tell me about What is Decentrawood",
+      "tell me about Decentrawood overview",
+      "tell me about Web3 entertainment ecosystem"
+    ],
+    "source_document_id": "doc-decentrawood-what-is-decentrawood",
+    "needs_review": false
+  },
+  {
+    "route_id": "about_us",
+    "title": "About Us",
+    "url": "https://decentrawood.com/about-us",
+    "route": "/about-us",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "Decentrawood is a virtual world at the intersection of blockchain, virtual reality, and AI. Users can buy LAND (virtual real estate), build or import NFTs, create avatars, and immerse in digital realities.",
+    "aliases": [
+      "about",
+      "about page",
+      "about us",
+      "ai",
+      "avatars",
+      "blockchain",
+      "company",
+      "dao governance",
+      "decentrawood about",
+      "deod token",
+      "digital assets",
+      "land",
+      "nft",
+      "team",
+      "virtual real estate",
+      "virtual reality",
+      "virtual world",
+      "who are you"
+    ],
+    "example_queries": [
+      "show me About Us",
+      "take me to About Us",
+      "where can I find About Us",
+      "tell me about Decentrawood about",
+      "tell me about virtual world",
+      "tell me about blockchain"
+    ],
+    "source_document_id": "doc-decentrawood-about-us",
+    "needs_review": false
+  },
+  {
+    "route_id": "dao_governance",
+    "title": "DAO — Governance",
+    "url": "https://decentrawood.com/dao",
+    "route": "/dao",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "Decentrawood DAO is the local governing body for the Decentrawood platform. It owns a majority of assets including smart contracts, Meta Land contracts, avatars, accessories, and marketplace.",
+    "aliases": [
+      "community control",
+      "dao",
+      "dao docs",
+      "dao — governance",
+      "decentralized autonomous organization",
+      "decentralized governance",
+      "decentrawood dao",
+      "governance",
+      "meta land",
+      "nft contracts",
+      "policy updates",
+      "proposal",
+      "proposals",
+      "smart contracts",
+      "vote",
+      "voting",
+      "whitelisting"
+    ],
+    "example_queries": [
+      "show me DAO",
+      "take me to DAO",
+      "where can I find DAO",
+      "tell me about DAO",
+      "tell me about Decentralized Autonomous Organization",
+      "tell me about Decentrawood DAO",
+      "how does governance work",
+      "how do I vote"
+    ],
+    "source_document_id": "doc-decentrawood-dao",
+    "needs_review": false
+  },
+  {
+    "route_id": "deod_tokenomics",
+    "title": "DEOD Tokenomics",
+    "url": "https://decentrawood.com/DeodToken",
+    "route": "/DeodToken",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "DEOD v2 is the current contract on BNB Chain (0x3510FbBC13090F991Ffa523527113A166161683e). Maximum supply is 2 billion, reduced to 1.89 billion after burning 110 million.",
+    "aliases": [
+      "0x3510fbbc13090f991ffa523527113a166161683e",
+      "bnb chain",
+      "bnb legacy",
+      "circulating supply",
+      "contract address",
+      "dao treasury",
+      "deod token supply",
+      "deod tokenomics",
+      "deod v2",
+      "holder airdrop",
+      "liquidity reserve",
+      "marketing",
+      "migration",
+      "polygon legacy",
+      "smart contract",
+      "staking reward",
+      "token allocation",
+      "token burn",
+      "token economics",
+      "tokenomics",
+      "vesting"
+    ],
+    "example_queries": [
+      "show me DEOD Tokenomics",
+      "take me to DEOD Tokenomics",
+      "where can I find DEOD Tokenomics",
+      "tell me about DEOD tokenomics",
+      "tell me about DEOD v2",
+      "tell me about DEOD token supply"
+    ],
+    "source_document_id": "doc-decentrawood-deodtoken",
+    "needs_review": false
+  },
+  {
+    "route_id": "buy_trade_deod_token",
+    "title": "Buy / Trade DEOD Token",
+    "url": "https://decentrawood.com/trade",
+    "route": "/trade",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "DEOD can be traded on MEXC, BitMart, Toobit, PancakeSwap, CoinDCX Web3, and WEEX. Includes step-by-step guides and DEOD arbitrage opportunity description.",
+    "aliases": [
+      "0x3510fbbc13090f991ffa523527113a166161683e",
+      "Deod token",
+      "arbitrage",
+      "bitmart",
+      "buy / trade deod token",
+      "buy deod",
+      "cex",
+      "coin",
+      "coindcx",
+      "crypto",
+      "deod",
+      "deod exchange",
+      "deod token",
+      "deod usdt",
+      "dex",
+      "exchange",
+      "mexc",
+      "pancakeswap",
+      "swap",
+      "token",
+      "token page",
+      "tokens",
+      "toobit",
+      "trade",
+      "trade deod",
+      "trading",
+      "trading page",
+      "weex"
+    ],
+    "example_queries": [
+      "show me Buy / Trade DEOD Token",
+      "take me to Buy / Trade DEOD Token",
+      "where can I find Buy / Trade DEOD Token",
+      "tell me about buy DEOD",
+      "tell me about trade DEOD",
+      "tell me about MEXC",
+      "what is the deod token",
+      "tell me about deod"
+    ],
+    "source_document_id": "doc-decentrawood-trade",
+    "needs_review": false
+  },
+  {
+    "route_id": "metaverse",
+    "title": "Metaverse",
+    "url": "https://decentrawood.com/metaverse",
+    "route": "/metaverse",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "The Decentrawood Metaverse is built on three vibrant zones: Gaming, Glamour (Ariba Zone), and Culture (Indus Zone). It also features a Social Zone for digital lifestyle interaction.",
+    "aliases": [
+      "3d world",
+      "ariba zone",
+      "culture zone",
+      "culture.decentrawood.com",
+      "decentrawood metaverse",
+      "gaming zone",
+      "glamour zone",
+      "glamour.decentrawood.com",
+      "indus zone",
+      "metaverse",
+      "metaverse page",
+      "metaverse zones",
+      "social zone",
+      "virtual land",
+      "virtual world"
+    ],
+    "example_queries": [
+      "show me Metaverse",
+      "take me to Metaverse",
+      "where can I find Metaverse",
+      "tell me about Decentrawood metaverse",
+      "tell me about metaverse zones",
+      "tell me about Gaming zone"
+    ],
+    "source_document_id": "doc-decentrawood-metaverse",
+    "needs_review": false
+  },
+  {
+    "route_id": "social_zone",
+    "title": "Social Zone",
+    "url": "https://decentrawood.com/socialzone",
+    "route": "/socialzone",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "The Decentrawood Social Zone features Heartlink (official social app) and Cupid Hub (3D immersive social space). Community growth +350%, 95% daily engagement.",
+    "aliases": [
+      "blockchain privacy",
+      "community groups",
+      "community growth",
+      "cupid hub",
+      "decentralized storage",
+      "end-to-end encrypted",
+      "heartlink",
+      "metaverse social",
+      "privacy",
+      "social",
+      "social app",
+      "social media",
+      "social zone",
+      "socialize",
+      "socialzone",
+      "virtual social"
+    ],
+    "example_queries": [
+      "show me Social Zone",
+      "take me to Social Zone",
+      "where can I find Social Zone",
+      "tell me about Social Zone",
+      "tell me about Heartlink",
+      "tell me about Cupid Hub"
+    ],
+    "source_document_id": "doc-decentrawood-socialzone",
+    "needs_review": false
+  },
+  {
+    "route_id": "community",
+    "title": "Community",
+    "url": "https://decentrawood.com/community",
+    "route": "/community",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "Decentrawood's community program rewards users for referral invitations, social media promotion, and community engagement with NFT drops, token bonuses, and leaderboard incentives.",
+    "aliases": [
+      "#decentrawood",
+      "#deod",
+      "#metaversegaming",
+      "#playtoearn",
+      "community",
+      "community builder",
+      "decentrawood community",
+      "discord",
+      "earn rewards",
+      "forum",
+      "hashtags",
+      "instagram",
+      "invite",
+      "leaderboard",
+      "nft drops",
+      "promote",
+      "referral",
+      "telegram",
+      "token bonuses",
+      "twitter"
+    ],
+    "example_queries": [
+      "show me Community",
+      "take me to Community",
+      "where can I find Community",
+      "tell me about Decentrawood community",
+      "tell me about community builder",
+      "tell me about earn rewards"
+    ],
+    "source_document_id": "doc-decentrawood-community",
+    "needs_review": false
+  },
+  {
+    "route_id": "blog",
+    "title": "Blog",
+    "url": "https://decentrawood.com/blog",
+    "route": "/blog",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "The Decentrawood Blog contains written articles, guides, and long-form posts about the platform's features, updates, and ecosystem.",
+    "aliases": [
+      "article",
+      "articles",
+      "blog",
+      "blog page",
+      "blog section",
+      "blogs",
+      "posts"
+    ],
+    "example_queries": [
+      "show me Blog",
+      "take me to Blog",
+      "where can I find Blog"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "news",
+    "title": "News",
+    "url": "https://decentrawood.com/news",
+    "route": "/news",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "Decentrawood News lists official announcements, press releases, and recent updates from the team.",
+    "aliases": [
+      "announcements",
+      "latest news",
+      "news",
+      "press",
+      "updates"
+    ],
+    "example_queries": [
+      "show me News",
+      "take me to News",
+      "where can I find News"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "privacy_policy",
+    "title": "Privacy Policy",
+    "url": "https://decentrawood.com/private-policy",
+    "route": "/private-policy",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "Decentrawood's privacy policy covers data collection, usage, cookies, security, children's privacy (under 18), third-party links, and modification rights. Contact: info.decentrawood.com.",
+    "aliases": [
+      "children privacy",
+      "cookies",
+      "data collection",
+      "data policy",
+      "gdpr",
+      "legal",
+      "personal information",
+      "policy",
+      "privacy",
+      "privacy policy"
+    ],
+    "example_queries": [
+      "show me Privacy Policy",
+      "take me to Privacy Policy",
+      "where can I find Privacy Policy",
+      "tell me about privacy policy",
+      "tell me about personal information",
+      "tell me about data collection"
+    ],
+    "source_document_id": "doc-decentrawood-private-policy",
+    "needs_review": false
+  },
+  {
+    "route_id": "gaming_platform",
+    "title": "Gaming Platform",
+    "url": "https://gaming.decentrawood.com/",
+    "route": "https://gaming.decentrawood.com/",
+    "domain": "gaming.decentrawood.com",
+    "type": "external_subdomain",
+    "description": "Gaming platform at gaming.decentrawood.com hosts 9+ games: DRC (coin rewards convertible to DEOD), DEOD HUNT (100 levels, 25K coins at L100), DEOD HUNT 2 (50 levels), Mystical Maze, Match Mania, D-Nexus, Lord Of Space, Word Chain, Flap Quest.",
+    "aliases": [
+      "blockchain gaming",
+      "coins to deod",
+      "d-nexus",
+      "decentrawood gaming",
+      "deod hunt",
+      "deod hunt 2",
+      "deod racing cartel",
+      "drc",
+      "flap quest",
+      "game",
+      "gamefi",
+      "games",
+      "gaming",
+      "gaming platform",
+      "lord of space",
+      "match mania",
+      "mystical maze",
+      "play to earn",
+      "word chain"
+    ],
+    "example_queries": [
+      "show me Gaming Platform",
+      "take me to Gaming Platform",
+      "where can I find Gaming Platform",
+      "tell me about Decentrawood gaming",
+      "tell me about DRC",
+      "tell me about DEOD Racing Cartel",
+      "what games can I play",
+      "how many games are there",
+      "list of games",
+      "play games"
+    ],
+    "source_document_id": "doc-gaming-home",
+    "needs_review": false
+  },
+  {
+    "route_id": "deod_staking",
+    "title": "DEOD Staking",
+    "url": "https://deodstaking.decentrawood.com/",
+    "route": "https://deodstaking.decentrawood.com/",
+    "domain": "deodstaking.decentrawood.com",
+    "type": "external_subdomain",
+    "description": "DEOD staking at deodstaking.decentrawood.com via GlobalStaking — a secure, decentralized, institutional-grade staking platform.",
+    "aliases": [
+      "decentralized staking",
+      "deod staking",
+      "globalstaking",
+      "institutional-grade",
+      "stake",
+      "stake deod",
+      "staking",
+      "staking rewards"
+    ],
+    "example_queries": [
+      "show me DEOD Staking",
+      "take me to DEOD Staking",
+      "where can I find DEOD Staking",
+      "tell me about DEOD staking",
+      "tell me about GlobalStaking",
+      "tell me about stake DEOD",
+      "how do I stake deod",
+      "what is the staking apy"
+    ],
+    "source_document_id": "doc-deod-staking-home",
+    "needs_review": false
+  },
+  {
+    "route_id": "ai_platform",
+    "title": "AI Platform",
+    "url": "https://ai.decentrawood.com/",
+    "route": "https://ai.decentrawood.com/",
+    "domain": "ai.decentrawood.com",
+    "type": "external_subdomain",
+    "description": "AI Platform — Decentrawood platform at ai.decentrawood.com.",
+    "aliases": [
+      "ai platform"
+    ],
+    "example_queries": [
+      "show me AI Platform",
+      "take me to AI Platform",
+      "where can I find AI Platform"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "tunehub_music_platform",
+    "title": "TuneHub — Music Platform",
+    "url": "https://music.decentrawood.com/",
+    "route": "https://music.decentrawood.com/",
+    "domain": "music.decentrawood.com",
+    "type": "external_subdomain",
+    "description": "TuneHub — Music Platform — Decentrawood platform at music.decentrawood.com.",
+    "aliases": [
+      "tunehub",
+      "tunehub — music platform"
+    ],
+    "example_queries": [
+      "show me TuneHub",
+      "take me to TuneHub",
+      "where can I find TuneHub"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "culture_zone",
+    "title": "Culture Zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": "https://culture.decentrawood.com/",
+    "domain": "culture.decentrawood.com",
+    "type": "external_subdomain",
+    "description": "Culture Zone — Decentrawood platform at culture.decentrawood.com.",
+    "aliases": [
+      "culture zone"
+    ],
+    "example_queries": [
+      "show me Culture Zone",
+      "take me to Culture Zone",
+      "where can I find Culture Zone"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "glamour_zone",
+    "title": "Glamour Zone",
+    "url": "https://glamour.decentrawood.com/",
+    "route": "https://glamour.decentrawood.com/",
+    "domain": "glamour.decentrawood.com",
+    "type": "external_subdomain",
+    "description": "Glamour Zone — Decentrawood platform at glamour.decentrawood.com.",
+    "aliases": [
+      "glamour zone"
+    ],
+    "example_queries": [
+      "show me Glamour Zone",
+      "take me to Glamour Zone",
+      "where can I find Glamour Zone"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "cupid_hub_3d_social",
+    "title": "Cupid Hub (3D Social)",
+    "url": "https://maps-decentrawood.s3.ap-south-1.amazonaws.com/Cupid_Hub_Web_New_Final+V2/index.html",
+    "route": "https://maps-decentrawood.s3.ap-south-1.amazonaws.com/Cupid_Hub_Web_New_Final+V2/index.html",
+    "domain": "maps-decentrawood.s3.ap-south-1.amazonaws.com",
+    "type": "external_resource",
+    "description": "Cupid Hub (3D Social) — Decentrawood resource at maps-decentrawood.s3.ap-south-1.amazonaws.com.",
+    "aliases": [
+      "cupid hub",
+      "cupid hub (3d social)"
+    ],
+    "example_queries": [
+      "show me Cupid Hub",
+      "take me to Cupid Hub",
+      "where can I find Cupid Hub"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "deod_ai_home",
+    "title": "DEOD AI — Home",
+    "url": "https://deod.ai/",
+    "route": "https://deod.ai/",
+    "domain": "deod.ai",
+    "type": "external_platform",
+    "description": "DEOD AI is a Decentralized Ecosystem for creating, verifying, deploying, and monetizing autonomous AI agents at enterprise scale. Three core modules: Create Your Agent, Know Your Agent (KYA), Use Your Agent.",
+    "aliases": [
+      "agent economy",
+      "agent marketplace",
+      "ai",
+      "artificial intelligence",
+      "autonomous ai agents",
+      "blockchain identity",
+      "create agent",
+      "decentralized ai",
+      "deod ai",
+      "deod ai — home",
+      "deod.ai",
+      "enterprise ai",
+      "know your agent",
+      "kya",
+      "multi-agent systems",
+      "orchestration",
+      "rag pipeline",
+      "trust layer",
+      "use your agent"
+    ],
+    "example_queries": [
+      "show me DEOD AI",
+      "take me to DEOD AI",
+      "where can I find DEOD AI",
+      "tell me about DEOD AI",
+      "tell me about DEOD.AI",
+      "tell me about autonomous AI agents"
+    ],
+    "source_document_id": "doc-deod-ai-home",
+    "needs_review": false
+  },
+  {
+    "route_id": "deod_ai_about",
+    "title": "DEOD AI — About",
+    "url": "https://deod.ai/about",
+    "route": "https://deod.ai/about",
+    "domain": "deod.ai",
+    "type": "external_platform",
+    "description": "DEOD AI's mission: build the operating system for autonomous AI agents. Vision: power the decentralized AI economy.",
+    "aliases": [
+      "ai",
+      "ai native businesses",
+      "ai-to-ai communication",
+      "artificial intelligence",
+      "autonomous ai economy",
+      "deod ai",
+      "deod ai about",
+      "deod ai — about",
+      "distributed intelligence",
+      "mission",
+      "vision",
+      "zero-trust"
+    ],
+    "example_queries": [
+      "show me DEOD AI",
+      "take me to DEOD AI",
+      "where can I find DEOD AI",
+      "tell me about DEOD AI about",
+      "tell me about autonomous AI economy",
+      "tell me about AI-to-AI communication"
+    ],
+    "source_document_id": "doc-deod-ai-about",
+    "needs_review": false
+  },
+  {
+    "route_id": "deod_ai_create_agent",
+    "title": "DEOD AI — Create Agent",
+    "url": "https://deod.ai/create-agent",
+    "route": "https://deod.ai/create-agent",
+    "domain": "deod.ai",
+    "type": "external_platform",
+    "description": "Agent Builder for production-ready AI agents with no-code visual builder or SDK. Supports 6 architectures (ReAct, Plan & Execute, Reflexion, Tree of Thought, MCTS, Custom DAG), RAG pipeline, multi-agent collaboration, and Kubernetes enterprise deployment.",
+    "aliases": [
+      "agent",
+      "agent builder",
+      "agent memory",
+      "ai agent",
+      "auto scaling",
+      "build agent",
+      "create ai agent",
+      "custom dag",
+      "deod ai",
+      "deod ai — create agent",
+      "gpu support",
+      "kubernetes",
+      "mcts",
+      "multi-agent",
+      "no-code builder",
+      "plan & execute",
+      "rag pipeline",
+      "react",
+      "reflexion",
+      "sandboxing",
+      "sdk",
+      "tool integrations",
+      "tree of thought",
+      "visual workflow"
+    ],
+    "example_queries": [
+      "show me DEOD AI",
+      "take me to DEOD AI",
+      "where can I find DEOD AI",
+      "tell me about create AI agent",
+      "tell me about agent builder",
+      "tell me about no-code builder"
+    ],
+    "source_document_id": "doc-deod-ai-create-agent",
+    "needs_review": false
+  },
+  {
+    "route_id": "deod_ai_know_your_agent_kya",
+    "title": "DEOD AI — Know Your Agent (KYA)",
+    "url": "https://deod.ai/know-your-agent",
+    "route": "https://deod.ai/know-your-agent",
+    "domain": "deod.ai",
+    "type": "external_platform",
+    "description": "KYA (Know Your Agent) is the identity/trust layer for AI agents — analogous to KYC for humans. Uses 5-step verification: Static Analysis, Behavioral Simulation, Security Testing, Human Review, Certificate Issuance.",
+    "aliases": [
+      "agent verification",
+      "behavioral simulation",
+      "blockchain identity",
+      "certification",
+      "cryptographic identity",
+      "deod ai",
+      "deod ai — know your agent (kya)",
+      "did",
+      "human review",
+      "know your agent",
+      "kya",
+      "penetration testing",
+      "security",
+      "static analysis",
+      "trust score",
+      "zero-trust"
+    ],
+    "example_queries": [
+      "show me DEOD AI",
+      "take me to DEOD AI",
+      "where can I find DEOD AI",
+      "tell me about KYA",
+      "tell me about Know Your Agent",
+      "tell me about agent verification"
+    ],
+    "source_document_id": "doc-deod-ai-know-your-agent",
+    "needs_review": false
+  },
+  {
+    "route_id": "deod_ai_use_your_agent",
+    "title": "DEOD AI — Use Your Agent",
+    "url": "https://deod.ai/use-your-agent",
+    "route": "https://deod.ai/use-your-agent",
+    "domain": "deod.ai",
+    "type": "external_platform",
+    "description": "Deploy KYA-certified AI agents across healthcare, finance, education, sales, customer support, research, enterprise, and legal. Featured agents: Customer Support Pro ($0.02/query), Sales Intelligence ($99/mo), Research Analyst ($0.05/query), Healthcare Assistant ($199/mo).",
+    "aliases": [
+      "ai marketplace",
+      "crm",
+      "customer support ai",
+      "customer support pro",
+      "deod ai",
+      "deod ai — use your agent",
+      "deploy ai agent",
+      "discord",
+      "education ai",
+      "finance ai",
+      "healthcare ai",
+      "healthcare assistant",
+      "kya certified",
+      "market",
+      "marketplace",
+      "research analyst",
+      "sales ai",
+      "sales intelligence",
+      "shop",
+      "slack",
+      "telegram",
+      "use your agent"
+    ],
+    "example_queries": [
+      "show me DEOD AI",
+      "take me to DEOD AI",
+      "where can I find DEOD AI",
+      "tell me about use your agent",
+      "tell me about deploy AI agent",
+      "tell me about AI marketplace",
+      "what can I buy in the marketplace",
+      "show me items for sale"
+    ],
+    "source_document_id": "doc-deod-ai-use-your-agent",
+    "needs_review": false
+  },
+  {
+    "route_id": "deod_ai_marketplace",
+    "title": "DEOD AI — Marketplace",
+    "url": "https://deod.ai/marketplace",
+    "route": "https://deod.ai/marketplace",
+    "domain": "deod.ai",
+    "type": "external_platform",
+    "description": "DEOD AI Marketplace for browsing, deploying, and monetizing AI agents across Healthcare, Finance, Legal, Education, Customer Support, HR, E-Commerce, and General domains.",
+    "aliases": [
+      "autonomous ai agents",
+      "browse agents",
+      "deod ai",
+      "deod ai marketplace",
+      "deod ai — marketplace",
+      "deploy agents",
+      "e-commerce",
+      "earn deod",
+      "education",
+      "finance",
+      "healthcare",
+      "legal",
+      "market",
+      "marketplace",
+      "shop"
+    ],
+    "example_queries": [
+      "show me DEOD AI",
+      "take me to DEOD AI",
+      "where can I find DEOD AI",
+      "tell me about DEOD AI marketplace",
+      "tell me about autonomous AI agents",
+      "tell me about browse agents",
+      "what can I buy in the marketplace",
+      "show me items for sale"
+    ],
+    "source_document_id": "doc-deod-ai-marketplace",
+    "needs_review": false
+  },
+  {
+    "route_id": "deod_ai_technology",
+    "title": "DEOD AI — Technology",
+    "url": "https://deod.ai/technology",
+    "route": "https://deod.ai/technology",
+    "domain": "deod.ai",
+    "type": "external_platform",
+    "description": "DEOD AI tech stack: Frontend (Next.js, React, TailwindCSS, TypeScript), Backend (NestJS, FastAPI, Python, Node.js), AI (LangChain, LangGraph, GPT-4o, Claude, Llama), Infra (Kubernetes, Docker, Kafka, Redis, PostgreSQL), Blockchain (Ethereum, Polygon, Solana). 99.99% uptime, <50ms response, 10M+ API calls/day.",
+    "aliases": [
+      "50ms response",
+      "99.99% uptime",
+      "aes-256",
+      "auto scaling",
+      "cdn",
+      "claude",
+      "deod ai",
+      "deod ai technology",
+      "deod ai — technology",
+      "docker",
+      "ethereum",
+      "fastapi",
+      "gpt-4o",
+      "gpu",
+      "hashicorp vault",
+      "kafka",
+      "kubernetes",
+      "langchain",
+      "langgraph",
+      "llama",
+      "nestjs",
+      "next.js",
+      "polygon",
+      "postgresql",
+      "react",
+      "redis",
+      "solana",
+      "tech",
+      "tech stack",
+      "technology",
+      "tls"
+    ],
+    "example_queries": [
+      "show me DEOD AI",
+      "take me to DEOD AI",
+      "where can I find DEOD AI",
+      "tell me about DEOD AI technology",
+      "tell me about tech stack",
+      "tell me about Next.js"
+    ],
+    "source_document_id": "doc-deod-ai-technology",
+    "needs_review": false
+  },
+  {
+    "route_id": "deod_ai_contact",
+    "title": "DEOD AI — Contact",
+    "url": "https://deod.ai/contact",
+    "route": "https://deod.ai/contact",
+    "domain": "deod.ai",
+    "type": "external_platform",
+    "description": "DEOD AI contact: support@deod.ai, Office at 1205 Lodha Supremus Powai, Mumbai, Maharashtra 400072, India. Response time: <24 hours.",
+    "aliases": [
+      "contact",
+      "contact us",
+      "deod ai",
+      "deod ai contact",
+      "deod ai — contact",
+      "mumbai",
+      "office address",
+      "support email",
+      "support@deod.ai"
+    ],
+    "example_queries": [
+      "show me DEOD AI",
+      "take me to DEOD AI",
+      "where can I find DEOD AI",
+      "tell me about DEOD AI contact",
+      "tell me about support email",
+      "tell me about office address"
+    ],
+    "source_document_id": "doc-deod-ai-contact",
+    "needs_review": false
+  },
+  {
+    "route_id": "deod_ai_login_register",
+    "title": "DEOD AI — Login / Register",
+    "url": "https://deod.ai/login",
+    "route": "https://deod.ai/login",
+    "domain": "deod.ai",
+    "type": "external_platform",
+    "description": "DEOD AI — Login / Register — Decentrawood platform at deod.ai.",
+    "aliases": [
+      "deod ai",
+      "deod ai — login / register"
+    ],
+    "example_queries": [
+      "show me DEOD AI",
+      "take me to DEOD AI",
+      "where can I find DEOD AI"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "deod_ai_create_agent_wizard",
+    "title": "DEOD AI — Create Agent Wizard",
+    "url": "https://deod.ai/create-agent-wizard",
+    "route": "https://deod.ai/create-agent-wizard",
+    "domain": "deod.ai",
+    "type": "external_platform",
+    "description": "DEOD AI — Create Agent Wizard — Decentrawood platform at deod.ai.",
+    "aliases": [
+      "deod ai",
+      "deod ai — create agent wizard"
+    ],
+    "example_queries": [
+      "show me DEOD AI",
+      "take me to DEOD AI",
+      "where can I find DEOD AI"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "trade_deod_on_mexc",
+    "title": "Trade DEOD on MEXC",
+    "url": "https://www.mexc.co/en-IN/exchange/DEOD_USDT",
+    "route": "https://www.mexc.co/en-IN/exchange/DEOD_USDT",
+    "domain": "mexc.co",
+    "type": "external_exchange",
+    "description": "Trade DEOD on MEXC — Decentrawood exchange at mexc.co.",
+    "aliases": [
+      "trade deod on mexc"
+    ],
+    "example_queries": [
+      "show me Trade DEOD on MEXC",
+      "take me to Trade DEOD on MEXC",
+      "where can I find Trade DEOD on MEXC"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "trade_deod_on_bitmart",
+    "title": "Trade DEOD on BitMart",
+    "url": "https://www.bitmart.com/en-US/trade/DEOD_USDT",
+    "route": "https://www.bitmart.com/en-US/trade/DEOD_USDT",
+    "domain": "bitmart.com",
+    "type": "external_exchange",
+    "description": "Trade DEOD on BitMart — Decentrawood exchange at bitmart.com.",
+    "aliases": [
+      "trade deod on bitmart"
+    ],
+    "example_queries": [
+      "show me Trade DEOD on BitMart",
+      "take me to Trade DEOD on BitMart",
+      "where can I find Trade DEOD on BitMart"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "trade_deod_on_toobit",
+    "title": "Trade DEOD on Toobit",
+    "url": "https://www.toobit.com/en-US/spot/DEOD_USDT",
+    "route": "https://www.toobit.com/en-US/spot/DEOD_USDT",
+    "domain": "toobit.com",
+    "type": "external_exchange",
+    "description": "Trade DEOD on Toobit — Decentrawood exchange at toobit.com.",
+    "aliases": [
+      "trade deod on toobit"
+    ],
+    "example_queries": [
+      "show me Trade DEOD on Toobit",
+      "take me to Trade DEOD on Toobit",
+      "where can I find Trade DEOD on Toobit"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "trade_deod_on_pancakeswap",
+    "title": "Trade DEOD on PancakeSwap",
+    "url": "https://pancakeswap.finance/swap?outputCurrency=0x3510FbBC13090F991Ffa523527113A166161683e&inputCurrency=0x55d398326f99059fF775485246999027B3197955",
+    "route": "https://pancakeswap.finance/swap",
+    "domain": "pancakeswap.finance",
+    "type": "external_dex",
+    "description": "Trade DEOD on PancakeSwap — Decentrawood decentralized exchange at pancakeswap.finance.",
+    "aliases": [
+      "trade deod on pancakeswap"
+    ],
+    "example_queries": [
+      "show me Trade DEOD on PancakeSwap",
+      "take me to Trade DEOD on PancakeSwap",
+      "where can I find Trade DEOD on PancakeSwap"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "trade_deod_on_coindcx",
+    "title": "Trade DEOD on CoinDCX",
+    "url": "https://coindcx.com/",
+    "route": "https://coindcx.com/",
+    "domain": "coindcx.com",
+    "type": "external_exchange",
+    "description": "Trade DEOD on CoinDCX — Decentrawood exchange at coindcx.com.",
+    "aliases": [
+      "trade deod on coindcx"
+    ],
+    "example_queries": [
+      "show me Trade DEOD on CoinDCX",
+      "take me to Trade DEOD on CoinDCX",
+      "where can I find Trade DEOD on CoinDCX"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "trade_deod_on_weex",
+    "title": "Trade DEOD on WEEX",
+    "url": "https://www.weex.com/spot/DEOD-USDT",
+    "route": "https://www.weex.com/spot/DEOD-USDT",
+    "domain": "weex.com",
+    "type": "external_exchange",
+    "description": "Trade DEOD on WEEX — Decentrawood exchange at weex.com.",
+    "aliases": [
+      "trade deod on weex"
+    ],
+    "example_queries": [
+      "show me Trade DEOD on WEEX",
+      "take me to Trade DEOD on WEEX",
+      "where can I find Trade DEOD on WEEX"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "decentrawood_twitter",
+    "title": "Decentrawood Twitter",
+    "url": "https://www.twitter.com/decentrawood",
+    "route": "https://www.twitter.com/decentrawood",
+    "domain": "twitter.com",
+    "type": "social",
+    "description": "Decentrawood Twitter — Decentrawood social channel at twitter.com.",
+    "aliases": [
+      "decentrawood twitter"
+    ],
+    "example_queries": [
+      "show me Decentrawood Twitter",
+      "take me to Decentrawood Twitter",
+      "where can I find Decentrawood Twitter"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "decentrawood_facebook",
+    "title": "Decentrawood Facebook",
+    "url": "https://www.facebook.com/decentrawood",
+    "route": "https://www.facebook.com/decentrawood",
+    "domain": "facebook.com",
+    "type": "social",
+    "description": "Decentrawood Facebook — Decentrawood social channel at facebook.com.",
+    "aliases": [
+      "decentrawood facebook"
+    ],
+    "example_queries": [
+      "show me Decentrawood Facebook",
+      "take me to Decentrawood Facebook",
+      "where can I find Decentrawood Facebook"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "decentrawood_instagram",
+    "title": "Decentrawood Instagram",
+    "url": "https://www.instagram.com/decentrawood_gaming/",
+    "route": "https://www.instagram.com/decentrawood_gaming/",
+    "domain": "instagram.com",
+    "type": "social",
+    "description": "Decentrawood Instagram — Decentrawood social channel at instagram.com.",
+    "aliases": [
+      "decentrawood instagram"
+    ],
+    "example_queries": [
+      "show me Decentrawood Instagram",
+      "take me to Decentrawood Instagram",
+      "where can I find Decentrawood Instagram"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "decentrawood_telegram",
+    "title": "Decentrawood Telegram",
+    "url": "https://t.me/decentrawoodDisscussion",
+    "route": "https://t.me/decentrawoodDisscussion",
+    "domain": "t.me",
+    "type": "social",
+    "description": "Decentrawood Telegram — Decentrawood social channel at t.me.",
+    "aliases": [
+      "decentrawood telegram"
+    ],
+    "example_queries": [
+      "show me Decentrawood Telegram",
+      "take me to Decentrawood Telegram",
+      "where can I find Decentrawood Telegram"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  },
+  {
+    "route_id": "decentrawood_discord",
+    "title": "Decentrawood Discord",
+    "url": "https://discord.com/invite/decentrawood",
+    "route": "https://discord.com/invite/decentrawood",
+    "domain": "discord.com",
+    "type": "social",
+    "description": "Decentrawood Discord — Decentrawood social channel at discord.com.",
+    "aliases": [
+      "decentrawood discord"
+    ],
+    "example_queries": [
+      "show me Decentrawood Discord",
+      "take me to Decentrawood Discord",
+      "where can I find Decentrawood Discord"
+    ],
+    "source_document_id": null,
+    "needs_review": true
+  }
+]

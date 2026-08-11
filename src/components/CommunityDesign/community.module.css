@@ -1,0 +1,682 @@
+.wrapper {
+    height: 420px;
+    width: 100%;
+    background-color: #000000;
+    /* border-radius: 7px 7px 7px 7px;  */
+    /* VIA CSS MATIC https://goo.gl/cIbnS */
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+    float: left;
+    height: 420px;
+    width: 500px;
+}
+
+.product-img img {
+    border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+    float: left;
+    height: 420px;
+    width: 327px;
+    border-radius: 0 7px 10px 7px;
+}
+
+.product-text {
+    height: 300px;
+    width: 500px;
+}
+
+.product-text h1 {
+    margin: 0 0 0 38px;
+    padding-top: 52px;
+    font-size: 33px;
+    color: #fff6f6;
+}
+
+.product-text h1,
+.product-price-btn p {
+    font-family: "Arial", sans-serif;
+}
+
+.product-text h2 {
+    margin: 10px 0 26px 38px;
+    font-size: 13px;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #d61a1a;
+    letter-spacing: 0.2em;
+}
+
+.product-text p {
+    height: 125px;
+    margin: 28px 0 0 38px;
+    font-family: "Segoe UI", sans-serif;
+    color: #ece5e5;
+    line-height: 1.7em;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.product-price-btn {
+    display: inline-block;
+    width: 327px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.product-price-btn p {
+    display: inline-block;
+    position: absolute;
+    top: -13px;
+    height: 50px;
+    font-family: "Trocchi", serif;
+    margin: 0 0 0 38px;
+    font-size: 28px;
+    font-weight: lighter;
+    color: #474747;
+}
+
+/* span {
+    display: inline-block;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+  }
+   */
+.product-price-btn button {
+    float: right;
+    display: inline-block;
+    height: 30px;
+    width: 106px;
+    margin: 0 20px 0 1px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #9cebd5;
+    cursor: pointer;
+    outline: none;
+}
+
+.product-price-btn button:hover {
+    background-color: #79b0a1;
+}
+
+/* Default styles */
+.about-container {
+    padding: 20px;
+    color: #fff;
+    background-color: #000000;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    /* Adjust the height as needed */
+}
+
+.background-image {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.content {
+    margin-top: 20px;
+    /* Adjust spacing */
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    line-height: 24px;
+}
+
+/* Media queries for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .about-container {
+        padding: 10px;
+    }
+
+    .image-container {
+        height: 40vh;
+        /* Adjust the height as needed */
+    }
+
+    .content {
+        margin-top: 10px;
+        /* Adjust spacing */
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .content p {
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+
+    .product-info {
+        float: left;
+        height: 420px;
+        width: 327px;
+        border-radius: 0 7px 10px 7px;
+    }
+}
+
+.product-price-btn .join-btn {
+    background-color: #00cc92; /* Custom color for Join */
+}
+
+.product-price-btn .play-btn {
+    background-color: #cc7503; /* Custom color for Play */
+}
+
+.product-price-btn .earn-btn {
+    background-color: #d45452; /* Custom color for Earn */
+}
+
+.product-price-btn .grow-btn {
+    background-color: #53df55; /* Custom color for Grow */
+}
+
+.product-price-btn button:hover {
+    opacity: 0.8; /* Optional: gives a more subtle effect on hover */
+}
+
+.button-container {
+    display: flex;
+    margin: 0px 0px 0px 35px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Ensure wrapper height and width adjust */
+    .wrapper {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    /* Stack product-info and product-img vertically on mobile */
+    .product-img,
+    .product-info {
+        float: none; /* Remove floating */
+        width: 100%; /* Ensure full width */
+        height: auto; /* Allow content to adjust in height */
+    }
+
+    /* Resize the image to fit the screen width */
+    .product-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 7px;
+    }
+
+    /* Adjust text for mobile */
+    .product-text {
+        width: 100%; /* Ensure the text takes full width */
+        padding: 0 10px; /* Add padding for better spacing */
+    }
+
+    .product-text h1 {
+        font-size: 26px; /* Adjust font size for smaller screens */
+        margin: 0;
+        padding-top: 20px; /* Adjust padding for mobile */
+    }
+
+    .product-text p {
+        font-size: 14px; /* Adjust font size for mobile */
+        line-height: 1.5em;
+    }
+
+    /* Adjust button-container to be responsive */
+    .button-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+        justify-content: space-between; /* Space out buttons */
+        margin: 10px 0;
+    }
+
+    .product-price-btn {
+        width: 48%; /* Buttons take up 48% of the width each on mobile */
+        margin-bottom: 10px;
+    }
+
+    /* Adjust button styles for mobile */
+    .product-price-btn button {
+        width: 100%; /* Make buttons take full width on mobile */
+        margin: 0;
+    }
+
+    .product-info {
+        padding-left: 0; /* Ensure no extra padding */
+    }
+}
+
+.container {
+    background-color: #000000;
+    background-image: radial-gradient(
+            circle at 10% 20%,
+            rgba(74, 144, 255, 0.05) 0%,
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(111, 66, 193, 0.05) 0%,
+            transparent 40%
+        );
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", sans-serif;
+    padding: 2rem;
+    perspective: 1000px;
+    /* max-width: 1400px; */
+    margin: 0 auto;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.card {
+    position: relative;
+    background: rgba(18, 20, 28, 0.95);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    transform-style: preserve-3d;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(
+        45deg,
+        transparent 40%,
+        rgba(74, 144, 255, 0.1),
+        rgba(111, 66, 193, 0.1),
+        transparent 60%
+    );
+    border-radius: inherit;
+    z-index: -1;
+    transition: all 0.5s ease;
+    animation: borderGlow 3s linear infinite;
+}
+
+.card::after {
+    filter: blur(20px);
+}
+
+@keyframes borderGlow {
+    0%,
+    100% {
+        opacity: 0.5;
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02) rotateX(5deg) rotateY(5deg);
+    background: #1a1d2a;
+    box-shadow: 0 20px 40px var(--shadow-color),
+        0 0 20px rgba(74, 144, 255, 0.1), 0 0 0 1px rgba(74, 144, 255, 0.1);
+}
+
+.card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.card-image {
+    height: 160px;
+    background: linear-gradient(45deg, #4a90ff, #6f42c1, #2e3192);
+    background-size: 200% 200%;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    animation: gradientShift 8s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image i {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: translateY(0);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.card:hover .card-image i {
+    transform: translateY(-5px) scale(1.1);
+    text-shadow: 0 5px 20px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.2) 0%,
+        transparent 70%
+    );
+    opacity: 0;
+    transition: all 0.5s ease;
+    mix-blend-mode: overlay;
+}
+
+.card:hover .glow {
+    opacity: 1;
+    animation: glowPulse 2s ease infinite;
+}
+
+@keyframes glowPulse {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+.card-content h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-content h2 i {
+    color: #4a90ff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover h2 {
+    transform: translateZ(20px);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover h2 i {
+    transform: rotate(15deg) scale(1.2);
+    color: var(--gradient-1);
+}
+
+.card-content p {
+    color: #8b8d93;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card:hover p {
+    transform: translateZ(15px);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.card-content button {
+    background: linear-gradient(45deg, #4a90ff, #6f42c1, #2e3192);
+    background-size: 200% 200%;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    animation: gradientShift 8s ease infinite;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-content button i {
+    transition: transform 0.3s ease;
+}
+
+.button:hover i {
+    transform: translateX(3px);
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.card:hover button::before {
+    transform: translateX(100%);
+}
+
+.button:hover {
+    transform: translateY(-2px) translateZ(25px);
+    box-shadow: 0 5px 15px rgba(74, 144, 255, 0.3),
+        0 0 20px rgba(74, 144, 255, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.06),
+        transparent 40%
+    );
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+
+    .card-image {
+        height: 140px;
+    }
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.card:hover .card-content {
+    animation: float 3s ease infinite;
+}
+
+.heading {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #000000;
+    margin: 0px;
+    padding: 30px 0 30px 0;
+
+}
+
+.banner-card {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.text-left {
+    flex: 1;
+    background: #7f85ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    color: white;
+    font-family: "Arial", sans-serif;
+    text-align: left;
+    border-radius: 40px;
+    margin-left: 20%;
+}
+
+.text-left h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+.text-left p {
+    font-size: 1.2rem;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.image-right {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-right img {
+    width: 50%;
+    margin-top: 10px;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 40px;
+    /* Dim the image for better text readability */
+}
+@media only screen and (max-width: 768px) {
+    /* Stack the elements vertically */
+    .banner-card {
+        flex-direction: column; /* Stack text and image vertically */
+        height: auto; /* Allow the height to adjust */
+        padding: 10px; /* Add some padding */
+    }
+
+    .text-left {
+        flex: none; /* Allow the text to take full width */
+        width: 100%; /* Take full width on mobile */
+        margin-left: 0; /* Remove margin for mobile */
+        padding: 15px; /* Adjust padding */
+        border-radius: 20px; /* Make border-radius smaller */
+    }
+
+    .text-left h1 {
+        font-size: 1.8rem; /* Adjust font size for mobile */
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Lighter text-shadow for readability */
+    }
+
+    .text-left p {
+        font-size: 1rem; /* Adjust font size for mobile */
+        text-shadow: 0 0 8px rgba(0, 255, 255, 0.7); /* Lighter text-shadow for readability */
+    }
+
+    .image-right {
+        width: 100%; /* Image takes full width */
+        height: 200px; /* Limit the image height for mobile */
+        margin-top: 10px; /* Small margin for separation */
+    }
+
+    .image-right img {
+        width: 100%; /* Image takes full width on mobile */
+        height: auto; /* Allow height to adjust proportionally */
+        border-radius: 20px; /* Make border-radius smaller */
+    }
+
+    /* Adjust button styles inside the card */
+    .card-content button {
+        font-size: 1rem; /* Adjust button font size for mobile */
+        padding: 10px 20px; /* Adjust padding */
+        width: 100%; /* Button takes full width on mobile */
+        margin-top: 15px; /* Add margin for spacing */
+    }
+}

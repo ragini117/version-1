@@ -1,0 +1,140 @@
+/* ═══════════════════ SHARED DAO FORM — DARK THEME ═══════════════════ */
+.container {
+    min-height: 100vh;
+    background: #080312;
+    background-image:
+        radial-gradient(ellipse at 15% 0%,  rgba(109,40,217,0.2) 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 90%, rgba(99,102,241,0.12) 0%, transparent 50%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 1rem 4rem;
+    font-family: 'Inter', 'Outfit', sans-serif;
+    color: #e2e8f0;
+}
+
+.formCard {
+    background: rgba(18,6,45,0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(168,85,247,0.15);
+    border-radius: 20px;
+    padding: 2.5rem 2.25rem;
+    width: 100%;
+    max-width: 720px;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+}
+
+.header {
+    font-size: 1.55rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+    background: linear-gradient(90deg, #ffffff 40%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.25;
+}
+
+.paragraph {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-bottom: 1.75rem;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(168,85,247,0.12);
+    padding-bottom: 1.25rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.label {
+    font-size: 12.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #c084fc;
+    margin-top: 1.1rem;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.05) !important;
+    border: 1.5px solid rgba(168,85,247,0.25) !important;
+    border-radius: 10px !important;
+    color: #e2e8f0 !important;
+    padding: 11px 14px;
+    font-size: 14.5px;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: border-color 0.2s, background 0.2s;
+    font-family: inherit;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: #a855f7 !important;
+    background: rgba(168,85,247,0.08) !important;
+    box-shadow: 0 0 0 3px rgba(168,85,247,0.15) !important;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #4b5563 !important;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.coAuthors {
+    font-size: 12.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #c084fc;
+    margin-top: 1.1rem;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.button_box {
+    margin-top: 1.75rem;
+}
+
+.submitButton {
+    padding: 12px 32px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg, #a855f7, #6d28d9);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 18px rgba(168,85,247,0.45);
+    transition: all 0.22s;
+    letter-spacing: 0.3px;
+}
+
+.submitButton:hover:not(:disabled) {
+    box-shadow: 0 6px 26px rgba(168,85,247,0.65);
+    transform: translateY(-1px);
+}
+
+.submitButton:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    transform: none;
+}
+
+@media (max-width: 600px) {
+    .formCard { padding: 1.75rem 1.25rem; }
+    .header   { font-size: 1.25rem; }
+}

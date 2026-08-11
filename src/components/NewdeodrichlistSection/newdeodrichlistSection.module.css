@@ -1,0 +1,115 @@
+/* Background */
+.richlist_bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0b1020, #020617);
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Page Title */
+  .page_title {
+    color: #38bdf8;
+    font-size: 44px;
+    font-weight: 700;
+  }
+  
+  .page_subtitle {
+    color: #94a3b8;
+    font-size: 16px;
+  }
+  
+  /* Card Base */
+  .rich_card {
+    border-radius: 20px;
+    padding: 26px;
+    height: 100%;
+    color: #ffffff;
+    position: relative;
+    transition: all 0.35s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  }
+  
+  .rich_card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.55);
+  }
+  
+  /* Card Colors */
+  .cardBlue {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+  }
+  
+  .cardPurple {
+    background: linear-gradient(135deg, #7c3aed, #4c1d95);
+  }
+  
+  .cardGreen {
+    background: linear-gradient(135deg, #16a34a, #14532d);
+  }
+  
+  .cardOrange {
+    background: linear-gradient(135deg, #f97316, #9a3412);
+  }
+  
+  .cardPink {
+    background: linear-gradient(135deg, #ec4899, #831843);
+  }
+  
+  .cardCyan {
+    background: linear-gradient(135deg, #06b6d4, #0e7490);
+  }
+  
+  /* Card Content */
+  .card_title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* Info Rows */
+  .info_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  
+  .info_row span {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  
+  .info_row strong {
+    font-weight: 600;
+  }
+  
+  /* Button */
+  .view_btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .view_btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .page_title {
+      font-size: 30px;
+    }
+  
+    .card_title {
+      font-size: 18px;
+    }
+  }
+  

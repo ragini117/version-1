@@ -1,0 +1,223 @@
+/* ═══════════════════════════════════════════════════════════
+   PAGE
+   ═══════════════════════════════════════════════════════════ */
+.container {
+    min-height: 100vh;
+    background: #080312;
+    background-image:
+        radial-gradient(ellipse at 20% 0%,  rgba(109, 40, 217, 0.22) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 90%, rgba(99, 102, 241, 0.12) 0%, transparent 50%);
+    padding: 0 0 4rem;
+    font-family: 'Inter', 'Outfit', sans-serif;
+    color: #e2e8f0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CONTENT WRAPPER
+   ═══════════════════════════════════════════════════════════ */
+.content {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   PAGE HEADER
+   ═══════════════════════════════════════════════════════════ */
+.pageHeader {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.backBtn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(168, 85, 247, 0.12);
+    border: 1.5px solid rgba(168, 85, 247, 0.3);
+    color: #a855f7;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s;
+}
+.backBtn:hover {
+    background: rgba(168, 85, 247, 0.24);
+    border-color: #a855f7;
+    color: #e9d5ff;
+    transform: translateX(-2px);
+}
+
+.headerText { flex: 1; }
+
+.title {
+    font-size: 1.85rem;
+    font-weight: 800;
+    margin: 0 0 4px;
+    background: linear-gradient(90deg, #ffffff 40%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   PROPOSALS LIST
+   ═══════════════════════════════════════════════════════════ */
+.proposalsList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   PROPOSAL CARD
+   ═══════════════════════════════════════════════════════════ */
+.proposalCard {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 1.4rem 1.1rem 1.5rem;
+    background: rgba(18, 6, 45, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-left: 3px solid var(--accent, #a855f7);
+    border-radius: 14px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.25s ease;
+}
+
+.proposalCard::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(var(--accent-rgb, 168,85,247), 0.05) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.25s;
+    pointer-events: none;
+}
+
+.proposalCard:hover {
+    background: rgba(28, 10, 60, 0.8);
+    border-color: var(--accent, #a855f7);
+    border-left-color: var(--accent, #a855f7);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 0 1px rgba(var(--accent-rgb, 168,85,247), 0.15) inset;
+    transform: translateY(-2px);
+}
+.proposalCard:hover::before { opacity: 1; }
+
+/* disabled / coming soon card */
+.proposalCard.comingSoonCard {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+.proposalCard.comingSoonCard:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CARD LEFT SECTION (icon + text)
+   ═══════════════════════════════════════════════════════════ */
+.title_icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.iconWrapper {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: rgba(var(--accent-rgb, 168,85,247), 0.12);
+    border: 1px solid rgba(var(--accent-rgb, 168,85,247), 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: var(--accent, #a855f7);
+    flex-shrink: 0;
+    transition: all 0.25s;
+}
+.proposalCard:hover .iconWrapper {
+    background: rgba(var(--accent-rgb, 168,85,247), 0.22);
+    box-shadow: 0 0 14px rgba(var(--accent-rgb, 168,85,247), 0.3);
+}
+
+.proposalTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin: 0 0 3px;
+    line-height: 1.3;
+}
+
+.proposalDescription {
+    font-size: 13px;
+    color: #94a3b8;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CARD RIGHT SECTION (badge + arrow)
+   ═══════════════════════════════════════════════════════════ */
+.cardRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.comingSoon {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #fbbf24;
+    background: rgba(251, 191, 36, 0.12);
+    border: 1.5px solid rgba(251, 191, 36, 0.35);
+    border-radius: 20px;
+    padding: 4px 12px;
+}
+
+.cardArrow {
+    font-size: 18px;
+    color: #4b5563;
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: all 0.22s;
+}
+.proposalCard:hover .cardArrow {
+    opacity: 1;
+    color: var(--accent, #a855f7);
+    transform: translateX(0);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════ */
+@media (max-width: 640px) {
+    .content { padding: 1.5rem 1rem 0; }
+    .title { font-size: 1.4rem; }
+    .proposalCard { padding: 0.9rem 1rem; }
+    .iconWrapper { width: 40px; height: 40px; font-size: 18px; }
+    .proposalTitle { font-size: 14.5px; }
+    .proposalDescription { font-size: 12px; }
+}

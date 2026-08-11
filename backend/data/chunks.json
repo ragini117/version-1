@@ -1,0 +1,1459 @@
+[
+  {
+    "chunk_id": "chunk-decentrawood-home-overview",
+    "document_id": "doc-decentrawood-home",
+    "title": "Decentrawood — Home",
+    "section": "Platform Overview",
+    "domain": "decentrawood.com",
+    "category": "decentrawood_overview",
+    "url": "https://decentrawood.com/",
+    "route": "/",
+    "keywords": [
+      "Decentrawood",
+      "Web3 entertainment",
+      "AI powered",
+      "metaverse",
+      "gaming",
+      "decentralized universe"
+    ],
+    "content": "Decentrawood is a trendsetter in Web3 Entertainment — AI Powered & Fully Immersive. Step into a decentralized universe where gaming, artificial intelligence, and virtual world creation converge into a seamless ecosystem. Key platform pillars: Gaming (gaming.decentrawood.com), AI (ai.decentrawood.com), Metaverse (glamour.decentrawood.com)."
+  },
+  {
+    "chunk_id": "chunk-decentrawood-home-arbitrage",
+    "document_id": "doc-decentrawood-home",
+    "title": "Decentrawood — Home",
+    "section": "DEOD Arbitrage Opportunity",
+    "domain": "decentrawood.com",
+    "category": "deod_token",
+    "url": "https://decentrawood.com/",
+    "route": "/",
+    "keywords": [
+      "DEOD arbitrage",
+      "MEXC",
+      "Bitmart",
+      "Toobit",
+      "PancakeSwap",
+      "price difference"
+    ],
+    "content": "Trade Smarter: DEOD Arbitrage Opportunity. Capture price differences across MEXC, Bitmart, Toobit, and PancakeSwap. DEOD is available on multiple platforms with varying liquidity, creating trading opportunities."
+  },
+  {
+    "chunk_id": "chunk-decentrawood-home-community",
+    "document_id": "doc-decentrawood-home",
+    "title": "Decentrawood — Home",
+    "section": "Community Building",
+    "domain": "decentrawood.com",
+    "category": "community",
+    "url": "https://decentrawood.com/",
+    "route": "/",
+    "keywords": [
+      "community",
+      "referral",
+      "invite",
+      "promote",
+      "NFT drops",
+      "token bonuses",
+      "leaderboard"
+    ],
+    "content": "Decentrawood Community Building: Register & Invite — sign up through referral, more referrals = bigger rewards. Promote & Win — spread the word using #Decentrawood and #PlayToEarn, engagement tracked. Get Incentives — earn exclusive NFT drops, token bonuses, and leaderboard rewards by contributing to discussions and helping newcomers."
+  },
+  {
+    "chunk_id": "chunk-what-is-decentrawood-overview",
+    "document_id": "doc-decentrawood-what-is-decentrawood",
+    "title": "What is Decentrawood?",
+    "section": "Overview",
+    "domain": "decentrawood.com",
+    "category": "decentrawood_overview",
+    "url": "https://decentrawood.com/what-is-decentrawood",
+    "route": "/what-is-decentrawood",
+    "keywords": [
+      "What is Decentrawood",
+      "AI-powered",
+      "Web3",
+      "entertainment ecosystem",
+      "generative AI",
+      "gaming",
+      "music",
+      "DAO",
+      "blockchain"
+    ],
+    "content": "Decentrawood is an AI-powered Web3 entertainment ecosystem that combines generative AI tools, gaming, music creation, social interaction, and DAO-based governance into a single decentralized platform. It is a multi-layered digital ecosystem designed for creators, gamers, and communities. Core emphasis: AI-driven creativity, social engagement, and Web3-native digital experiences accessible across mobile and immersive environments. Includes a dedicated AI platform at ai.decentrawood.com and gaming platform at gaming.decentrawood.com."
+  },
+  {
+    "chunk_id": "chunk-what-is-decentrawood-gaming-hub",
+    "document_id": "doc-decentrawood-what-is-decentrawood",
+    "title": "What is Decentrawood?",
+    "section": "Gaming Hub",
+    "domain": "decentrawood.com",
+    "category": "gaming",
+    "url": "https://decentrawood.com/what-is-decentrawood",
+    "route": "/what-is-decentrawood",
+    "keywords": [
+      "Gaming Hub",
+      "GameFi",
+      "blockchain games",
+      "gaming.decentrawood.com"
+    ],
+    "content": "The Gaming Hub hosts interactive blockchain-integrated games and GameFi-style experiences, allowing users to participate in digital gaming economies directly within the ecosystem. The official gaming platform is at gaming.decentrawood.com."
+  },
+  {
+    "chunk_id": "chunk-what-is-decentrawood-tunehub",
+    "document_id": "doc-decentrawood-what-is-decentrawood",
+    "title": "What is Decentrawood?",
+    "section": "TuneHub (Music & Creator Platform)",
+    "domain": "decentrawood.com",
+    "category": "decentrawood_overview",
+    "url": "https://decentrawood.com/what-is-decentrawood",
+    "route": "/what-is-decentrawood",
+    "keywords": [
+      "TuneHub",
+      "music platform",
+      "music.decentrawood.com",
+      "creator economy",
+      "Web3 music"
+    ],
+    "content": "TuneHub (music.decentrawood.com) enables music creation, sharing, and exploration while connecting creators to Web3 ownership models and community interaction. It is the music and creator economy platform within the Decentrawood ecosystem."
+  },
+  {
+    "chunk_id": "chunk-what-is-decentrawood-social-zone",
+    "document_id": "doc-decentrawood-what-is-decentrawood",
+    "title": "What is Decentrawood?",
+    "section": "Social Zone",
+    "domain": "decentrawood.com",
+    "category": "social_zone",
+    "url": "https://decentrawood.com/what-is-decentrawood",
+    "route": "/what-is-decentrawood",
+    "keywords": [
+      "Social Zone",
+      "socialize",
+      "events",
+      "mobile",
+      "immersive"
+    ],
+    "content": "The Social Zone allows users to socialize, communicate, attend events, and build communities across mobile devices, digital social spaces, and immersive environments without requiring full metaverse immersion."
+  },
+  {
+    "chunk_id": "chunk-what-is-decentrawood-dao",
+    "document_id": "doc-decentrawood-what-is-decentrawood",
+    "title": "What is Decentrawood?",
+    "section": "DAO & Governance",
+    "domain": "decentrawood.com",
+    "category": "dao",
+    "url": "https://decentrawood.com/what-is-decentrawood",
+    "route": "/what-is-decentrawood",
+    "keywords": [
+      "DAO",
+      "governance",
+      "proposal",
+      "voting",
+      "decentralized"
+    ],
+    "content": "Decentrawood is governed through a Decentralized Autonomous Organization (DAO), enabling community members to propose, vote on, and influence ecosystem development."
+  },
+  {
+    "chunk_id": "chunk-what-is-decentrawood-deod-utility",
+    "document_id": "doc-decentrawood-what-is-decentrawood",
+    "title": "What is Decentrawood?",
+    "section": "DEOD Token Utility",
+    "domain": "decentrawood.com",
+    "category": "deod_token",
+    "url": "https://decentrawood.com/what-is-decentrawood",
+    "route": "/what-is-decentrawood",
+    "keywords": [
+      "DEOD token",
+      "utility",
+      "platform features",
+      "governance",
+      "in-game economy"
+    ],
+    "content": "DEOD Token Utility: Access platform features, participate in ecosystem activities, support governance mechanisms, and enable in-game and creator economies."
+  },
+  {
+    "chunk_id": "chunk-about-us-platform",
+    "document_id": "doc-decentrawood-about-us",
+    "title": "About Us — Decentrawood",
+    "section": "The Decentrawood Platform",
+    "domain": "decentrawood.com",
+    "category": "about",
+    "url": "https://decentrawood.com/about-us",
+    "route": "/about-us",
+    "keywords": [
+      "Decentrawood about",
+      "virtual world",
+      "blockchain",
+      "VR",
+      "AI",
+      "digital assets"
+    ],
+    "content": "Decentrawood is a groundbreaking virtual world at the intersection of blockchain technology, virtual reality, and artificial intelligence. Users can socialize, communicate, travel, game, and entertain themselves. The platform is powered by blockchain ensuring data integrity, transparency, security, and true digital asset ownership. Anyone can become a citizen — buy land, build or import NFTs, create avatars, and explore entirely different realities."
+  },
+  {
+    "chunk_id": "chunk-about-us-land",
+    "document_id": "doc-decentrawood-about-us",
+    "title": "About Us — Decentrawood",
+    "section": "What is LAND?",
+    "domain": "decentrawood.com",
+    "category": "metaverse",
+    "url": "https://decentrawood.com/about-us",
+    "route": "/about-us",
+    "keywords": [
+      "LAND",
+      "virtual real estate",
+      "digital parcels",
+      "own",
+      "develop",
+      "monetize",
+      "passive income"
+    ],
+    "content": "LAND represents digital parcels of virtual real estate in Decentrawood that users can own, develop, and monetize. Owning LAND grants exclusive rights to develop and customize virtual properties, design landscapes, construct buildings, and host events. LANDowners can earn passive income by leasing or selling their virtual properties to other users."
+  },
+  {
+    "chunk_id": "chunk-about-us-deod",
+    "document_id": "doc-decentrawood-about-us",
+    "title": "About Us — Decentrawood",
+    "section": "DEOD Token",
+    "domain": "decentrawood.com",
+    "category": "deod_token",
+    "url": "https://decentrawood.com/about-us",
+    "route": "/about-us",
+    "keywords": [
+      "DEOD token",
+      "transactions",
+      "governance",
+      "staking",
+      "digital assets",
+      "DAO"
+    ],
+    "content": "The DEOD token is the native utility token of Decentrawood. It facilitates transactions, incentivizes user participation, and governs the decentralized ecosystem. Users earn DEOD by creating and trading digital assets, participating in events, contributing to the platform, and staking tokens. DEOD also enables governance participation through DAOs — proposing and voting on changes, upgrades, and initiatives."
+  },
+  {
+    "chunk_id": "chunk-dao-what-is",
+    "document_id": "doc-decentrawood-dao",
+    "title": "Decentrawood DAO",
+    "section": "What Is a DAO?",
+    "domain": "decentrawood.com",
+    "category": "dao",
+    "url": "https://decentrawood.com/dao",
+    "route": "/dao",
+    "keywords": [
+      "DAO",
+      "Decentralized Autonomous Organization",
+      "decentralized",
+      "cryptocurrency",
+      "blockchain"
+    ],
+    "content": "A Decentralized Autonomous Organization (DAO) is a legal central governing body formed to take decisions and act in the best interest of an entity. It is not controlled by a single institution like a government or central bank, but instead divided among a variety of computers, networks, and nodes. It is popular in the cryptocurrency and blockchain community."
+  },
+  {
+    "chunk_id": "chunk-dao-decentrawood-dao",
+    "document_id": "doc-decentrawood-dao",
+    "title": "Decentrawood DAO",
+    "section": "Decentrawood DAO & How It Works",
+    "domain": "decentrawood.com",
+    "category": "dao",
+    "url": "https://decentrawood.com/dao",
+    "route": "/dao",
+    "keywords": [
+      "Decentrawood DAO",
+      "governance",
+      "voting",
+      "Meta Land",
+      "smart contracts",
+      "NFT contracts",
+      "whitelisting",
+      "PEOPLE IN CONTROL"
+    ],
+    "content": "Decentrawood DAO is the local governing body for the Decentrawood platform, which owns a majority of assets including smart contracts, Meta Land contracts, Avatar clothing, accessories, and Marketplace. It emphasizes 'PEOPLE IN CONTROL' — users who indulge, create, and own the virtual space hold the policies that determine how the metaverse behaves. This includes deciding what items are allowed or disallowed to launch, auction, and more. The community puts forward ideas and votes on upgrades, Meta land auctions, policy updates, whitelisting of NFT contracts, and whatever the community deems appropriate. Voting is governed by Decentrawood DAO's governance interface."
+  },
+  {
+    "chunk_id": "chunk-deodtoken-v2-contract",
+    "document_id": "doc-decentrawood-deodtoken",
+    "title": "DEOD Tokenomics",
+    "section": "DEOD v2 — Current Contract",
+    "domain": "decentrawood.com",
+    "category": "tokenomics",
+    "url": "https://decentrawood.com/DeodToken",
+    "route": "/DeodToken",
+    "keywords": [
+      "DEOD v2",
+      "BNB Chain",
+      "contract address",
+      "0x3510FbBC13090F991Ffa523527113A166161683e",
+      "supply",
+      "2 billion",
+      "burn",
+      "pre-minted"
+    ],
+    "content": "DEOD v2 is the current contract on BNB Chain. Contract Address: 0x3510FbBC13090F991Ffa523527113A166161683e. Maximum supply: 2 billion. 110 million burnt, leaving 1.89 billion effective max supply. All tokens are pre-minted for security and scalability."
+  },
+  {
+    "chunk_id": "chunk-deodtoken-allocation",
+    "document_id": "doc-decentrawood-deodtoken",
+    "title": "DEOD Tokenomics",
+    "section": "Allocation Breakdown",
+    "domain": "decentrawood.com",
+    "category": "tokenomics",
+    "url": "https://decentrawood.com/DeodToken",
+    "route": "/DeodToken",
+    "keywords": [
+      "token allocation",
+      "holder airdrop",
+      "vesting",
+      "staking reward",
+      "liquidity",
+      "marketing",
+      "team",
+      "DAO treasury"
+    ],
+    "content": "DEOD v2 Allocation Breakdown:\n1. Holder Airdrop: 594,300,000 — migration for old contract holders. Release: Year 1 40%, Year 2 30%, Year 3 30%.\n2. Old Allotted Tokens (7-year vesting): 564,230,700 — 0.5% monthly reward on staked amount. After 3 years, 20% of staked amount released annually until 7 years. Vesting contract live before Feb 15 2026.\n3. Staking Reward Provision: 170,769,300 — for long-term holder incentives.\n4. Liquidity Reserve (CEX & DEX): 200,000,000 — for exchange listings and on-chain liquidity.\n5. Marketing & Promotion: 195,700,000 — ecosystem growth, partnerships, airdrops, bounty, brand expansion.\n6. Team (3-year vest): 100,000,000 — released monthly equally for 36 months.\n7. DAO + Treasury: 60,000,000 — governance, ecosystem grants, strategic initiatives. Controlled by DAO committee.\n\nCirculating supply = total supply minus allocated wallet holdings (categories 2-7)."
+  },
+  {
+    "chunk_id": "chunk-deodtoken-legacy",
+    "document_id": "doc-decentrawood-deodtoken",
+    "title": "DEOD Tokenomics",
+    "section": "Legacy Contracts & Migration",
+    "domain": "decentrawood.com",
+    "category": "tokenomics",
+    "url": "https://decentrawood.com/DeodToken",
+    "route": "/DeodToken",
+    "keywords": [
+      "legacy contracts",
+      "Polygon",
+      "BNB",
+      "migration",
+      "holder swap",
+      "airdrop"
+    ],
+    "content": "Legacy DEOD Contracts: Polygon (Old DEOD): 0xE77aBB1E75D2913B2076DD16049992FFeACa5235. BNB Chain (Old DEOD): 0x7f4B7431a4E1B9f375EF0A94224eA4Ef09B4F668. Migration Note: All eligible holders from old contracts are supported through the Holder Migration Swap / Airdrop mechanism in DEOD v2, ensuring continuity, fairness, and value preservation."
+  },
+  {
+    "chunk_id": "chunk-trade-exchanges",
+    "document_id": "doc-decentrawood-trade",
+    "title": "Buy DEOD — Trade",
+    "section": "Supported Exchanges & How to Buy",
+    "domain": "decentrawood.com",
+    "category": "deod_token",
+    "url": "https://decentrawood.com/trade",
+    "route": "/trade",
+    "keywords": [
+      "buy DEOD",
+      "MEXC",
+      "BitMart",
+      "Toobit",
+      "PancakeSwap",
+      "CoinDCX",
+      "WEEX",
+      "DEOD USDT"
+    ],
+    "content": "Buy DEOD Instantly on: MEXC (high liquidity, beginner friendly, spot & futures), BitMart (global, secure), Toobit (advanced tools, low fees), PancakeSwap (no account, wallet trading, contract 0x3510FbBC13090F991Ffa523527113A166161683e), CoinDCX Web3 (self-custody), WEEX (fast execution, competitive fees).\n\nHow to Buy on Exchanges: 1) Sign up, 2) Deposit USDT, 3) Search DEOD/USDT, 4) Trade.\nHow to Buy on PancakeSwap: 1) Connect wallet, 2) Have BNB, 3) Paste DEOD contract address, 4) Swap.\n\nDEOD Arbitrage: Buy DEOD at a lower price on one exchange, sell at higher price on another, capture the difference. Use official links, verify contract, do your research."
+  },
+  {
+    "chunk_id": "chunk-metaverse-zones",
+    "document_id": "doc-decentrawood-metaverse",
+    "title": "Decentrawood Metaverse",
+    "section": "Metaverse Zones",
+    "domain": "decentrawood.com",
+    "category": "metaverse",
+    "url": "https://decentrawood.com/metaverse",
+    "route": "/metaverse",
+    "keywords": [
+      "metaverse",
+      "Gaming zone",
+      "Glamour zone",
+      "Culture zone",
+      "Ariba Zone",
+      "Indus Zone",
+      "Social Zone"
+    ],
+    "content": "The Decentrawood Metaverse is built on three vibrant zones:\n1. Gaming Zone — blockchain-integrated gaming experiences.\n2. Glamour Zone (Ariba Zone) — where style meets stardom. Brings glitz, fame, and entertainment into the metaverse.\n3. Culture Zone (Indus Zone) — where traditions blend with innovation. Celebrates diversity, connecting people, places, and traditions.\n\nSocial Zone features: Friends, Coffee, Clubbing, Parties, Hangouts — a digital lifestyle hub."
+  },
+  {
+    "chunk_id": "chunk-socialzone-overview",
+    "document_id": "doc-decentrawood-socialzone",
+    "title": "Social Zone",
+    "section": "Social Zone Overview",
+    "domain": "decentrawood.com",
+    "category": "social_zone",
+    "url": "https://decentrawood.com/socialzone",
+    "route": "/socialzone",
+    "keywords": [
+      "Social Zone",
+      "meet",
+      "chat",
+      "party",
+      "community growth",
+      "daily engagement"
+    ],
+    "content": "Your World. Your Circle. One Social Universe. Meet, chat, party, or chill — from your phone or inside the metaverse. Decentrawood makes social fun again. Statistics: +350% community growth rate, 95% users engaged daily."
+  },
+  {
+    "chunk_id": "chunk-socialzone-heartlink-cupidhub",
+    "document_id": "doc-decentrawood-socialzone",
+    "title": "Social Zone",
+    "section": "Heartlink & Cupid Hub",
+    "domain": "decentrawood.com",
+    "category": "social_zone",
+    "url": "https://decentrawood.com/socialzone",
+    "route": "/socialzone",
+    "keywords": [
+      "Heartlink",
+      "Cupid Hub",
+      "social app",
+      "3D immersive",
+      "hangouts",
+      "dance nights"
+    ],
+    "content": "Heartlink is the official mobile social app of Decentrawood. Make friends, chat, or find your match. Carry the Decentrawood Social Experience in your pocket.\n\nCupid Hub is the Social Soul of Decentrawood — a gateway to hangouts, coffee dates, dance nights, and spontaneous parties in an immersive 3D world."
+  },
+  {
+    "chunk_id": "chunk-socialzone-groups",
+    "document_id": "doc-decentrawood-socialzone",
+    "title": "Social Zone",
+    "section": "Community Groups",
+    "domain": "decentrawood.com",
+    "category": "social_zone",
+    "url": "https://decentrawood.com/socialzone",
+    "route": "/socialzone",
+    "keywords": [
+      "community groups",
+      "Metaverse Gamers",
+      "AI Art Lovers",
+      "Party Lounge"
+    ],
+    "content": "Community Groups in Social Zone: Metaverse Gamers (32K Members), AI Art Lovers (18K Members), Party Lounge (25K Members), Chill & Coffee (12K Members)."
+  },
+  {
+    "chunk_id": "chunk-socialzone-privacy",
+    "document_id": "doc-decentrawood-socialzone",
+    "title": "Social Zone",
+    "section": "Privacy & Data Protection",
+    "domain": "decentrawood.com",
+    "category": "social_zone",
+    "url": "https://decentrawood.com/socialzone",
+    "route": "/socialzone",
+    "keywords": [
+      "privacy",
+      "decentralized storage",
+      "blockchain ownership",
+      "end-to-end encrypted",
+      "data export"
+    ],
+    "content": "Privacy & Data Protection: All user data is secured through decentralized storage and blockchain-backed ownership — no central entity controls your information. Users control visibility with granular privacy options. Data can be exported or completely wiped at any time. Messages and interactions are end-to-end encrypted."
+  },
+  {
+    "chunk_id": "chunk-community-rewards",
+    "document_id": "doc-decentrawood-community",
+    "title": "Build the Community",
+    "section": "Community Rewards Program",
+    "domain": "decentrawood.com",
+    "category": "community",
+    "url": "https://decentrawood.com/community",
+    "route": "/community",
+    "keywords": [
+      "community builder",
+      "referral",
+      "invite",
+      "promote",
+      "hashtags",
+      "NFT drops",
+      "token bonuses",
+      "leaderboard"
+    ],
+    "content": "How to Be a Community Builder & Earn Rewards:\n1. Register & Invite — Sign up through referral. More referrals = bigger rewards.\n2. Promote & Win — Use hashtags #Decentrawood, #DEOD, #MetaverseGaming, #PlayToEarn on Twitter, Instagram, Discord. Engagement tracked.\n3. Get Incentives — Earn rewards for discussions, insights, helping newcomers. Exclusive NFT drops, token bonuses, leaderboard incentives.\n\nDecentrawood is more than a platform — it's a thriving metaverse where engagement turns into rewards."
+  },
+  {
+    "chunk_id": "chunk-gaming-drc",
+    "document_id": "doc-gaming-home",
+    "title": "Decentrawood Gaming",
+    "section": "DRC — DEOD Racing Cartel",
+    "domain": "gaming.decentrawood.com",
+    "category": "gaming",
+    "url": "https://gaming.decentrawood.com/",
+    "route": "https://gaming.decentrawood.com/",
+    "keywords": [
+      "DRC",
+      "DEOD Racing Cartel",
+      "racing",
+      "coins",
+      "DEOD tokens",
+      "cross-platform"
+    ],
+    "content": "DRC: DEOD Racing Cartel — Race for coin rewards every match. 1st place: 650 coins, 2nd: 450 coins, 3rd: 250 coins. Features: Unlock & Customize Cars, Sunny/Rain/Night Tracks, Cross-Platform Controls (PC, Mobile & Gamepad), Convert Coins into DEOD Tokens."
+  },
+  {
+    "chunk_id": "chunk-gaming-deod-hunt",
+    "document_id": "doc-gaming-home",
+    "title": "Decentrawood Gaming",
+    "section": "DEOD HUNT & DEOD HUNT 2",
+    "domain": "gaming.decentrawood.com",
+    "category": "gaming",
+    "url": "https://gaming.decentrawood.com/",
+    "route": "https://gaming.decentrawood.com/",
+    "keywords": [
+      "DEOD HUNT",
+      "DEOD HUNT 2",
+      "100 levels",
+      "50 levels",
+      "coins",
+      "DEOD tokens",
+      "play to earn"
+    ],
+    "content": "DEOD HUNT: 100 reward-filled levels. Earn coins throughout progression — 10,000 coins at Level 50, 25,000 coins at Level 100. Redeem coins for DEOD tokens.\n\nDEOD HUNT 2: 50 action-packed levels. Rewards at every stage, major rewards at Levels 25 & 50. Faster progression than Hunt 1. Coins redeemable for DEOD."
+  },
+  {
+    "chunk_id": "chunk-gaming-other-games",
+    "document_id": "doc-gaming-home",
+    "title": "Decentrawood Gaming",
+    "section": "Other Games",
+    "domain": "gaming.decentrawood.com",
+    "category": "gaming",
+    "url": "https://gaming.decentrawood.com/",
+    "route": "https://gaming.decentrawood.com/",
+    "keywords": [
+      "Mystical Maze",
+      "Match Mania",
+      "D-Nexus",
+      "Lord Of Space",
+      "Word Chain",
+      "Flap Quest"
+    ],
+    "content": "Additional Games: Mystical Maze (Entry fee: 50 coins, win up to 500 coins), Match Mania (5 levels, earn 100–500 coins per level), D-Nexus (Free, skill-based challenges), Lord Of Space (Free, space adventure), Word Chain (Free, vocabulary skills), Flap Quest (Free, endless flying challenge)."
+  },
+  {
+    "chunk_id": "chunk-staking-overview",
+    "document_id": "doc-deod-staking-home",
+    "title": "DEOD Staking",
+    "section": "DEOD Staking Overview",
+    "domain": "deodstaking.decentrawood.com",
+    "category": "staking",
+    "url": "https://deodstaking.decentrawood.com/",
+    "route": "https://deodstaking.decentrawood.com/",
+    "keywords": [
+      "DEOD staking",
+      "GlobalStaking",
+      "stake",
+      "rewards",
+      "decentralized",
+      "institutional-grade"
+    ],
+    "content": "DEOD Staking via GlobalStaking at deodstaking.decentrawood.com. Secure, decentralized staking platform. Stake digital assets, earn competitive rewards, and manage your portfolio through a transparent, institutional-grade platform trusted by investors worldwide."
+  },
+  {
+    "chunk_id": "chunk-deod-ai-overview",
+    "document_id": "doc-deod-ai-home",
+    "title": "DEOD AI — Home",
+    "section": "What is DEOD AI?",
+    "domain": "deod.ai",
+    "category": "deod_ai",
+    "url": "https://deod.ai/",
+    "route": "https://deod.ai/",
+    "keywords": [
+      "DEOD AI",
+      "DEOD.AI",
+      "decentralized AI",
+      "autonomous agents",
+      "agent economy",
+      "blockchain trust"
+    ],
+    "content": "DEOD AI is a Decentralized Ecosystem enabling autonomous AI agents to be created, verified, deployed, and monetized at enterprise scale. Powered by decentralized infrastructure, blockchain trust, and enterprise-grade orchestration. Key pillars: Agent Economy (monetize AI agents), Multi-Agent Systems (orchestrate workflows), Trust Layer (blockchain verification), Decentralized Infrastructure (global, scalable, secure)."
+  },
+  {
+    "chunk_id": "chunk-deod-ai-modules",
+    "document_id": "doc-deod-ai-home",
+    "title": "DEOD AI — Home",
+    "section": "Three Core Modules",
+    "domain": "deod.ai",
+    "category": "deod_ai",
+    "url": "https://deod.ai/",
+    "route": "https://deod.ai/",
+    "keywords": [
+      "Create Your Agent",
+      "Know Your Agent",
+      "KYA",
+      "Use Your Agent",
+      "agent builder",
+      "marketplace"
+    ],
+    "content": "DEOD AI Three Core Modules:\n1. Create Your Agent (Agent Builder) — Build production-ready AI agents with no-code visual builder or code SDK. Features: No-Code Builder, Multi-Agent, RAG Pipeline. URL: deod.ai/create-agent.\n2. Know Your Agent (KYA) — Verify and certify agents with cryptographic identity and trust scoring. URL: deod.ai/know-your-agent.\n3. Use Your Agent — Deploy agents for real-world automation across industries. Features: Marketplace, Integrations, Scale. URL: deod.ai/use-your-agent."
+  },
+  {
+    "chunk_id": "chunk-deod-ai-enterprise-features",
+    "document_id": "doc-deod-ai-home",
+    "title": "DEOD AI — Home",
+    "section": "Enterprise Features",
+    "domain": "deod.ai",
+    "category": "enterprise",
+    "url": "https://deod.ai/",
+    "route": "https://deod.ai/",
+    "keywords": [
+      "enterprise",
+      "multi-agent orchestration",
+      "RAG infrastructure",
+      "AI-to-AI",
+      "blockchain identity",
+      "analytics"
+    ],
+    "content": "DEOD AI Enterprise Features: Multi-Agent Orchestration (coordinate complex workflows), RAG Infrastructure (built-in knowledge pipelines), AI-to-AI Communication (autonomous agent collaboration), Blockchain Identity (decentralized trust layer), Agent Marketplace (discover & monetize agents), Security & Compliance (enterprise-grade), Enterprise Deployment (Kubernetes & auto-scaling), Analytics Dashboard (real-time monitoring)."
+  },
+  {
+    "chunk_id": "chunk-create-agent-builder",
+    "document_id": "doc-deod-ai-create-agent",
+    "title": "Create Your Agent",
+    "section": "No-Code Agent Builder",
+    "domain": "deod.ai",
+    "category": "agent_builder",
+    "url": "https://deod.ai/create-agent",
+    "route": "https://deod.ai/create-agent",
+    "keywords": [
+      "no-code builder",
+      "drag drop",
+      "workflow",
+      "agent memory",
+      "RAG pipeline",
+      "multi-agent",
+      "tool integrations"
+    ],
+    "content": "DEOD AI No-Code Agent Builder: Drag & Drop visual workflow design — no code required. Features: Complex decision trees and branching logic, persistent Agent Memory and context management, built-in RAG Pipeline (Retrieval Augmented Generation), Multi-Agent Collaboration (orchestrate multiple agents), Tool Integrations (connect to APIs, databases, services)."
+  },
+  {
+    "chunk_id": "chunk-create-agent-architectures",
+    "document_id": "doc-deod-ai-create-agent",
+    "title": "Create Your Agent",
+    "section": "Agent Architectures",
+    "domain": "deod.ai",
+    "category": "agent_builder",
+    "url": "https://deod.ai/create-agent",
+    "route": "https://deod.ai/create-agent",
+    "keywords": [
+      "ReAct",
+      "Plan Execute",
+      "Reflexion",
+      "Tree of Thought",
+      "MCTS",
+      "Custom DAG",
+      "agent types"
+    ],
+    "content": "DEOD AI supports 6 Agent Architectures:\n1. ReAct — interleaving reasoning and action for dynamic decision-making.\n2. Plan & Execute — plan first, then execute with structured workflows.\n3. Reflexion — learn from mistakes with iterative self-correction.\n4. Tree of Thought — explore multiple reasoning paths simultaneously.\n5. MCTS Agent — optimal decision making with Monte Carlo tree search.\n6. Custom DAG — build custom directed acyclic graph workflows."
+  },
+  {
+    "chunk_id": "chunk-create-agent-deployment",
+    "document_id": "doc-deod-ai-create-agent",
+    "title": "Create Your Agent",
+    "section": "Enterprise Deployment",
+    "domain": "deod.ai",
+    "category": "enterprise",
+    "url": "https://deod.ai/create-agent",
+    "route": "https://deod.ai/create-agent",
+    "keywords": [
+      "Kubernetes",
+      "auto scaling",
+      "GPU support",
+      "sandboxing",
+      "enterprise deployment"
+    ],
+    "content": "DEOD AI Enterprise Deployment: Kubernetes Deployment (cloud-native container orchestration), Auto Scaling (demand-based), GPU Support (high-performance acceleration), Secure Sandboxing (isolated execution environments)."
+  },
+  {
+    "chunk_id": "chunk-kya-verification",
+    "document_id": "doc-deod-ai-know-your-agent",
+    "title": "Know Your Agent (KYA)",
+    "section": "KYA Verification Pipeline",
+    "domain": "deod.ai",
+    "category": "kya",
+    "url": "https://deod.ai/know-your-agent",
+    "route": "https://deod.ai/know-your-agent",
+    "keywords": [
+      "KYA",
+      "Know Your Agent",
+      "verification",
+      "KYC for AI",
+      "static analysis",
+      "behavioral simulation",
+      "security testing",
+      "human review",
+      "certificate"
+    ],
+    "content": "KYA (Know Your Agent) is to AI agents what KYC is to humans. 5-Step Verification Pipeline:\nStep 1: Static Analysis — deep code analysis for vulnerabilities and patterns (2-4 hours).\nStep 2: Behavioral Simulation — test agent behavior across thousands of scenarios (4-8 hours).\nStep 3: Security Testing — penetration testing and vulnerability assessment (2-4 hours).\nStep 4: Human Review — expert security review and certification (24-48 hours).\nStep 5: Certificate Issuance — blockchain-backed certificate minted (1-2 hours)."
+  },
+  {
+    "chunk_id": "chunk-kya-trust-security",
+    "document_id": "doc-deod-ai-know-your-agent",
+    "title": "Know Your Agent (KYA)",
+    "section": "Trust Dashboard & Zero-Trust Security",
+    "domain": "deod.ai",
+    "category": "kya",
+    "url": "https://deod.ai/know-your-agent",
+    "route": "https://deod.ai/know-your-agent",
+    "keywords": [
+      "trust score",
+      "trust dashboard",
+      "zero-trust",
+      "DID",
+      "cryptographic identity",
+      "audit logging",
+      "threat detection"
+    ],
+    "content": "KYA Trust Dashboard example metrics: Trust Score 98/100, Verification Level: Enterprise, Uptime: 99.9%, Rating: 4.9/5, Behavioral Consistency: 95%, Security Posture: 98%, Operational Health: 99%.\n\nZero-Trust Security Architecture: Zero-Trust Architecture (every request verified, no implicit trust), Cryptographic Identity (DID-based identity on blockchain), Audit Logging (complete activity trail and provenance), Threat Detection (real-time anomaly and threat detection)."
+  },
+  {
+    "chunk_id": "chunk-use-agent-use-cases",
+    "document_id": "doc-deod-ai-use-your-agent",
+    "title": "Use Your Agent",
+    "section": "Industry Use Cases",
+    "domain": "deod.ai",
+    "category": "marketplace",
+    "url": "https://deod.ai/use-your-agent",
+    "route": "https://deod.ai/use-your-agent",
+    "keywords": [
+      "healthcare AI",
+      "finance AI",
+      "education AI",
+      "sales AI",
+      "customer support AI",
+      "research AI",
+      "enterprise AI",
+      "legal AI"
+    ],
+    "content": "AI Agent Use Cases across industries: Healthcare (patient care, diagnostics, medical research), Finance (trading, risk analysis, advisory), Education (personalized tutoring, learning assistants), Sales (lead generation, outreach, CRM), Customer Support (24/7 support, ticket resolution), Research (data analysis, literature review), Enterprise (workflow automation, operations), Legal (contract analysis, compliance)."
+  },
+  {
+    "chunk_id": "chunk-use-agent-marketplace-agents",
+    "document_id": "doc-deod-ai-use-your-agent",
+    "title": "Use Your Agent",
+    "section": "Marketplace Agents & Integrations",
+    "domain": "deod.ai",
+    "category": "marketplace",
+    "url": "https://deod.ai/use-your-agent",
+    "route": "https://deod.ai/use-your-agent",
+    "keywords": [
+      "Customer Support Pro",
+      "Sales Intelligence",
+      "Research Analyst",
+      "Healthcare Assistant",
+      "Slack",
+      "Discord",
+      "Telegram",
+      "CRM",
+      "earn DEOD"
+    ],
+    "content": "KYA-Certified Marketplace Agents:\n- Customer Support Pro: 4.9 rating, 12.5K deployments, $0.02/query\n- Sales Intelligence: 4.8 rating, 8.2K deployments, $99/month\n- Research Analyst: 4.7 rating, 5.1K deployments, $0.05/query\n- Healthcare Assistant: 4.9 rating, 3.8K deployments, $199/month\n\nEnterprise Templates: Customer Support (Sentiment Analysis, Knowledge Base, Escalation), Healthcare (HIPAA Compliant, Secure Routing), Sales Intelligence (Lead Scoring, Email Automation, CRM), Research (Multi-Source Search, Citation Engine, Summarization).\n\nIntegrations: Slack, Discord, Telegram, API, CRM, Database. List your own agent to earn DEOD."
+  },
+  {
+    "chunk_id": "chunk-deod-ai-about-mission-vision",
+    "document_id": "doc-deod-ai-about",
+    "title": "DEOD AI — About",
+    "section": "Mission, Vision & Core Pillars",
+    "domain": "deod.ai",
+    "category": "deod_ai",
+    "url": "https://deod.ai/about",
+    "route": "https://deod.ai/about",
+    "keywords": [
+      "DEOD AI mission",
+      "DEOD AI vision",
+      "autonomous AI economy",
+      "AI-to-AI communication",
+      "AI native businesses",
+      "distributed intelligence"
+    ],
+    "content": "DEOD AI Mission: Building the operating system for autonomous AI agents — enabling them to operate independently, transact securely, and scale globally.\n\nVision: Powering the decentralized AI economy — autonomous agents creating value, AI-native business workflows, intelligence distributed across global trustless infrastructure.\n\nCore Pillars: 1) Autonomous AI Economy, 2) AI-to-AI Communication, 3) AI Native Businesses, 4) Distributed Intelligence, 5) Decentralized Infrastructure, 6) Security Architecture (zero-trust)."
+  },
+  {
+    "chunk_id": "chunk-deod-ai-tech-stack",
+    "document_id": "doc-deod-ai-technology",
+    "title": "DEOD AI — Technology",
+    "section": "Technology Stack",
+    "domain": "deod.ai",
+    "category": "technology",
+    "url": "https://deod.ai/technology",
+    "route": "https://deod.ai/technology",
+    "keywords": [
+      "tech stack",
+      "Next.js",
+      "React",
+      "NestJS",
+      "FastAPI",
+      "LangChain",
+      "LangGraph",
+      "GPT-4o",
+      "Claude",
+      "Llama",
+      "Kubernetes",
+      "Docker",
+      "Ethereum",
+      "Polygon",
+      "Solana"
+    ],
+    "content": "DEOD AI Technology Stack: Frontend (Next.js, React, TailwindCSS, TypeScript), Backend (NestJS, FastAPI, Python, Node.js), AI Layer (LangChain, LangGraph, GPT-4o, Claude, Llama), Infrastructure (Kubernetes, Docker, Kafka, Redis, PostgreSQL), Blockchain (Ethereum, Polygon, Solana)."
+  },
+  {
+    "chunk_id": "chunk-deod-ai-tech-performance-security",
+    "document_id": "doc-deod-ai-technology",
+    "title": "DEOD AI — Technology",
+    "section": "Performance, Security & Scalability",
+    "domain": "deod.ai",
+    "category": "technology",
+    "url": "https://deod.ai/technology",
+    "route": "https://deod.ai/technology",
+    "keywords": [
+      "99.99% uptime",
+      "50ms response",
+      "10M API calls",
+      "TLS",
+      "AES-256",
+      "HashiCorp Vault",
+      "zero trust",
+      "auto scaling",
+      "GPU",
+      "CDN"
+    ],
+    "content": "Performance: 99.99% uptime, <50ms response time, 10M+ API calls/day, global data centers.\n\nEnterprise Security: TLS encryption (end-to-end), HashiCorp Vault (secrets management), Zero-Trust architecture (every request authenticated), AES-256 encryption at rest.\n\nScalability: Auto Scaling (horizontal and vertical), Load Balancing, CDN Edge (global delivery), GPU Orchestration (dynamic allocation)."
+  },
+  {
+    "chunk_id": "chunk-deod-ai-contact",
+    "document_id": "doc-deod-ai-contact",
+    "title": "DEOD AI — Contact",
+    "section": "Contact Information",
+    "domain": "deod.ai",
+    "category": "contact",
+    "url": "https://deod.ai/contact",
+    "route": "https://deod.ai/contact",
+    "keywords": [
+      "contact",
+      "support@deod.ai",
+      "Mumbai",
+      "office address",
+      "response time"
+    ],
+    "content": "DEOD AI Contact: Email support@deod.ai. Office: 1205, Lodha Supremus Powai, Saki Vihar Rd, Opposite Mtnl Off, Tunga Village, Chandivali, Mumbai, Maharashtra 400072, India. Response Time: under 24 hours."
+  },
+  {
+    "chunk_id": "chunk-deod-ai-marketplace-listing",
+    "document_id": "doc-deod-ai-marketplace",
+    "title": "DEOD AI — Marketplace",
+    "section": "Marketplace Overview",
+    "domain": "deod.ai",
+    "category": "marketplace",
+    "url": "https://deod.ai/marketplace",
+    "route": "https://deod.ai/marketplace",
+    "keywords": [
+      "DEOD AI marketplace",
+      "browse agents",
+      "deploy agents",
+      "earn DEOD",
+      "agent domains"
+    ],
+    "content": "DEOD AI Agent Marketplace: Browse, deploy, and monetize intelligent AI agents. Available domains: Healthcare, Finance, Legal, Education, Customer Support, HR, E-Commerce, General. Create an AI agent and list it on the marketplace to earn DEOD tokens."
+  },
+  {
+    "chunk_id": "chunk-privacy-policy",
+    "document_id": "doc-decentrawood-private-policy",
+    "title": "Privacy Policy",
+    "section": "Privacy Policy Summary",
+    "domain": "decentrawood.com",
+    "category": "legal",
+    "url": "https://decentrawood.com/private-policy",
+    "route": "/private-policy",
+    "keywords": [
+      "privacy policy",
+      "data collection",
+      "cookies",
+      "children privacy",
+      "third-party"
+    ],
+    "content": "Decentrawood Privacy Policy: Collects personal info (name, email, contact), usage data (IP, browser, device), and cookies. Used for service improvement, personalization, communication, and anonymized research. Industry-standard security measures. Not directed to children under 18. Third-party links disclaimed. Contact: info.decentrawood.com."
+  },
+  {
+    "chunk_id": "chunk-what-is-decentrawood-tagline",
+    "document_id": "doc-decentrawood-what-is-decentrawood",
+    "title": "What is Decentrawood?",
+    "section": "Tagline",
+    "domain": "decentrawood.com",
+    "category": "decentrawood_overview",
+    "url": "https://decentrawood.com/what-is-decentrawood",
+    "route": "/what-is-decentrawood",
+    "keywords": [
+      "tagline",
+      "slogan",
+      "motto",
+      "trendsetter",
+      "Web3 entertainment",
+      "AI powered",
+      "fully immersive"
+    ],
+    "content": "Decentrawood's official tagline, as shown on its homepage, is: \"Trendsetter in Web3 Entertainment — AI Powered & Fully Immersive.\" This reflects Decentrawood's positioning as an AI-driven, fully immersive Web3 entertainment platform."
+  },
+  {
+    "chunk_id": "chunk-gaming-games-overview",
+    "document_id": "doc-gaming-games-list",
+    "title": "Decentrawood Games — Full List",
+    "section": "Games Overview",
+    "domain": "gaming.decentrawood.com",
+    "category": "gaming",
+    "url": "https://gaming.decentrawood.com",
+    "route": "/",
+    "keywords": [
+      "Decentrawood games",
+      "how many games",
+      "list of games",
+      "9 games",
+      "gaming hub",
+      "play to earn",
+      "earn DEOD",
+      "blockchain games"
+    ],
+    "content": "Decentrawood has 9 games available on its gaming platform at gaming.decentrawood.com. The 9 games are: 1. DRC: Deod Racing Cartel, 2. DEOD HUNT 2, 3. DEOD HUNT, 4. Mystical Maze, 5. Match Mania, 6. D-Nexus, 7. Lord Of Space, 8. Word Chain, 9. Flap Quest. All games are blockchain-integrated and players can earn coins redeemable for DEOD tokens."
+  },
+  {
+    "chunk_id": "chunk-gaming-games-details",
+    "document_id": "doc-gaming-games-list",
+    "title": "Decentrawood Games — Full List",
+    "section": "Individual Game Details",
+    "domain": "gaming.decentrawood.com",
+    "category": "gaming",
+    "url": "https://gaming.decentrawood.com",
+    "route": "/",
+    "keywords": [
+      "DRC",
+      "Deod Racing Cartel",
+      "DEOD HUNT",
+      "DEOD HUNT 2",
+      "Mystical Maze",
+      "Match Mania",
+      "D-Nexus",
+      "Lord Of Space",
+      "Word Chain",
+      "Flap Quest",
+      "racing game",
+      "hunt game",
+      "maze game",
+      "word game",
+      "space game"
+    ],
+    "content": "DRC: Deod Racing Cartel — Racing game (Android & Web). Earn coins every race: 1st=650 coins, 2nd=450 coins, 3rd=250 coins. Unlock & customize cars. Race in sunny, rain & night tracks. Convert coins to DEOD tokens.\n\nDEOD HUNT 2 — Action game (Android & Web). 50 levels with rewards at every stage. Major rewards at Level 25 & 50. Faster than DEOD HUNT 1. Earn coins redeemable for DEOD.\n\nDEOD HUNT — Original hunt game (Android & Web). 100 levels. 10,000 coins at Level 50. 25,000 coins at Level 100. Redeem coins for DEOD.\n\nMystical Maze — Maze game (Android & Web). Entry fee: 50 coins. Win up to 500 coins.\n\nMatch Mania — Matching game (iOS, Android & Web). 5 levels. Earn 100–500 coins per level.\n\nD-Nexus — Free to play skill-based game (Windows & Web). Quick & fun gameplay.\n\nLord Of Space — Free to play space adventure (Windows, Android & Web). Exciting missions & challenges.\n\nWord Chain — Free to play word game (Web). Test vocabulary, fast word-building.\n\nFlap Quest — Free to play flying game (Web). One-tap controls. Endless flying challenge. Beat your high score."
+  },
+  {
+    "chunk_id": "chunk-gaming-games-count",
+    "document_id": "doc-gaming-games-list",
+    "title": "Decentrawood Games — Full List",
+    "section": "Games Count and Summary",
+    "domain": "gaming.decentrawood.com",
+    "category": "gaming",
+    "url": "https://gaming.decentrawood.com",
+    "route": "/",
+    "keywords": [
+      "how many games",
+      "number of games",
+      "total games",
+      "9 games",
+      "games count",
+      "Decentrawood gaming"
+    ],
+    "content": "Decentrawood currently has 9 games in its Gaming Hub at gaming.decentrawood.com. These 9 games are: DRC (Deod Racing Cartel), DEOD HUNT 2, DEOD HUNT, Mystical Maze, Match Mania, D-Nexus, Lord Of Space, Word Chain, and Flap Quest. Games are available across Web, Android, iOS, and Windows platforms. Players earn coins which can be converted into DEOD tokens."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-maha-kumbh",
+    "document_id": "doc-culture-zone",
+    "title": "Maha Kumbh",
+    "section": "Maha Kumbh",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Maha Kumbh",
+      "Kumbh Mela",
+      "cultural event",
+      "join VR"
+    ],
+    "content": "Maha Kumbh is a significant cultural event featured on the Decentrawood platform, allowing users to join and experience it in virtual reality."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-decentrawood-cha-raja",
+    "document_id": "doc-culture-zone",
+    "title": "Decentrawood Cha Raja",
+    "section": "Decentrawood Cha Raja",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Decentrawood Cha Raja",
+      "cultural celebration",
+      "join VR"
+    ],
+    "content": "Decentrawood Cha Raja is another cultural feature available on the platform, providing a VR experience of this iconic celebration."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-dahi-handi",
+    "document_id": "doc-culture-zone",
+    "title": "Dahi Handi",
+    "section": "Dahi Handi",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Dahi Handi",
+      "festival",
+      "join VR"
+    ],
+    "content": "Dahi Handi is a traditional festival showcased on the Decentrawood platform, allowing users to join and experience it in VR."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-red-fort",
+    "document_id": "doc-culture-zone",
+    "title": "Red Fort",
+    "section": "Red Fort",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Red Fort",
+      "historical landmark",
+      "join VR"
+    ],
+    "content": "Red Fort is a historical landmark featured on the Decentrawood platform, where users can join and explore it in virtual reality."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-ram-temple",
+    "document_id": "doc-culture-zone",
+    "title": "Ram temple",
+    "section": "Ram temple",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Ram temple",
+      "religious site",
+      "join VR"
+    ],
+    "content": "The Ram temple is a significant religious site available on the Decentrawood platform for users to join and experience in VR."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-khatushyam-baba",
+    "document_id": "doc-culture-zone",
+    "title": "Khatushyam Baba",
+    "section": "Khatushyam Baba",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Khatushyam Baba",
+      "cultural figure",
+      "join VR"
+    ],
+    "content": "Khatushyam Baba is a revered figure featured on the Decentrawood platform, allowing users to join and experience this cultural aspect in VR."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-jagannath-temple",
+    "document_id": "doc-culture-zone",
+    "title": "Jagannath Temple",
+    "section": "Jagannath Temple",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Jagannath Temple",
+      "temple",
+      "join VR"
+    ],
+    "content": "Jagannath Temple is a prominent temple featured on the Decentrawood platform, where users can join and explore it in virtual reality."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-tirupati-temple",
+    "document_id": "doc-culture-zone",
+    "title": "Tirupati Temple",
+    "section": "Tirupati Temple",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Tirupati Temple",
+      "religious site",
+      "join VR"
+    ],
+    "content": "Tirupati Temple is a famous religious site available on the Decentrawood platform for users to join and experience in VR."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-prem-mandir",
+    "document_id": "doc-culture-zone",
+    "title": "Prem Mandir",
+    "section": "Prem Mandir",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Prem Mandir",
+      "temple",
+      "join VR"
+    ],
+    "content": "Prem Mandir is a significant temple featured on the Decentrawood platform, allowing users to join and explore it in virtual reality."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-mahakaleshwar",
+    "document_id": "doc-culture-zone",
+    "title": "Mahakaleshwar",
+    "section": "Mahakaleshwar",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Mahakaleshwar",
+      "temple",
+      "join VR"
+    ],
+    "content": "Mahakaleshwar is a revered temple featured on the Decentrawood platform, where users can join and experience it in VR."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-saibaba-temple",
+    "document_id": "doc-culture-zone",
+    "title": "Saibaba temple",
+    "section": "Saibaba temple",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Saibaba temple",
+      "religious site",
+      "join VR"
+    ],
+    "content": "Saibaba temple is a significant religious site available on the Decentrawood platform for users to join and experience in VR."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-church",
+    "document_id": "doc-culture-zone",
+    "title": "Church",
+    "section": "Church",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Church",
+      "cultural site",
+      "join VR"
+    ],
+    "content": "A Church is featured on the Decentrawood platform, allowing users to join and explore this cultural site in virtual reality."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-masjid",
+    "document_id": "doc-culture-zone",
+    "title": "Masjid",
+    "section": "Masjid",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Masjid",
+      "religious site",
+      "join VR"
+    ],
+    "content": "Masjid is a significant religious site available on the Decentrawood platform for users to join and experience in VR."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-golden-temple",
+    "document_id": "doc-culture-zone",
+    "title": "Golden temple",
+    "section": "Golden temple",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Golden temple",
+      "temple",
+      "join VR"
+    ],
+    "content": "Golden temple is a prominent temple featured on the Decentrawood platform, allowing users to join and explore it in virtual reality."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-kamtanath",
+    "document_id": "doc-culture-zone",
+    "title": "Kamtanath",
+    "section": "Kamtanath",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Kamtanath",
+      "temple",
+      "join VR"
+    ],
+    "content": "Kamtanath is a revered temple featured on the Decentrawood platform, where users can join and experience it in VR."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-palitana-jain-temple",
+    "document_id": "doc-culture-zone",
+    "title": "Palitana Jain temple",
+    "section": "Palitana Jain temple",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Palitana Jain temple",
+      "religious site",
+      "join VR"
+    ],
+    "content": "Palitana Jain temple is a significant religious site available on the Decentrawood platform for users to join and experience in VR."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-ballaleshwar",
+    "document_id": "doc-culture-zone",
+    "title": "Ballaleshwar",
+    "section": "Ballaleshwar",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Ballaleshwar",
+      "temple",
+      "join VR"
+    ],
+    "content": "Ballaleshwar is a revered temple featured on the Decentrawood platform, allowing users to join and explore it in virtual reality."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-varadvinayak",
+    "document_id": "doc-culture-zone",
+    "title": "Varadvinayak",
+    "section": "Varadvinayak",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Varadvinayak",
+      "temple",
+      "join VR"
+    ],
+    "content": "Varadvinayak is a significant temple featured on the Decentrawood platform, where users can join and experience it in VR."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-vighnahar",
+    "document_id": "doc-culture-zone",
+    "title": "Vighnahar",
+    "section": "Vighnahar",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Vighnahar",
+      "temple",
+      "join VR"
+    ],
+    "content": "Vighnahar is a revered temple featured on the Decentrawood platform, allowing users to join and explore it in virtual reality."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-mahaganapati",
+    "document_id": "doc-culture-zone",
+    "title": "Mahaganapati",
+    "section": "Mahaganapati",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Mahaganapati",
+      "temple",
+      "join VR"
+    ],
+    "content": "Mahaganapati is a significant temple featured on the Decentrawood platform, where users can join and experience it in VR."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-moreshwar",
+    "document_id": "doc-culture-zone",
+    "title": "Moreshwar",
+    "section": "Moreshwar",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Moreshwar",
+      "temple",
+      "join VR"
+    ],
+    "content": "Moreshwar is a revered temple featured on the Decentrawood platform, allowing users to join and explore it in virtual reality."
+  },
+  {
+    "chunk_id": "chunk-culture_zone-siddhivinayak",
+    "document_id": "doc-culture-zone",
+    "title": "Siddhivinayak",
+    "section": "Siddhivinayak",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Siddhivinayak",
+      "temple",
+      "join VR"
+    ],
+    "content": "Siddhivinayak is a significant temple featured on the Decentrawood platform, where users can join and experience it in VR."
+  },
+  {
+    "chunk_id": "chunk-glamour_zone-burj-khalifa",
+    "document_id": "doc-glamour-zone",
+    "title": "Burj Khalifa",
+    "section": "Burj Khalifa",
+    "domain": "glamour.decentrawood.com",
+    "category": "glamour_zone",
+    "url": "https://glamour.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Burj Khalifa",
+      "virtual space",
+      "join Burj Khalifa",
+      "VR experience"
+    ],
+    "content": "Burj Khalifa is one of the virtual spaces available on Decentrawood Glamour. Users can join this space through various platforms including VR."
+  },
+  {
+    "chunk_id": "chunk-glamour_zone-cupid-hub",
+    "document_id": "doc-glamour-zone",
+    "title": "Cupid Hub",
+    "section": "Cupid Hub",
+    "domain": "glamour.decentrawood.com",
+    "category": "glamour_zone",
+    "url": "https://glamour.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Cupid Hub",
+      "virtual space",
+      "join Cupid Hub",
+      "VR experience"
+    ],
+    "content": "Cupid Hub is a virtual space offered by Decentrawood Glamour, accessible on multiple platforms including VR. It provides a unique environment for users to interact."
+  },
+  {
+    "chunk_id": "chunk-glamour_zone-marriage-hall",
+    "document_id": "doc-glamour-zone",
+    "title": "Marriage Hall",
+    "section": "Marriage Hall",
+    "domain": "glamour.decentrawood.com",
+    "category": "glamour_zone",
+    "url": "https://glamour.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Marriage Hall",
+      "virtual space",
+      "join Marriage Hall",
+      "VR experience"
+    ],
+    "content": "Marriage Hall is another virtual space in Decentrawood Glamour where users can engage in social activities. It is available on various platforms including VR."
+  },
+  {
+    "chunk_id": "chunk-glamour_zone-celebrity-palace",
+    "document_id": "doc-glamour-zone",
+    "title": "Celebrity Palace",
+    "section": "Celebrity Palace",
+    "domain": "glamour.decentrawood.com",
+    "category": "glamour_zone",
+    "url": "https://glamour.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Celebrity Palace",
+      "virtual space",
+      "join Celebrity Palace",
+      "VR experience"
+    ],
+    "content": "Celebrity Palace is a virtual space within Decentrawood Glamour, allowing users to join and interact in a unique setting. It is accessible on multiple platforms."
+  },
+  {
+    "chunk_id": "chunk-glamour_zone-dwood-shop",
+    "document_id": "doc-glamour-zone",
+    "title": "Dwood Shop",
+    "section": "Dwood Shop",
+    "domain": "glamour.decentrawood.com",
+    "category": "glamour_zone",
+    "url": "https://glamour.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Dwood Shop",
+      "virtual shopping",
+      "join Dwood Shop",
+      "VR experience"
+    ],
+    "content": "Dwood Shop is a virtual shopping space available in Decentrawood Glamour, where users can join and explore various offerings. It supports multiple platforms including VR."
+  },
+  {
+    "chunk_id": "chunk-glamour_zone-gold-souk",
+    "document_id": "doc-glamour-zone",
+    "title": "Gold Souk",
+    "section": "Gold Souk",
+    "domain": "glamour.decentrawood.com",
+    "category": "glamour_zone",
+    "url": "https://glamour.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Gold Souk",
+      "virtual marketplace",
+      "join Gold Souk",
+      "VR experience"
+    ],
+    "content": "Gold Souk is a virtual marketplace in Decentrawood Glamour, providing users with a unique shopping experience. It is accessible on various platforms including VR."
+  },
+  {
+    "chunk_id": "chunk-glamour_zone-restaurant",
+    "document_id": "doc-glamour-zone",
+    "title": "Restaurant",
+    "section": "Restaurant",
+    "domain": "glamour.decentrawood.com",
+    "category": "glamour_zone",
+    "url": "https://glamour.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Restaurant",
+      "virtual dining",
+      "join Restaurant",
+      "VR experience"
+    ],
+    "content": "The Restaurant is a virtual dining space in Decentrawood Glamour, where users can join and enjoy a unique culinary experience. It is available on multiple platforms."
+  },
+  {
+    "chunk_id": "chunk-glamour_zone-villa",
+    "document_id": "doc-glamour-zone",
+    "title": "Villa",
+    "section": "Villa",
+    "domain": "glamour.decentrawood.com",
+    "category": "glamour_zone",
+    "url": "https://glamour.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Villa",
+      "virtual living space",
+      "join Villa",
+      "VR experience"
+    ],
+    "content": "Villa is a virtual living space offered by Decentrawood Glamour, allowing users to join and explore a unique environment. It is accessible on various platforms including VR."
+  },
+  {
+    "chunk_id": "chunk-glamour_zone-muse-of-erotica",
+    "document_id": "doc-glamour-zone",
+    "title": "Muse of Erotica",
+    "section": "Muse of Erotica",
+    "domain": "glamour.decentrawood.com",
+    "category": "glamour_zone",
+    "url": "https://glamour.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "Muse of Erotica",
+      "virtual space",
+      "join Muse of Erotica",
+      "VR experience"
+    ],
+    "content": "Muse of Erotica is a unique virtual space in Decentrawood Glamour, where users can join and explore its offerings. It is available on multiple platforms including VR."
+  }
+]

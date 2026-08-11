@@ -1,0 +1,243 @@
+.connect_bg {
+    background: url('../../../public/assets/reffral-bg.png');
+
+    width: 100%;
+    min-height: 100vh;
+    background-position: center center;
+    position: relative;
+    top: 0;
+    background-attachment: fixed;
+    /* background-size: 100vw 100vh; */
+    /* background-repeat: no-repeat; */
+}
+
+.errorStyle {
+    color: red;
+}
+
+.cus_label {
+    color: #fff;
+    font-size: 14px;
+}
+
+.cus_label_check {
+    color: #fff;
+    font-size: 14px;
+}
+
+.form_cus_textlbl {
+    font-size: 12px !important;
+}
+
+.register_img img {
+    width: 500px;
+    transform: scale(1.5);
+    /* backdrop-filter: 0px 10px 10px #fff; */
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem #5b42d6);
+    /* box-shadow: 0px 0px 10px 0px #fff; */
+
+}
+
+/* .ragister_main_box{
+   
+} */
+.cus_form {
+    background-color: transparent !important;
+    color: #fff !important;
+    padding: 2px 10px !important;
+    border: none !important;
+    ;
+    border-bottom: 1px solid #fff !important;
+    border-radius: 10px !important;
+    /* width: 300px!important; */
+}
+
+.cus_form:focus {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.cus_refrral_btn {
+    padding: 4px 20px;
+    background-color: #7a62f9 !important;
+    color: #fff !important;
+    border: none !important;
+    width: 50%;
+    margin: auto;
+
+}
+
+.cus_refrral_btn:focus {
+    box-shadow: none !important;
+
+}
+
+.header_box {
+    text-align: center;
+    width: 430px;
+}
+
+.header_box h2 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.top_back_box {
+    display: flex;
+    align-items: center;
+    grid-gap: 6px;
+}
+
+.top_back_box a {
+    color: #fff !important;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/* active */
+
+.fotter_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+
+}
+
+.fotter_bottom2 {
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+}
+
+.fotter_bottom p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.fotter_bottom a {
+    color: #62aeff;
+    font-weight: 600;
+}
+
+.fotter_bottom2 p {
+    color: #ffffff;
+    font-size: 18px;
+
+}
+
+.ragister_main_box {
+    /* text-align: center; */
+    width: 430px;
+    margin-top: 20px;
+    /* margin: auto; */
+    margin-bottom: 10px;
+    border: 1px solid #ffffff93;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #402f95;
+}
+
+.cus_form_check {
+    background-color: transparent !important;
+    border: 1px solid #fff !important;
+}
+
+.cus_form_check:focus {
+    box-shadow: none !important;
+}
+
+@media screen and (max-width:920px) {
+    .fotter_bottom2 {
+        display: none;
+
+    }
+
+    .register_img {
+        margin-top: 100px;
+    }
+
+    .register_img img {
+        width: 300px !important;
+        transform: scale(1);
+        position: relative;
+        /* right: 50px; */
+        /* backdrop-filter: 0px 10px 10px #fff; */
+        filter: drop-shadow(0.35rem 0.35rem 0.4rem #5b42d6);
+        /* box-shadow: 0px 0px 10px 0px #fff; */
+
+    }
+
+    .ragister_main_box {
+        width: 100% !important;
+        margin-top: 50px;
+
+    }
+
+    .header_box {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .fotter_bottom2 {
+        display: block;
+        position: absolute;
+        bottom: 0;
+
+        right: 82Px !important;
+
+    }
+
+    /* .fotter_bottom2 p{
+        position: absolute;
+    bottom: 0;
+   
+        right:82Px!important;
+     } */
+
+    .fotter_bottom {
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+        font-size: 12px;
+
+    }
+
+
+
+    .connect_bg {
+        width: 100%;
+        min-height: 100vh;
+        background-position: center center;
+        position: relative;
+        top: 0;
+        background-attachment: fixed;
+        /* background-position: center center;
+ 
+    
+      background-repeat: no-repeat; */
+
+
+
+    }
+
+    .wallet_caption h1 {
+        color: #3ba7ff;
+        font-size: 19px;
+        word-spacing: 0px !important;
+        font-weight: 600;
+    }
+
+    .wallet_caption h4 {
+        color: rgb(255, 255, 255);
+        font-size: 14px !important;
+    }
+
+    .wallet_caption h2 {
+        color: rgb(255, 255, 255);
+        font-size: 17px !important;
+        ;
+    }
+}

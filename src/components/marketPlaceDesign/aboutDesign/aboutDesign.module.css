@@ -1,0 +1,59 @@
+/* Default styles */
+.about-container {
+  padding: 20px;
+  color: #fff; /* White text color */
+  width: 100%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* Adjust the height as needed */
+}
+
+.background-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.content {
+  margin-top: 20px; /* Adjust spacing */
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin-bottom: 15px;
+  word-wrap: break-word;
+  line-height: 24px;
+}
+
+/* Media queries for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  .about-container {
+    padding: 10px;
+  }
+
+  .image-container {
+    height: 40vh; /* Adjust the height as needed */
+  }
+
+  .content {
+    margin-top: 10px; /* Adjust spacing */
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .content p {
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+}

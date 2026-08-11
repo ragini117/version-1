@@ -1,0 +1,32 @@
+.owl-theme .owl-nav button.owl-prev {
+    background: #373435 !important;
+    width: 45px;
+    height: 45px;
+    color: #fff !important;
+    font-size: 30px !important;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: -28px;
+    transform: translateY(-50%);
+}
+
+.owl-theme .owl-nav button.owl-next {
+    background: #373435 !important;
+    width: 45px;
+    height: 45px;
+    color: #fff !important;
+    font-size: 30px !important;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    right: -29px;
+    transform: translateY(-50%);
+}
+
+
+
+
+/* .accordion-button::after {
+    display: none !important;
+} */

@@ -1,0 +1,266 @@
+.connect_bg {
+    background: url('../../../public/assets/connectbg.png');
+    width: 100%;
+    min-height: 100vh;
+    background-position: center center;
+    position: relative;
+    top: 0;
+    background-attachment: fixed;
+    /* background-size: 100vw 100vh; */
+    /* background-repeat: no-repeat; */
+
+}
+
+.top_back_box {
+    display: flex;
+    align-items: center;
+    grid-gap: 6px;
+}
+
+.map_btn{
+    padding: 5px 20px;
+    background-color: #ffffff;
+    color: #323232;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.map_content{
+    background:#00063f!important;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #3a3838;
+    border: 1px solid #fff!important;
+    color: #fff;
+}
+.map_img img{
+    width: 100%;
+}
+
+.card_footer_cus{
+    float: right;
+}
+.close_btn{
+    background-color: #fffbfb !important;
+    border-radius: 50px;
+    color: #020202;
+    border: 0;
+}
+
+.top_back_box a {
+    color: #fff !important;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.connect_main_box {
+
+    position: relative;
+    margin-top: 50px;
+
+}
+
+.wallet_caption {
+    /* text-align: center; */
+}
+.linkclr{
+    font-weight: 600;
+    color:#3ba7ff!important;
+}
+
+.wallet_caption h1 {
+    color: #3ba7ff;
+    font-size: 40px;
+    /* word-spacing: 5px;  */
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+
+.wallet_caption h2 {
+    color: rgb(255, 255, 255);
+    /* font-size: 30px; */
+}
+
+.wallet_caption h4 {
+    color: rgb(255, 255, 255);
+    /* font-size: 30px;  */
+}
+
+
+.wallet_button_box {
+    width: 280px;
+    /* border: 1px solid #fff;  */
+    text-align: center;
+    padding: 10px;
+}
+
+.wallet_img {
+    background-color: #307fd459;
+    border: 1px solid #307fd4;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+}
+
+.wallet_img img {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 10px;
+    background-size: cover;
+    object-fit: contain;
+
+    padding: 10px;
+}
+
+.cus_connect_btn {
+    background-color: #3ba7ff !important;
+    padding: 10px 20px;
+    color: #fff !important;
+    border: 0 !important;
+    outline: none;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+    font-weight: 600;
+
+}
+
+.cus_connect_btn:focus {
+    box-shadow: none !important;
+    border: 0;
+    outline: none;
+}
+
+
+.connect_guest_btn {
+    background-color: #cbcfd1 !important;
+    padding: 10px 20px;
+    color: #666666 !important;
+    border: 0 !important;
+    outline: none;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+    font-weight: 600;
+}
+
+.connect_guest_btn:focus {
+    box-shadow: none !important;
+    border: 0;
+    outline: none;
+}
+
+
+/* active */
+
+.fotter_bottom {
+    /* position: absolute;
+    bottom: 0;
+    left: 60px; */
+
+}
+
+.fotter_bottom2 {
+    /* position: relative;
+    top: 10%;
+    right: 50%; */
+}
+
+.fotter_bottom p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.fotter_bottom a {
+    color: #62aeff;
+    font-weight: 600;
+}
+
+.fotter_bottom2 p {
+    color: #ffffff;
+    font-size: 18px;
+
+}
+
+@media screen and (max-width:920px) {
+    .fotter_bottom2 {
+        display: none;
+
+    }
+
+    .wallet_button_box {
+        width: 100%;
+        /* border: 1px solid #fff;  */
+        text-align: center;
+        padding: 10px;
+    }
+
+}
+
+
+
+@media screen and (max-width:600px) {
+    .fotter_bottom2 {
+        display: none;
+
+    }
+
+    .fotter_bottom {
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+        font-size: 12px;
+
+    }
+
+    /* .connect_wallet_caption  h1 {
+      color: #3ba7ff;
+      font-size: 19px;
+      word-spacing:0;
+      font-weight: 600;
+  } */
+    .connect_main_box {
+
+        position: relative;
+        margin-top: 20px;
+
+    }
+
+    .connect_bg {
+        width: 100%;
+        min-height: 100vh;
+        background-position: center center;
+        position: relative;
+        top: 0;
+        background-attachment: fixed;
+        /* background-position: center center;
+ 
+    
+      background-repeat: no-repeat; */
+
+
+
+    }
+
+    .wallet_caption h1 {
+        color: #3ba7ff;
+        font-size: 19px;
+        word-spacing: 0px !important;
+        font-weight: 600;
+    }
+
+    .wallet_caption h4 {
+        color: rgb(255, 255, 255);
+        font-size: 14px !important;
+    }
+
+    .wallet_caption h2 {
+        color: rgb(255, 255, 255);
+        font-size: 17px !important;
+        ;
+    }
+}

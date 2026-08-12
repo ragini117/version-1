@@ -1,0 +1,131 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "knowledge_base": "C:\\Users\\Ragini\\Downloads\\decentrawood\\backend\\data\\chunks.json",
+  "query_file": "C:\\Users\\Ragini\\Downloads\\decentrawood\\backend\\evaluation\\threshold_queries.json",
+  "total_queries": 147,
+  "relevant_queries": 126,
+  "irrelevant_queries": 21,
+  "top_k": 6,
+  "threshold_search": {
+    "start": 0.1,
+    "end": 0.8,
+    "step": 0.01
+  },
+  "recommended_threshold": 0.13,
+  "metrics": {
+    "precision": 0.8621,
+    "recall": 0.9921,
+    "f1": 0.9225,
+    "accuracy": 0.8571,
+    "true_positive": 125,
+    "true_negative": 1,
+    "false_positive": 20,
+    "false_negative": 1
+  },
+  "score_distribution": {
+    "relevant_min": 0.0931093841791153,
+    "relevant_max": 0.8103597164154053,
+    "irrelevant_min": 0.1218513697385788,
+    "irrelevant_max": 0.5618388056755066
+  },
+  "category_results": [
+    {
+      "category": "community",
+      "queries": 7,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "category": "core_decentrawood",
+      "queries": 10,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "category": "dao",
+      "queries": 10,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "category": "deod",
+      "queries": 20,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "category": "deod_ai",
+      "queries": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "category": "gaming",
+      "queries": 16,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "category": "metaverse",
+      "queries": 11,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "category": "music",
+      "queries": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "category": "social",
+      "queries": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "category": "privacy",
+      "queries": 4,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "category": "staking",
+      "queries": 5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "category": "trade",
+      "queries": 13,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "category": "navigation",
+      "queries": 5,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889
+    },
+    {
+      "category": "hallucination",
+      "queries": 21,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  ]
+}

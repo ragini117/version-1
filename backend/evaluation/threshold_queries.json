@@ -1,0 +1,884 @@
+[
+  {
+    "id": 1,
+    "query": "What is Decentrawood?",
+    "relevant": true,
+    "category": "core_decentrawood"
+  },
+  {
+    "id": 2,
+    "query": "What is the purpose of Decentrawood?",
+    "relevant": true,
+    "category": "core_decentrawood"
+  },
+  {
+    "id": 3,
+    "query": "What is LAND in Decentrawood?",
+    "relevant": true,
+    "category": "core_decentrawood"
+  },
+  {
+    "id": 4,
+    "query": "What can I do with LAND?",
+    "relevant": true,
+    "category": "core_decentrawood"
+  },
+  {
+    "id": 5,
+    "query": "What is the DEOD token used for?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 6,
+    "query": "Tell me about DEOD tokenomics.",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 7,
+    "query": "What is the current DEOD contract address?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 8,
+    "query": "Which blockchain is DEOD v2 on?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 9,
+    "query": "What is the maximum DEOD supply?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 10,
+    "query": "How many DEOD tokens were burned?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 11,
+    "query": "What is the holder airdrop allocation?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 12,
+    "query": "How are the holder airdrop tokens released?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 13,
+    "query": "Where can I buy DEOD?",
+    "relevant": true,
+    "category": "trade"
+  },
+  {
+    "id": 14,
+    "query": "How do I buy DEOD on an exchange?",
+    "relevant": true,
+    "category": "trade"
+  },
+  {
+    "id": 15,
+    "query": "How do I buy DEOD on PancakeSwap?",
+    "relevant": true,
+    "category": "trade"
+  },
+  {
+    "id": 16,
+    "query": "Which exchanges support DEOD?",
+    "relevant": true,
+    "category": "trade"
+  },
+  {
+    "id": 17,
+    "query": "What is DEOD arbitrage?",
+    "relevant": true,
+    "category": "trade"
+  },
+  {
+    "id": 18,
+    "query": "Show me the DEOD trading page.",
+    "relevant": true,
+    "category": "trade"
+  },
+  {
+    "id": 19,
+    "query": "What games can I play?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 20,
+    "query": "Take me to the Gaming Platform.",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 21,
+    "query": "What is DRC?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 22,
+    "query": "How many coins does first place get in DRC?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 23,
+    "query": "What is DEOD HUNT?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 24,
+    "query": "How many levels does DEOD HUNT have?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 25,
+    "query": "How many coins are earned at Level 50?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 26,
+    "query": "What games are free?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 27,
+    "query": "What is DEOD staking?",
+    "relevant": true,
+    "category": "staking"
+  },
+  {
+    "id": 28,
+    "query": "Where can I stake DEOD?",
+    "relevant": true,
+    "category": "staking"
+  },
+  {
+    "id": 29,
+    "query": "What is GlobalStaking?",
+    "relevant": true,
+    "category": "staking"
+  },
+  {
+    "id": 30,
+    "query": "Take me to DEOD Staking.",
+    "relevant": true,
+    "category": "staking"
+  },
+  {
+    "id": 31,
+    "query": "What is the staking APY?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 32,
+    "query": "What is DEOD AI?",
+    "relevant": true,
+    "category": "deod_ai"
+  },
+  {
+    "id": 33,
+    "query": "I want to create an AI agent.",
+    "relevant": true,
+    "category": "deod_ai"
+  },
+  {
+    "id": 34,
+    "query": "What is KYA?",
+    "relevant": true,
+    "category": "deod_ai"
+  },
+  {
+    "id": 35,
+    "query": "Take me to KYA.",
+    "relevant": true,
+    "category": "deod_ai"
+  },
+  {
+    "id": 36,
+    "query": "What is Use Your Agent?",
+    "relevant": true,
+    "category": "deod_ai"
+  },
+  {
+    "id": 37,
+    "query": "What is the Decentrawood Metaverse?",
+    "relevant": true,
+    "category": "metaverse"
+  },
+  {
+    "id": 38,
+    "query": "What zones are in the Metaverse?",
+    "relevant": true,
+    "category": "metaverse"
+  },
+  {
+    "id": 39,
+    "query": "Tell me about the Gaming Zone.",
+    "relevant": true,
+    "category": "metaverse"
+  },
+  {
+    "id": 40,
+    "query": "What is the Glamour Zone?",
+    "relevant": true,
+    "category": "metaverse"
+  },
+  {
+    "id": 41,
+    "query": "What is the Culture Zone?",
+    "relevant": true,
+    "category": "metaverse"
+  },
+  {
+    "id": 42,
+    "query": "Open the Metaverse page.",
+    "relevant": true,
+    "category": "metaverse"
+  },
+  {
+    "id": 43,
+    "query": "What is the Social Zone?",
+    "relevant": true,
+    "category": "social"
+  },
+  {
+    "id": 44,
+    "query": "What community groups are available?",
+    "relevant": true,
+    "category": "social"
+  },
+  {
+    "id": 45,
+    "query": "Is messaging end-to-end encrypted?",
+    "relevant": true,
+    "category": "social"
+  },
+  {
+    "id": 46,
+    "query": "Can I export or wipe my data?",
+    "relevant": true,
+    "category": "social"
+  },
+  {
+    "id": 47,
+    "query": "How can I become a community builder?",
+    "relevant": true,
+    "category": "community"
+  },
+  {
+    "id": 48,
+    "query": "What rewards can community members earn?",
+    "relevant": true,
+    "category": "community"
+  },
+  {
+    "id": 49,
+    "query": "What is Decentrawood DAO?",
+    "relevant": true,
+    "category": "dao"
+  },
+  {
+    "id": 50,
+    "query": "How does governance work?",
+    "relevant": true,
+    "category": "dao"
+  },
+  {
+    "id": 51,
+    "query": "How do I vote?",
+    "relevant": true,
+    "category": "dao"
+  },
+  {
+    "id": 52,
+    "query": "Take me to DAO.",
+    "relevant": true,
+    "category": "dao"
+  },
+  {
+    "id": 53,
+    "query": "What is DEOD?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 54,
+    "query": "Where can I buy it?",
+    "relevant": true,
+    "category": "trade"
+  },
+  {
+    "id": 55,
+    "query": "Tell me about DEOD HUNT.",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 56,
+    "query": "How many levels does it have?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 57,
+    "query": "Tell me about DEOD AI.",
+    "relevant": true,
+    "category": "deod_ai"
+  },
+  {
+    "id": 58,
+    "query": "What about KYA?",
+    "relevant": true,
+    "category": "deod_ai"
+  },
+  {
+    "id": 59,
+    "query": "What is the current DEOD price?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 60,
+    "query": "What is the exact staking APY?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 61,
+    "query": "Who is the CEO of Decentrawood?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 62,
+    "query": "Is DEOD guaranteed to increase in price?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 63,
+    "query": "Tell me a Decentrawood fact that is not in your knowledge base.",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 64,
+    "query": "What blockchain does Decentrawood use?",
+    "relevant": true,
+    "category": "core_decentrawood"
+  },
+  {
+    "id": 65,
+    "query": "What is the DEOD token?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 66,
+    "query": "What is the total supply of DEOD?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 67,
+    "query": "What is the DEOD v2 contract address?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 68,
+    "query": "What happened to the old DEOD contract?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 69,
+    "query": "How can I buy DEOD token?",
+    "relevant": true,
+    "category": "trade"
+  },
+  {
+    "id": 70,
+    "query": "Which exchange is recommended for new users?",
+    "relevant": true,
+    "category": "trade"
+  },
+  {
+    "id": 71,
+    "query": "What games are available on Decentrawood?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 72,
+    "query": "What wallet do I need to play games?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 73,
+    "query": "Take me to the blog",
+    "relevant": true,
+    "category": "navigation"
+  },
+  {
+    "id": 74,
+    "query": "Show me the news",
+    "relevant": true,
+    "category": "navigation"
+  },
+  {
+    "id": 75,
+    "query": "Open the NFT marketplace",
+    "relevant": true,
+    "category": "navigation"
+  },
+  {
+    "id": 76,
+    "query": "Show me the rich list",
+    "relevant": true,
+    "category": "navigation"
+  },
+  {
+    "id": 77,
+    "query": "What is the price of DEOD right now?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 78,
+    "query": "Is DEOD listed on Binance?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 79,
+    "query": "When was Decentrawood founded?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 80,
+    "query": "What is Decentrawood in simple words?",
+    "relevant": true,
+    "category": "core_decentrawood"
+  },
+  {
+    "id": 81,
+    "query": "Is Decentrawood a gaming platform or a social platform?",
+    "relevant": true,
+    "category": "core_decentrawood"
+  },
+  {
+    "id": 82,
+    "query": "What makes Decentrawood different from other metaverse platforms?",
+    "relevant": true,
+    "category": "core_decentrawood"
+  },
+  {
+    "id": 83,
+    "query": "What does \"People in Control\" mean on Decentrawood?",
+    "relevant": true,
+    "category": "core_decentrawood"
+  },
+  {
+    "id": 84,
+    "query": "What is the official website of Decentrawood?",
+    "relevant": true,
+    "category": "core_decentrawood"
+  },
+  {
+    "id": 85,
+    "query": "What is the effective supply of DEOD after burning?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 86,
+    "query": "How long does the team vesting last?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 87,
+    "query": "What is the vesting schedule for the Holder Airdrop?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 88,
+    "query": "How much DEOD is reserved for marketing?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 89,
+    "query": "What is the liquidity reserve amount?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 90,
+    "query": "When does the vesting contract go live?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 91,
+    "query": "What is the difference between MEXC and PancakeSwap?",
+    "relevant": true,
+    "category": "trade"
+  },
+  {
+    "id": 92,
+    "query": "Do I need KYC to buy DEOD on PancakeSwap?",
+    "relevant": true,
+    "category": "trade"
+  },
+  {
+    "id": 93,
+    "query": "What trading pairs does DEOD have?",
+    "relevant": true,
+    "category": "trade"
+  },
+  {
+    "id": 94,
+    "query": "What are the risks of DEOD arbitrage?",
+    "relevant": true,
+    "category": "trade"
+  },
+  {
+    "id": 95,
+    "query": "What is the old DEOD contract address on Polygon?",
+    "relevant": true,
+    "category": "deod"
+  },
+  {
+    "id": 96,
+    "query": "What genre is DRC Deod Racing Cartel?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 97,
+    "query": "What is DEOD Hunt 2?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 98,
+    "query": "Is Decentrawood gaming available on mobile?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 99,
+    "query": "What happens if I lose my MetaMask recovery phrase?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 100,
+    "query": "Can I own in-game assets as NFTs?",
+    "relevant": true,
+    "category": "gaming"
+  },
+  {
+    "id": 101,
+    "query": "What venues are inside the Glamour Zone?",
+    "relevant": true,
+    "category": "metaverse"
+  },
+  {
+    "id": 102,
+    "query": "What festivals are celebrated in the Culture Zone?",
+    "relevant": true,
+    "category": "metaverse"
+  },
+  {
+    "id": 103,
+    "query": "What historical places exist in the Indus Zone?",
+    "relevant": true,
+    "category": "metaverse"
+  },
+  {
+    "id": 104,
+    "query": "What is the Social Zone cross-cutting layer?",
+    "relevant": true,
+    "category": "social"
+  },
+  {
+    "id": 105,
+    "query": "What is the Cupid Hub web link?",
+    "relevant": true,
+    "category": "social"
+  },
+  {
+    "id": 106,
+    "query": "What is the tagline of DEOD AI?",
+    "relevant": true,
+    "category": "deod_ai"
+  },
+  {
+    "id": 107,
+    "query": "Can I train a custom AI model on Decentrawood?",
+    "relevant": true,
+    "category": "deod_ai"
+  },
+  {
+    "id": 108,
+    "query": "Who can use the AI Studio?",
+    "relevant": true,
+    "category": "deod_ai"
+  },
+  {
+    "id": 109,
+    "query": "What is the difference between text-to-image and image-to-image?",
+    "relevant": true,
+    "category": "deod_ai"
+  },
+  {
+    "id": 110,
+    "query": "How fast is the Decentrawood community growing?",
+    "relevant": true,
+    "category": "social"
+  },
+  {
+    "id": 111,
+    "query": "What is the daily engagement rate on Decentrawood?",
+    "relevant": true,
+    "category": "social"
+  },
+  {
+    "id": 112,
+    "query": "How many members are in the Metaverse Gamers group?",
+    "relevant": true,
+    "category": "social"
+  },
+  {
+    "id": 113,
+    "query": "How many members are in the Party Lounge group?",
+    "relevant": true,
+    "category": "social"
+  },
+  {
+    "id": 114,
+    "query": "What event categories exist in the Social Zone?",
+    "relevant": true,
+    "category": "social"
+  },
+  {
+    "id": 115,
+    "query": "Is Heartlink available on iOS and Android?",
+    "relevant": true,
+    "category": "social"
+  },
+  {
+    "id": 116,
+    "query": "What does the Decentrawood DAO control?",
+    "relevant": true,
+    "category": "dao"
+  },
+  {
+    "id": 117,
+    "query": "How do I submit a DAO proposal?",
+    "relevant": true,
+    "category": "dao"
+  },
+  {
+    "id": 118,
+    "query": "Can I propose a change to the NFT marketplace rules?",
+    "relevant": true,
+    "category": "dao"
+  },
+  {
+    "id": 119,
+    "query": "Where can I see active DAO proposals?",
+    "relevant": true,
+    "category": "dao"
+  },
+  {
+    "id": 120,
+    "query": "What is the DAO proposal link?",
+    "relevant": true,
+    "category": "dao"
+  },
+  {
+    "id": 121,
+    "query": "What hashtags should I use to earn social rewards?",
+    "relevant": true,
+    "category": "community"
+  },
+  {
+    "id": 122,
+    "query": "Is there a cap on referrals?",
+    "relevant": true,
+    "category": "community"
+  },
+  {
+    "id": 123,
+    "query": "What do top leaderboard members win?",
+    "relevant": true,
+    "category": "community"
+  },
+  {
+    "id": 124,
+    "query": "How do I join the Decentrawood Telegram?",
+    "relevant": true,
+    "category": "community"
+  },
+  {
+    "id": 125,
+    "query": "Is my data safe on Decentrawood?",
+    "relevant": true,
+    "category": "privacy"
+  },
+  {
+    "id": 126,
+    "query": "Can I delete my data from Decentrawood?",
+    "relevant": true,
+    "category": "privacy"
+  },
+  {
+    "id": 127,
+    "query": "Are messages on Decentrawood encrypted?",
+    "relevant": true,
+    "category": "privacy"
+  },
+  {
+    "id": 128,
+    "query": "Who controls my data on Decentrawood?",
+    "relevant": true,
+    "category": "privacy"
+  },
+  {
+    "id": 129,
+    "query": "I want to stake my DEOD",
+    "relevant": true,
+    "category": "staking"
+  },
+  {
+    "id": 130,
+    "query": "Show me the whitepaper",
+    "relevant": true,
+    "category": "navigation"
+  },
+  {
+    "id": 131,
+    "query": "Take me to the DAO proposals page",
+    "relevant": true,
+    "category": "dao"
+  },
+  {
+    "id": 132,
+    "query": "I want to see the culture zone",
+    "relevant": true,
+    "category": "metaverse"
+  },
+  {
+    "id": 133,
+    "query": "Open the glamour zone",
+    "relevant": true,
+    "category": "metaverse"
+  },
+  {
+    "id": 134,
+    "query": "Take me to TuneHub",
+    "relevant": true,
+    "category": "music"
+  },
+  {
+    "id": 135,
+    "query": "Show me the AI Studio",
+    "relevant": true,
+    "category": "deod_ai"
+  },
+  {
+    "id": 136,
+    "query": "I want to deposit crypto",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 137,
+    "query": "Open community page",
+    "relevant": true,
+    "category": "community"
+  },
+  {
+    "id": 138,
+    "query": "How much does the Pro tier of AI Studio cost per month?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 139,
+    "query": "How many land parcels are available in the metaverse?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 140,
+    "query": "What is the DEOD price prediction for 2025?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 141,
+    "query": "Is Decentrawood available in my country?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 142,
+    "query": "Who are the investors of Decentrawood?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 143,
+    "query": "Does Decentrawood have a referral bonus of 50 DEOD?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 144,
+    "query": "Is DEOD listed on Coinbase?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 145,
+    "query": "What is the market cap of DEOD?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 146,
+    "query": "Does Decentrawood have a roadmap for 2026?",
+    "relevant": false,
+    "category": "hallucination"
+  },
+  {
+    "id": 147,
+    "query": "Can I earn 18% APY by staking DEOD?",
+    "relevant": false,
+    "category": "hallucination"
+  }
+]

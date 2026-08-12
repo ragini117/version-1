@@ -134,32 +134,6 @@ PRICE_KEYWORDS = [
     "trading", "volume", "listed", "listing", "exchange",
 ]
 
-DECENTRAWOOD_TERMS = {
-    "decentrawood", "deod", "tunehub", "ai studio", "glamour zone","Deod ai", "Deod Staking",
-    "ariba zone", "indus zone", "cupid hub", "d-nexus", "mystical maze",
-    "lord of space", "flap quest", "match mania", "heartlink",
-}
-
-WEB3_TERMS = {
-    "web3", "metaverse", "blockchain", "crypto", "cryptocurrency", "token", "nft",
-    "nfts", "staking", "dao", "p2e", "gamefi", "pancakeswap", "mexc",
-    "bitmart", "toobit", "metamask", "coinmarketcap", "coingecko",
-    "bitcoin", "btc", "ethereum", "eth", "solana", "sol", "uniswap", "binance", "coin",
-}
-
-DOMAIN_KEYWORDS = [
-    "decentrawood", "deod", "deod token", "web3", "metaverse", "blockchain", "ai-powered",
-    "game", "games", "gaming", "play-to-earn", "p2e", "gamefi", "deod hunt", "deod racing",
-    "mystical maze", "match mania", "d-nexus", "lord of space", "word chain", "flap quest",
-    "deod ai",
-    "glamour zone", "ariba zone", "culture zone", "indus zone", "social zone", "cupid hub",
-    "heartlink", "celebrity palace", "tunehub", "music", "token", "tokenomics", "trade",
-    "trading", "exchange", "wallet", "metamask", "pancakeswap", "mexc", "bitmart", "toobit",
-    "staking", "vesting", "airdrop", "rich list", "price", "dao", "governance", "proposal",
-    "vote", "treasury", "nft", "nfts", "collectible", "community", "referral", "blog",
-    "news", "whitepaper", "faq", "privacy", "terms", "what is decentrawood", "about decentrawood",
-]
-
 
 @lru_cache(maxsize=1)
 def get_settings():

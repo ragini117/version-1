@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
+import { NavigationLinkCard } from "./NavigationLinkCard";
+
 
 export const TranscriptPanel = ({ transcript }) => {
   const panelEndRef = useRef(null);
@@ -113,6 +115,12 @@ export const TranscriptPanel = ({ transcript }) => {
                     <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#D4AF37", animation: "bounce 1.4s infinite 0.2s" }}></span>
                     <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#D4AF37", animation: "bounce 1.4s infinite 0.4s" }}></span>
                   </div>
+                )}
+                {msg.navigation?.should_navigate === false && msg.navigation?.primary_route?.url && (
+                  <NavigationLinkCard
+                    route={msg.navigation.primary_route}
+                    theme="gold"
+                  />
                 )}
               </div>
             </div>

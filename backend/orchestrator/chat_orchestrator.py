@@ -66,6 +66,14 @@ class ChatOrchestrator:
         conversation_context = self.conversation_manager.process_query(session_id, user_message, history_list)
         query_for_pipeline = conversation_context.rewritten_query
 
+        logger.info(
+            "[ORCHESTRATOR] session=%s original_query=%r rewritten_query=%r rewrite_reason=%s",
+            session_id,
+            user_message,
+            query_for_pipeline,
+            conversation_context.metadata.get("rewrite_reason", "—"),
+        )
+
         # Check Cache
         cached = None
         cache_start = time.perf_counter()
@@ -83,11 +91,12 @@ class ChatOrchestrator:
             sources = cached.get("sources", [])
 
             primary_route = navigation.get("primary_route") if navigation else None
-            navigate_to = primary_route.get("url") if primary_route else None
+            # navigate_to is only set for internal routes; derive AFTER process_navigation
+            pre_navigate_to = primary_route.get("url") if primary_route else None
 
             # Process navigation and rewrite URLs
             response_text, navigate_to, decision, navigation = self.navigation_service.process_navigation(
-                response_text, navigate_to, decision, navigation, primary_route=primary_route
+                response_text, pre_navigate_to, decision, navigation, primary_route=primary_route
             )
 
             nav_cache_source = "Cached Route (Qdrant/Config)" if navigate_to else None
@@ -138,97 +147,61 @@ class ChatOrchestrator:
         tracker.log_intent(intent, confidence, needs_live_data_intent)
         tracker.log_rag(rag_result["docs"])
 
-        domain_result = None
         answer_score = 1.0 if rag_result.get("rag_hit") else 0.0
 
-        decision_obj = make_navigation_decision(answer_score, nav_routes)
+        decision_obj = make_navigation_decision(
+            answer_score, nav_routes, rag_docs=rag_result.get("retrieved_documents", [])
+        )
         decision = decision_obj["decision"]
         navigation = decision_obj["navigation"]
 
-        primary_route = navigation.get("primary_route") if navigation.get("should_navigate") else None
+        primary_route = navigation.get("primary_route")
         navigate_to = primary_route.get("url") if primary_route else None
         nav_source = "Qdrant Vector DB (decentrawood_routes)" if navigate_to else None
 
-        # Check Domain Scope
-        if not rag_result["rag_hit"]:
-            domain_result = await asyncio.to_thread(self.intent_classifier.check_domain, query_for_pipeline)
-            if not domain_result["is_domain"]:
-                response_text = OUT_OF_SCOPE_MESSAGE
-                navigate_to = None
-                decision = {"type": "ANSWER", "answer_required": True, "navigation_required": False}
-                navigation = {"should_navigate": False, "primary_route": None, "related_routes": []}
-                
-                await asyncio.to_thread(
-                    self.history_service.save_chat,
-                    session_id, user_message, response_text,
-                    intent=intent, navigation_route=navigate_to, decision=decision,
-                    navigation=navigation, confidence=confidence,
-                )
-                tracker.log_db_stored(session_id)
-                self._log_stage_timings({**timings, "total": time.perf_counter() - start_total})
-                tracker.set_final_source("Domain Classifier (Out of Scope Fallback)")
-                result = tracker.finish()
-                return {
-                    "response_text": response_text,
-                    "intent": intent,
-                    "confidence": confidence,
-                    "retrieved_documents": [],
-                    "decision": decision,
-                    "navigation": navigation,
-                    "sources": result["sources"],
-                    "session_id": session_id,
-                    "token": active_token,
-                    "navigate_to": navigate_to,
-                    "timings": {**timings, "total": time.perf_counter() - start_total},
-                }
-
+        # Live queries
         is_live_query = bool(self.intent_classifier.needs_live_data(query_for_pipeline))
 
         if is_live_query:
-            if domain_result is None:
-                domain_result = await asyncio.to_thread(self.intent_classifier.check_domain, query_for_pipeline)
-            
-            if not domain_result["is_domain"]:
-                response_text = OUT_OF_SCOPE_MESSAGE
-                navigate_to = None
-                decision = {"type": "ANSWER", "answer_required": True, "navigation_required": False}
-                navigation = {"should_navigate": False, "primary_route": None, "related_routes": []}
+            cached_live = None
+            if not self.intent_classifier.is_price_query(query_for_pipeline):
+                cached_live = await asyncio.to_thread(self.cache_service.get_live, query_for_pipeline)
+            if cached_live:
+                response_text = cached_live
+                tracker.set_final_source("Redis Live Cache")
             else:
-                cached_live = None
-                if not self.intent_classifier.is_price_query(query_for_pipeline):
-                    cached_live = await asyncio.to_thread(self.cache_service.get_live, query_for_pipeline)
-                if cached_live:
-                    response_text = cached_live
-                    tracker.set_final_source("Redis Live Cache")
+                search_query = self.intent_classifier.enhance_live_query(query_for_pipeline)
+                tracker.log_external_agent(search_query)
+                raw_result = await asyncio.to_thread(self.web_search_retriever.search, search_query)
+                tracker.log_external_agent_result(raw_result)
+                
+                if "info@decentrawood.com" in raw_result:
+                    response_text = raw_result
+                    tracker.set_final_source("Domain Classifier (Out of Scope Fallback)")
+                elif raw_result == "__TIMEOUT__":
+                    response_text = "Prices change fast — for the most accurate current DEOD price, check CoinGecko or CoinMarketCap directly."
+                    tracker.set_final_source("External Agent (DuckDuckGo Timeout Fallback)")
+                elif raw_result == "__ERROR__":
+                    response_text = "I'm sorry, I couldn't fetch that information right now. Please try again."
+                    tracker.set_final_source("External Agent (DuckDuckGo Error Fallback)")
                 else:
-                    search_query = self.intent_classifier.enhance_live_query(query_for_pipeline)
-                    tracker.log_external_agent(search_query)
-                    raw_result = await asyncio.to_thread(self.web_search_retriever.search, search_query)
-                    tracker.log_external_agent_result(raw_result)
-                    
-                    if "info@decentrawood.com" in raw_result:
-                        response_text = raw_result
-                        tracker.set_final_source("Domain Classifier (Out of Scope Fallback)")
-                    elif raw_result == "__TIMEOUT__":
-                        response_text = "Prices change fast — for the most accurate current DEOD price, check CoinGecko or CoinMarketCap directly."
-                        tracker.set_final_source("External Agent (DuckDuckGo Timeout Fallback)")
-                    elif raw_result == "__ERROR__":
-                        response_text = "I'm sorry, I couldn't fetch that information right now. Please try again."
-                        tracker.set_final_source("External Agent (DuckDuckGo Error Fallback)")
-                    else:
-                        response_text = await asyncio.to_thread(
-                            self.response_generator.reformat_live_response, query_for_pipeline, raw_result, history_list
+                    response_text = await asyncio.to_thread(
+                        self.response_generator.reformat_live_response, query_for_pipeline, raw_result, history_list
+                    )
+                    tracker.set_final_source("External Agent (DuckDuckGo Search)")
+                    if not self.intent_classifier.is_price_query(query_for_pipeline):
+                        await asyncio.to_thread(
+                            self.cache_service.set_live, query_for_pipeline, response_text, ttl_seconds=120
                         )
-                        tracker.set_final_source("External Agent (DuckDuckGo Search)")
-                        if not self.intent_classifier.is_price_query(query_for_pipeline):
-                            await asyncio.to_thread(
-                                self.cache_service.set_live, query_for_pipeline, response_text, ttl_seconds=120
-                            )
 
             # Apply post-processing to block navigation to specific URLs & append them to response_text
             response_text, navigate_to, decision, navigation = self.navigation_service.process_navigation(
                 response_text, navigate_to, decision, navigation, primary_route=primary_route
             )
+
+            nav_url = navigate_to or (primary_route.get("url") if primary_route else None)
+            nav_type = primary_route.get("type") if primary_route else None
+            tracker.log_navigation(intent, nav_url, source=nav_source, route_type=nav_type, should_navigate=bool(navigate_to))
 
             result = tracker.finish()
             if not self.intent_classifier.is_price_query(query_for_pipeline):
@@ -280,6 +253,10 @@ class ChatOrchestrator:
         response_text, navigate_to, decision, navigation = self.navigation_service.process_navigation(
             response_text, navigate_to, decision, navigation, primary_route=primary_route
         )
+
+        nav_url = navigate_to or (primary_route.get("url") if primary_route else None)
+        nav_type = primary_route.get("type") if primary_route else None
+        tracker.log_navigation(intent, nav_url, source=nav_source, route_type=nav_type, should_navigate=bool(navigate_to))
 
         result = tracker.finish()
 

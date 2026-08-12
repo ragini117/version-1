@@ -155,6 +155,7 @@ export const ChatProvider = ({ children }) => {
         text: botResponseText,
         sender: "bot",
         timestamp: new Date(),
+        navigation: data.navigation,
       };
 
       setMessages((prev) => {

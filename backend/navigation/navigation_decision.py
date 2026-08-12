@@ -9,10 +9,11 @@ def make_navigation_decision(
     answer_threshold: float = ANSWER_THRESHOLD,
     nav_threshold: float = NAVIGATION_THRESHOLD,
     margin_threshold: float = NAVIGATION_MARGIN,
+    rag_docs: List[Dict[str, Any]] = None,
 ) -> Dict[str, Any]:
     """
     Evaluates answer_score and semantic route similarity scores to produce decision and navigation objects.
-    Enforces strict thresholding with no fuzzy fallbacks.
+    Enforces strict thresholding with cross-validation for destination resolution.
     """
     if not nav_routes:
         return {
@@ -36,21 +37,27 @@ def make_navigation_decision(
     margin = nav_top_score - nav_second_score
 
     # Check if navigation confidence is sufficient and not ambiguous (sufficient margin)
-    strong_nav = (nav_top_score >= nav_threshold) and (margin >= margin_threshold)
+    route_reliable = (nav_top_score >= nav_threshold) and (margin >= margin_threshold)
 
-    # Single Source of Truth: Check exact Qdrant metadata 'type'
-    is_internal_route = (effective_top.get("type") == "internal")
+    # Destination Resolution: Cross-validate with RAG answers
+    if not route_reliable and effective_top.get("url"):
+        answer_urls = {doc.get("metadata", {}).get("url") for doc in (rag_docs or []) if doc.get("metadata", {}).get("url")}
+        if effective_top.get("url") in answer_urls:
+            route_reliable = True
 
-    # External routes (type != "internal") MUST NEVER auto-navigate
-    if not is_internal_route:
-        strong_nav = False
+    if not route_reliable:
+        effective_top = None
 
-    # The decision is simple:
-    # If we have an answer score >= threshold, we always provide an answer.
-    # If strong_nav is True, we also navigate.
     answer_req = answer_score >= answer_threshold
-    nav_req = strong_nav
-    should_nav = strong_nav
+    
+    if effective_top:
+        is_internal_route = (effective_top.get("type") == "internal")
+        should_nav = is_internal_route
+        nav_req = True
+    else:
+        is_internal_route = False
+        should_nav = False
+        nav_req = False
 
     if answer_req and nav_req:
         decision_type = "BOTH"
@@ -72,7 +79,8 @@ def make_navigation_decision(
             "url": effective_top.get("url"),
             "route": effective_top.get("route"),
             "label": effective_top.get("title"),
-            "type": "internal" if is_internal_route else "external",
+            "type": effective_top.get("type", "internal"),
+            "domain": effective_top.get("domain"),
             "confidence": round(nav_top_score, 4),
         }
         if effective_top
@@ -85,7 +93,8 @@ def make_navigation_decision(
             "url": r.get("url"),
             "route": r.get("route"),
             "label": r.get("title"),
-            "type": "internal" if r.get("type") == "internal" else "external",
+            "type": r.get("type", "internal"),
+            "domain": r.get("domain"),
             "confidence": round(r.get("score", 0.0), 4),
         }
         for r in other_routes

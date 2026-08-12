@@ -72,6 +72,11 @@ class QuerySourceTracker:
         if docs:
             logger.info(f"[RAG] retrieved {len(docs)} chunks")
             self.sources_used.append(f"Qdrant RAG ({len(docs)} chunks)")
+            for i, doc in enumerate(docs):
+                meta = doc.metadata or {}
+                url = meta.get("url") or "No URL"
+                domain = meta.get("domain") or "No Domain"
+                logger.info(f"  -> Chunk {i+1}: URL={url} (Domain={domain})")
         else:
             logger.info("[RAG] no relevant chunks found")
 

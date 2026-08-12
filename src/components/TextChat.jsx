@@ -8,6 +8,7 @@ import { VoiceButton } from "./Voice/VoiceButton";
 import { SpeechPlayer } from "./Voice/SpeechPlayer";
 import ChatHeader from "./ChatHeader";
 import useChatWindowSize from "../hooks/useChatWindowSize";
+import { NavigationLinkCard } from "./NavigationLinkCard";
 
 
 export const TextChat = ({
@@ -194,14 +195,31 @@ export const TextChat = ({
                 position: "relative",
               }}
             >
-              {msg.text.split(/(https?:\/\/[^\s]+)/g).map((part, i) =>
-                /(https?:\/\/[^\s]+)/g.test(part) ? (
-                  <a key={i} href={part} target="_blank" rel="noopener noreferrer" style={{ color: msg.sender === "user" ? "#FFFFFF" : "#8B5CFF", textDecoration: "underline" }}>
-                    {part}
-                  </a>
-                ) : (
-                  part
-                )
+              {/* Render text, but skip URLs that are already shown in the nav card */}
+              {(() => {
+                const navUrl = msg.navigation?.primary_route?.url;
+                return msg.text.split(/(https?:\/\/[^\s]+)/g).map((part, i) => {
+                  if (/(https?:\/\/[^\s]+)/g.test(part)) {
+                    // If this URL matches the navigation card URL, suppress it
+                    if (navUrl && part.replace(/\/+$/, '') === navUrl.replace(/\/+$/, '')) {
+                      return null;
+                    }
+                    return (
+                      <a key={i} href={part} target="_blank" rel="noopener noreferrer"
+                        style={{ color: msg.sender === "user" ? "#FFFFFF" : "#8B5CFF", textDecoration: "underline" }}>
+                        {part}
+                      </a>
+                    );
+                  }
+                  return part;
+                });
+              })()}
+              {/* Navigation URL card (external routes only) */}
+              {msg.navigation?.should_navigate === false && msg.navigation?.primary_route?.url && (
+                <NavigationLinkCard
+                  route={msg.navigation.primary_route}
+                  theme="purple"
+                />
               )}
             </div>
             {msg.sender !== "user" && <SpeechPlayer text={msg.text} />}

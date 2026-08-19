@@ -23,6 +23,7 @@ class ConversationSessionState:
     pending_topic: str | None = None
     recent_entities: list[str] = field(default_factory=list)
     last_navigation: str | None = None
+    previous_intent: str | None = None
     timestamp: float = field(default_factory=time.monotonic)
     metadata: dict[str, Any] = field(default_factory=dict)
 

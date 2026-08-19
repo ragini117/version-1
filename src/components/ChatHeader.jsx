@@ -12,7 +12,9 @@ import {
   AlertTriangle,
   ArrowLeft,
   MessageSquare,
-  Volume2
+  Volume2,
+  Globe,
+  Check
 } from "lucide-react";
 import { useChat } from "@/context/ChatContext";
 
@@ -28,7 +30,12 @@ const TRANSLATIONS = {
   clearConfirmTitle: "Clear Conversation?",
   clearConfirmDesc: "Are you sure you want to clear your conversation history? This cannot be undone.",
   cancel: "Cancel",
-  clear: "Clear"
+  clear: "Clear",
+  language: "Language",
+  langAuto: "Auto Detect",
+  langEn: "English",
+  langHi: "हिंदी",
+  langHinglish: "Hinglish"
 };
 
 export const ChatHeader = ({
@@ -41,9 +48,10 @@ export const ChatHeader = ({
   chatHistory = [],
   onClearChat
 }) => {
-  const { clearChat } = useChat();
+  const { clearChat, language, setLanguage } = useChat();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
 
   const menuRef = useRef(null);
@@ -52,6 +60,7 @@ export const ChatHeader = ({
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setIsMenuOpen(false);
+        setIsLanguageMenuOpen(false);
       }
     };
     if (isMenuOpen) {
@@ -65,8 +74,8 @@ export const ChatHeader = ({
   const handleDownloadChat = () => {
     const dateStr = new Date().toISOString().split("T")[0];
     const exportHeader = `DecentraAI Assistant Chat Export (${mode.toUpperCase()} MODE) - ${dateStr}\n` +
-                         `==================================================\n\n`;
-    
+      `==================================================\n\n`;
+
     const logs = chatHistory.map(msg => {
       const time = msg.timestamp
         ? new Date(msg.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
@@ -78,7 +87,7 @@ export const ChatHeader = ({
     const fileContent = exportHeader + logs;
     const blob = new Blob([fileContent], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);
-    
+
     const link = document.createElement('a');
     link.href = url;
     link.download = `decentra-chat-${mode}-${dateStr}.txt`;
@@ -265,6 +274,7 @@ export const ChatHeader = ({
                       onClick={() => {
                         onSwitchMode();
                         setIsMenuOpen(false);
+                        setIsLanguageMenuOpen(false);
                       }}
                       style={{
                         display: "flex",
@@ -293,6 +303,74 @@ export const ChatHeader = ({
                     </div>
                   )}
 
+                  {/* Language Switch Item */}
+                  <div
+                    onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      gap: "8px",
+                      padding: "10px 16px",
+                      color: "white",
+                      fontSize: "13px",
+                      cursor: "pointer",
+                      transition: "all 0.2s ease",
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "rgba(139, 92, 255, 0.15)"}
+                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
+                  >
+                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                      <Globe size={14} style={{ color: "#8B5CFF" }} />
+                      <span>{currentT.language}</span>
+                    </div>
+                  </div>
+
+                  <AnimatePresence>
+                    {isLanguageMenuOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        style={{ overflow: "hidden", backgroundColor: "rgba(0,0,0,0.2)" }}
+                      >
+                        {[
+                          { id: "auto", label: currentT.langAuto, icon: null },
+                          { id: "en", label: currentT.langEn, icon: "🇬🇧" },
+                          { id: "hi", label: currentT.langHi, icon: "🇮🇳" },
+                          { id: "hinglish", label: currentT.langHinglish, icon: "🇮🇳" }
+                        ].map((lang) => (
+                          <div
+                            key={lang.id}
+                            onClick={() => {
+                              setLanguage(lang.id);
+                              setIsLanguageMenuOpen(false);
+                              setIsMenuOpen(false);
+                            }}
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "8px",
+                              padding: "8px 16px 8px 38px",
+                              color: language === lang.id ? "#8B5CFF" : "#d6d6d6",
+                              fontSize: "12px",
+                              cursor: "pointer",
+                              transition: "all 0.2s ease",
+                            }}
+                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "rgba(139, 92, 255, 0.1)"}
+                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
+                          >
+                            <span style={{ width: "14px", display: "inline-block" }}>
+                              {language === lang.id && <Check size={12} />}
+                            </span>
+                            {lang.icon && <span style={{ marginRight: "4px" }}>{lang.icon}</span>}
+                            <span>{lang.label}</span>
+                          </div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+
                   {/* Download Chat Item */}
                   <div
                     onClick={handleDownloadChat}
@@ -318,6 +396,7 @@ export const ChatHeader = ({
                     onClick={() => {
                       setIsConfirmModalOpen(true);
                       setIsMenuOpen(false);
+                      setIsLanguageMenuOpen(false);
                     }}
                     style={{
                       display: "flex",

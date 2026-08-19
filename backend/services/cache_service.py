@@ -73,6 +73,12 @@ class CacheService:
         self._l1_cache.pop(normalized, None)
         return self._cache.delete(key_or_query)
 
+    def clear_l1(self) -> int:
+        """Flush the entire in-process L1 memory cache. Returns number of entries cleared."""
+        count = len(self._l1_cache)
+        self._l1_cache.clear()
+        return count
+
     def get_live(self, query: str) -> Optional[str]:
         # Live queries check cache_manager (which has its own memory fallback)
         return self._cache.get_cached_live_response(query)

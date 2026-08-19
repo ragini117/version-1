@@ -16,7 +16,7 @@
       "gaming",
       "decentralized universe"
     ],
-    "content": "Decentrawood is a trendsetter in Web3 Entertainment — AI Powered & Fully Immersive. Step into a decentralized universe where gaming, artificial intelligence, and virtual world creation converge into a seamless ecosystem. Key platform pillars: Gaming (gaming.decentrawood.com), AI (ai.decentrawood.com), Metaverse (glamour.decentrawood.com)."
+    "content": "Decentrawood is a trendsetter in Web3 Entertainment — AI Powered & Fully Immersive. Step into a decentralized universe where gaming, artificial intelligence, and virtual world creation converge into a seamless ecosystem. Key platform pillars: Gaming (gaming.decentrawood.com), AI (deod.ai), Metaverse (glamour.decentrawood.com)."
   },
   {
     "chunk_id": "chunk-decentrawood-home-arbitrage",
@@ -77,7 +77,7 @@
       "DAO",
       "blockchain"
     ],
-    "content": "Decentrawood is an AI-powered Web3 entertainment ecosystem that combines generative AI tools, gaming, music creation, social interaction, and DAO-based governance into a single decentralized platform. It is a multi-layered digital ecosystem designed for creators, gamers, and communities. Core emphasis: AI-driven creativity, social engagement, and Web3-native digital experiences accessible across mobile and immersive environments. Includes a dedicated AI platform at ai.decentrawood.com and gaming platform at gaming.decentrawood.com."
+    "content": "Decentrawood is an AI-powered Web3 entertainment ecosystem that combines generative AI tools, gaming, music creation, social interaction, and DAO-based governance into a single decentralized platform. It is a multi-layered digital ecosystem designed for creators, gamers, and communities. Core emphasis: AI-driven creativity, social engagement, and Web3-native digital experiences accessible across mobile and immersive environments. Includes a dedicated AI platform at deod.ai and gaming platform at gaming.decentrawood.com."
   },
   {
     "chunk_id": "chunk-what-is-decentrawood-gaming-hub",
@@ -965,7 +965,7 @@
       "cultural event",
       "join VR"
     ],
-    "content": "Maha Kumbh is a significant cultural event featured on the Decentrawood platform, allowing users to join and experience it in virtual reality."
+    "content": "Maha Kumbh is a virtual cultural experience on the Decentrawood platform that users can join and explore through VR. It represents the Maha Kumbh Mela, one of the world's largest religious gatherings, recreated as an immersive virtual environment."
   },
   {
     "chunk_id": "chunk-culture_zone-decentrawood-cha-raja",
@@ -981,7 +981,7 @@
       "cultural celebration",
       "join VR"
     ],
-    "content": "Decentrawood Cha Raja is another cultural feature available on the platform, providing a VR experience of this iconic celebration."
+    "content": "Decentrawood Cha Raja is a virtual cultural experience on the Decentrawood platform that users can join and explore through VR. It is inspired by Mumbai's iconic Lalbaugcha Raja Ganesh Chaturthi celebration."
   },
   {
     "chunk_id": "chunk-culture_zone-dahi-handi",
@@ -997,7 +997,7 @@
       "festival",
       "join VR"
     ],
-    "content": "Dahi Handi is a traditional festival showcased on the Decentrawood platform, allowing users to join and experience it in VR."
+    "content": "Dahi Handi is a traditional festival showcased on the Decentrawood platform, allowing users to join and experience it in VR. Dahi Handi is a real Maharashtrian festival tied to Krishna Janmashtami, commemorating young Krishna's mischievous love of stealing butter/curd. Teams ('Govinda' groups) form human pyramids to break a curd-filled pot (handi) suspended high above the street — a major community event especially in Mumbai and Pune."
   },
   {
     "chunk_id": "chunk-culture_zone-red-fort",
@@ -1013,7 +1013,7 @@
       "historical landmark",
       "join VR"
     ],
-    "content": "Red Fort is a historical landmark featured on the Decentrawood platform, where users can join and explore it in virtual reality."
+    "content": "Red Fort is a historical landmark featured on the Decentrawood platform, where users can join and explore it in virtual reality. Red Fort (Lal Qila) is a UNESCO World Heritage Mughal-era fortress in Delhi, built by Emperor Shah Jahan in the 17th century. It's historically and symbolically significant as the site where India's Prime Minister hoists the national flag and addresses the nation every Independence Day (Aug 15)."
   },
   {
     "chunk_id": "chunk-culture_zone-ram-temple",
@@ -1029,7 +1029,7 @@
       "religious site",
       "join VR"
     ],
-    "content": "The Ram temple is a significant religious site available on the Decentrawood platform for users to join and experience in VR."
+    "content":"Ram Temple is a virtual temple on the Decentrawood platform that users can join and explore through VR. It represents the Ram Mandir in Ayodhya, Uttar Pradesh, dedicated to Lord Rama, with its architecture recreated in an immersive virtual environment."
   },
   {
     "chunk_id": "chunk-culture_zone-khatushyam-baba",
@@ -1045,7 +1045,7 @@
       "cultural figure",
       "join VR"
     ],
-    "content": "Khatushyam Baba is a revered figure featured on the Decentrawood platform, allowing users to join and experience this cultural aspect in VR."
+    "content": "Khatushyam Baba is a virtual temple experience on the Decentrawood platform that users can join and explore through VR. It represents the Khatu Shyam Ji temple in Rajasthan, dedicated to Barbarik from the Mahabharata."
   },
   {
     "chunk_id": "chunk-culture_zone-jagannath-temple",
@@ -1061,7 +1061,7 @@
       "temple",
       "join VR"
     ],
-    "content": "Jagannath Temple is a prominent temple featured on the Decentrawood platform, where users can join and explore it in virtual reality."
+    "content": "Jagannath Temple is a virtual temple on the Decentrawood platform that users can join and explore through VR. It represents the Jagannath Temple in Puri, Odisha, with its architecture and surroundings recreated in an immersive virtual environment."
   },
   {
     "chunk_id": "chunk-culture_zone-tirupati-temple",
@@ -1077,7 +1077,7 @@
       "religious site",
       "join VR"
     ],
-    "content": "Tirupati Temple is a famous religious site available on the Decentrawood platform for users to join and experience in VR."
+    "content": "Tirupati Temple is a virtual temple on the Decentrawood platform that users can join and explore through VR. It represents the Tirumala Venkateswara Temple in Andhra Pradesh, dedicated to Lord Venkateswara, with its architecture recreated in a virtual environment."
   },
   {
     "chunk_id": "chunk-culture_zone-prem-mandir",
@@ -1093,7 +1093,7 @@
       "temple",
       "join VR"
     ],
-    "content": "Prem Mandir is a significant temple featured on the Decentrawood platform, allowing users to join and explore it in virtual reality."
+    "content": "Prem Mandir is a virtual temple on the Decentrawood platform that users can join and explore through VR. It represents Prem Mandir in Vrindavan, Uttar Pradesh, dedicated to Radha and Krishna, with its distinctive architecture recreated in a virtual environment."
   },
   {
     "chunk_id": "chunk-culture_zone-mahakaleshwar",
@@ -1109,7 +1109,7 @@
       "temple",
       "join VR"
     ],
-    "content": "Mahakaleshwar is a revered temple featured on the Decentrawood platform, where users can join and experience it in VR."
+    "content": "Mahakaleshwar is a virtual temple on the Decentrawood platform that users can join and explore through VR. It represents the Mahakaleshwar Temple in Ujjain, Madhya Pradesh, one of the twelve Jyotirlingas."
   },
   {
     "chunk_id": "chunk-culture_zone-saibaba-temple",
@@ -1125,7 +1125,7 @@
       "religious site",
       "join VR"
     ],
-    "content": "Saibaba temple is a significant religious site available on the Decentrawood platform for users to join and experience in VR."
+    "content": "Saibaba Temple is a virtual temple on the Decentrawood platform that users can join and explore through VR. It represents the Shirdi Sai Baba Temple in Maharashtra in an immersive virtual environment."
   },
   {
     "chunk_id": "chunk-culture_zone-church",
@@ -1141,7 +1141,7 @@
       "cultural site",
       "join VR"
     ],
-    "content": "A Church is featured on the Decentrawood platform, allowing users to join and explore this cultural site in virtual reality."
+    "content": "A Church is featured on the Decentrawood platform, allowing users to join and explore this cultural site in virtual reality. A church, in general, is a place of Christian worship. Within Decentrawood's Culture Zone, it represents Christianity alongside the platform's other faith-based cultural landmarks, reflecting the platform's aim to represent diverse religious traditions."
   },
   {
     "chunk_id": "chunk-culture_zone-masjid",
@@ -1157,7 +1157,7 @@
       "religious site",
       "join VR"
     ],
-    "content": "Masjid is a significant religious site available on the Decentrawood platform for users to join and experience in VR."
+    "content": "Masjid is a significant religious site available on the Decentrawood platform for users to join and experience in VR. A masjid (mosque) is a place of Islamic worship. Within Decentrawood's Culture Zone, it represents Islam alongside the platform's other faith-based cultural landmarks, reflecting the platform's aim to represent diverse religious traditions."
   },
   {
     "chunk_id": "chunk-culture_zone-golden-temple",
@@ -1173,7 +1173,7 @@
       "temple",
       "join VR"
     ],
-    "content": "Golden temple is a prominent temple featured on the Decentrawood platform, allowing users to join and explore it in virtual reality."
+    "content": "Golden Temple (Harmandir Sahib) is a virtual temple featured on the Decentrawood platform, where users can join and explore its immersive virtual environment through VR. It represents the iconic Golden Temple in Amritsar, Punjab, allowing users to explore its digital architecture and surroundings."
   },
   {
     "chunk_id": "chunk-culture_zone-kamtanath",
@@ -1189,7 +1189,7 @@
       "temple",
       "join VR"
     ],
-    "content": "Kamtanath is a revered temple featured on the Decentrawood platform, where users can join and experience it in VR."
+    "content": "Kamtanath (Kamadgiri) is a virtual sacred site featured on the Decentrawood platform, where users can join and explore it through VR. Users can experience its immersive virtual environment and explore a digital representation."
   },
   {
     "chunk_id": "chunk-culture_zone-palitana-jain-temple",
@@ -1205,7 +1205,7 @@
       "religious site",
       "join VR"
     ],
-    "content": "Palitana Jain temple is a significant religious site available on the Decentrawood platform for users to join and experience in VR."
+    "content": "Palitana Jain temple is a significant religious site available on the Decentrawood platform for users to join and experience in VR. Palitana Jain Temples sit atop Shatrunjaya hill in Gujarat and form the largest cluster of Jain temples in the world (800+ temples). It's one of the most important pilgrimage sites in Jainism, requiring a climb of roughly 3,500+ steps."
   },
   {
     "chunk_id": "chunk-culture_zone-ballaleshwar",
@@ -1221,7 +1221,7 @@
       "temple",
       "join VR"
     ],
-    "content": "Ballaleshwar is a revered temple featured on the Decentrawood platform, allowing users to join and explore it in virtual reality."
+    "content": "Ballaleshwar is a revered temple featured on the Decentrawood platform, allowing users to join and explore it in virtual reality. Ballaleshwar is one of the eight Ashtavinayak temples (Lord Ganesha shrines) in Maharashtra, located in Pali, Raigad district. It is unique among the Ashtavinayak set as the deity is named after a devotee, Ballal."
   },
   {
     "chunk_id": "chunk-culture_zone-varadvinayak",
@@ -1237,7 +1237,7 @@
       "temple",
       "join VR"
     ],
-    "content": "Varadvinayak is a significant temple featured on the Decentrawood platform, where users can join and experience it in VR."
+    "content": "Varadvinayak is a virtual temple on the Decentrawood platform that users can join and explore through VR. Users can experience its immersive virtual environment, explore the temple's digital architecture, and discover the representation of the Varadvinayak temple in Mahad, Maharashtra."
   },
   {
     "chunk_id": "chunk-culture_zone-vighnahar",
@@ -1253,7 +1253,7 @@
       "temple",
       "join VR"
     ],
-    "content": "Vighnahar is a revered temple featured on the Decentrawood platform, allowing users to join and explore it in virtual reality."
+    "content": "Vighnahar (Vighneshwar) is a virtual temple featured on the Decentrawood platform, where users can join and explore its digital environment through VR. It represents the Vighneshwar temple in Ozar, Maharashtra, one of the eight Ashtavinayak temples, allowing users to experience its virtual architecture and surroundings."
   },
   {
     "chunk_id": "chunk-culture_zone-mahaganapati",
@@ -1269,7 +1269,7 @@
       "temple",
       "join VR"
     ],
-    "content": "Mahaganapati is a significant temple featured on the Decentrawood platform, where users can join and experience it in VR."
+    "content": "Mahaganapati is a virtual temple on Decentrawood where users can enter and explore a digital representation of the Mahaganapati temple through VR. Users can experience the temple's virtual environment and explore its architecture and surroundings in an immersive way."
   },
   {
     "chunk_id": "chunk-culture_zone-moreshwar",
@@ -1285,7 +1285,7 @@
       "temple",
       "join VR"
     ],
-    "content": "Moreshwar is a revered temple featured on the Decentrawood platform, allowing users to join and explore it in virtual reality."
+    "content": "Moreshwar (Mayureshwar) is a virtual temple available on the Decentrawood platform, where users can join and explore the temple in an immersive VR experience. It represents the Moreshwar temple in Morgaon, Maharashtra, one of the eight Ashtavinayak temples."
   },
   {
     "chunk_id": "chunk-culture_zone-siddhivinayak",
@@ -1301,7 +1301,7 @@
       "temple",
       "join VR"
     ],
-    "content": "Siddhivinayak is a significant temple featured on the Decentrawood platform, where users can join and experience it in VR."
+    "content": "Siddhivinayak is a virtual temple featured on the Decentrawood platform that users can explore through VR. It represents the Siddhivinayak temple at Siddhatek, Maharashtra, one of the eight temples in the Ashtavinayak circuit."
   },
   {
     "chunk_id": "chunk-glamour_zone-burj-khalifa",
@@ -1318,7 +1318,7 @@
       "join Burj Khalifa",
       "VR experience"
     ],
-    "content": "Burj Khalifa is one of the virtual spaces available on Decentrawood Glamour. Users can join this space through various platforms including VR."
+    "content": "Burj Khalifa is a virtual space available in the Decentrawood Glamour Zone. Users can access and explore this virtual experience through supported platforms, including VR. The space brings the iconic Burj Khalifa landmark into Decentrawood's virtual environment, allowing users to experience a digital representation of one of the world's most recognisable architectural landmarks."
   },
   {
     "chunk_id": "chunk-glamour_zone-cupid-hub",
@@ -1335,7 +1335,7 @@
       "join Cupid Hub",
       "VR experience"
     ],
-    "content": "Cupid Hub is a virtual space offered by Decentrawood Glamour, accessible on multiple platforms including VR. It provides a unique environment for users to interact."
+    "content": "Cupid Hub is a virtual space offered by Decentrawood Glamour, accessible on multiple platforms including VR. It provides a unique environment for users to interact. Cupid Hub is named after Cupid, the Roman god of desire, affection, and romantic love (often depicted with a bow and arrow). As a venue concept, the name signals a space built around romance, matchmaking, and social/dating connection — consistent with its site description as 'The Social Soul of Decentrawood' and its framing in blog content as a Web3 Valentine's-style experience."
   },
   {
     "chunk_id": "chunk-glamour_zone-marriage-hall",
@@ -1352,7 +1352,7 @@
       "join Marriage Hall",
       "VR experience"
     ],
-    "content": "Marriage Hall is another virtual space in Decentrawood Glamour where users can engage in social activities. It is available on various platforms including VR."
+    "content": "Marriage Hall is another virtual space in Decentrawood Glamour where users can engage in social activities. It is available on various platforms including VR. A marriage hall (banquet/wedding hall) is a real-world venue type used for hosting wedding ceremonies and receptions, typically featuring large event spaces for guests, décor, and celebration. As a Glamour Zone venue, it represents this social/celebratory function within the Decentrawood metaverse."
   },
   {
     "chunk_id": "chunk-glamour_zone-celebrity-palace",
@@ -1369,7 +1369,7 @@
       "join Celebrity Palace",
       "VR experience"
     ],
-    "content": "Celebrity Palace is a virtual space within Decentrawood Glamour, allowing users to join and interact in a unique setting. It is accessible on multiple platforms."
+    "content": "Celebrity Palace is a virtual space within Decentrawood Glamour, allowing users to join and interact in a unique setting. It is accessible on multiple platforms. 'Celebrity Palace' evokes the idea of a palace-style venue associated with fame, luxury, and red-carpet-style events — a common theming choice in entertainment/metaverse platforms to signal glamour, exclusivity, and star-studded social gatherings."
   },
   {
     "chunk_id": "chunk-glamour_zone-dwood-shop",
@@ -1386,7 +1386,7 @@
       "join Dwood Shop",
       "VR experience"
     ],
-    "content": "Dwood Shop is a virtual shopping space available in Decentrawood Glamour, where users can join and explore various offerings. It supports multiple platforms including VR."
+    "content": "Dwood Shop is a virtual shopping space available in Decentrawood Glamour, where users can join and explore various offerings. It supports multiple platforms including VR. Dwood Shop is Decentrawood's own branded store within the Glamour Zone — 'Dwood' being shorthand for Decentrawood. It represents the platform's in-world retail/merchandise experience, distinct from the Culture Zone's separate temple-items store."
   },
   {
     "chunk_id": "chunk-glamour_zone-gold-souk",
@@ -1403,7 +1403,7 @@
       "join Gold Souk",
       "VR experience"
     ],
-    "content": "Gold Souk is a virtual marketplace in Decentrawood Glamour, providing users with a unique shopping experience. It is accessible on various platforms including VR."
+    "content": "Gold Souk is a virtual marketplace in Decentrawood Glamour, providing users with a unique shopping experience. It is accessible on various platforms including VR. Gold Souk is based on the real Dubai Gold Souk in the Deira district — a historic open-air marketplace famous for its dense concentration of gold and jewellery traders, one of the largest gold markets in the world. As a Glamour Zone venue, it channels that same luxury-marketplace atmosphere."
   },
   {
     "chunk_id": "chunk-glamour_zone-restaurant",
@@ -1420,7 +1420,7 @@
       "join Restaurant",
       "VR experience"
     ],
-    "content": "The Restaurant is a virtual dining space in Decentrawood Glamour, where users can join and enjoy a unique culinary experience. It is available on multiple platforms."
+    "content": "The Restaurant is a virtual dining space in Decentrawood Glamour, where users can join and enjoy a unique culinary experience. It is available on multiple platforms. A restaurant venue, in general, is a dining/social space. Within the Glamour Zone, it represents Decentrawood's virtual dining/social hangout experience, fitting alongside the zone's other lifestyle and luxury-themed venues."
   },
   {
     "chunk_id": "chunk-glamour_zone-villa",
@@ -1437,7 +1437,7 @@
       "join Villa",
       "VR experience"
     ],
-    "content": "Villa is a virtual living space offered by Decentrawood Glamour, allowing users to join and explore a unique environment. It is accessible on various platforms including VR."
+    "content": "Villa is a virtual living space offered by Decentrawood Glamour, allowing users to join and explore a unique environment. It is accessible on various platforms including VR. A villa is a real-world venue type — a large, upscale private residence, typically associated with luxury living, privacy, and high-end lifestyle. Within the Glamour Zone, it represents Decentrawood's virtual luxury housing/private social space."
   },
   {
     "chunk_id": "chunk-glamour_zone-muse-of-erotica",
@@ -1454,6 +1454,301 @@
       "join Muse of Erotica",
       "VR experience"
     ],
-    "content": "Muse of Erotica is a unique virtual space in Decentrawood Glamour, where users can join and explore its offerings. It is available on multiple platforms including VR."
+    "content": "Muse of Erotica is a unique virtual space in Decentrawood Glamour, where users can join and explore its offerings. It is available on multiple platforms including VR. The name draws on the Muses of Greek mythology — goddesses believed to inspire art, literature, and creativity. 'Muse of Erotica' positions this as an artistic, adult-oriented (mature audience) venue within the Glamour Zone, themed around sensuality and romantic/artistic inspiration rather than any explicit content; treat it as an 18+ themed space when describing it to users."
+  },
+  {
+    "chunk_id": "chunk-gaming-bhairava-the-saviour",
+    "document_id": "doc-decentrawood-blog-bhairava",
+    "title": "Bhairava: The Saviour",
+    "section": "New Game Announcement",
+    "domain": "decentrawood.com",
+    "category": "gaming",
+    "url": "https://decentrawood.com/blog",
+    "route": "/blog",
+    "keywords": [
+      "Bhairava",
+      "Bhairava The Saviour",
+      "survival game",
+      "futuristic weapons",
+      "Kalki",
+      "new game",
+      "sci-fi shooter"
+    ],
+    "content": "Bhairava: The Saviour is a futuristic survival/shooter game exclusive to Decentrawood's gaming platform, introduced via a blog announcement (dated Mar 18, 2025). The lead character is inspired by the movie Kalki. Key features: advanced futuristic weapons (plasma rifles, energy cannons), full character customization (gender, outfits, weapon upgrades), dynamic AI enemies that adapt to player tactics, fast-paced sci-fi combat (faster-paced than typical tactical survival games), and high-fidelity futuristic environments with 360-degree immersive audio. Note: as of the latest crawl, Bhairava is announced/promoted via blog content but does not appear in the live 9-game list shown on gaming.decentrawood.com's homepage — treat it as a newer/separately-promoted title and verify current live status before telling users it is playable right now."
+  },
+  {
+    "chunk_id": "chunk-gaming-deod-hunt-2-genre-detail",
+    "document_id": "doc-decentrawood-blog-deodhunt2",
+    "title": "DEOD Hunt 2 — Web3 Shooter Positioning",
+    "section": "Game Genre Detail",
+    "domain": "decentrawood.com",
+    "category": "gaming",
+    "url": "https://decentrawood.com/blog",
+    "route": "/blog",
+    "keywords": [
+      "DEOD Hunt 2",
+      "Web3 shooter",
+      "genre",
+      "differences from DEOD Hunt 1"
+    ],
+    "content": "Blog coverage positions DEOD Hunt 2 specifically as a 'Web3 shooter game' — a new chapter distinct from the original DEOD Hunt in terms of gameplay speed and progression (50 levels vs 100, faster pacing, rewards concentrated at levels 25 & 50). Decentrawood's blog has run multiple explainer posts comparing DEOD Hunt 2 to DEOD Hunt 1 for players choosing between the two."
+  },
+  {
+    "chunk_id": "chunk-gaming-games-count-confirmed-current",
+    "document_id": "doc-gaming-home",
+    "title": "Decentrawood Gaming — Confirmed Current Game List",
+    "section": "Live Games (verified from gaming.decentrawood.com)",
+    "domain": "gaming.decentrawood.com",
+    "category": "gaming",
+    "url": "https://gaming.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "how many games",
+      "total games",
+      "games list",
+      "gaming platform",
+      "live games"
+    ],
+    "content": "As of the latest site check, the live Decentrawood Gaming Hub (gaming.decentrawood.com) still lists exactly 9 games, unchanged from before: DRC: Deod Racing Cartel, DEOD HUNT 2, DEOD HUNT, Mystical Maze, Match Mania, D-Nexus, Lord Of Space, Word Chain, and Flap Quest. A 10th title, Bhairava: The Saviour, is promoted separately via the Decentrawood blog as an exclusive survival/shooter game but does not currently appear in the homepage's live game carousel — its availability status should be treated as newer/promotional rather than confirmed-live. No numeric play-count, rating, or popularity ranking is publicly published on the website for any game. Per Decentrawood's internal team/analytics data (not publicly shown on the site), DEOD HUNT is the most popular game on the platform — see the dedicated popularity chunk for details and sourcing caveat."
+  },
+  {
+    "chunk_id": "chunk-culture-zone-full-list-confirmed",
+    "document_id": "doc-culture-zone",
+    "title": "Decentrawood Culture Zone — Full Confirmed List",
+    "section": "All Cultural Landmarks (22 total)",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "how many temples",
+      "temple count",
+      "culture zone list",
+      "22 landmarks",
+      "Ashtavinayak",
+      "Maha Kumbh",
+      "Red Fort",
+      "Ram temple",
+      "Jagannath",
+      "Tirupati",
+      "Prem Mandir",
+      "Mahakaleshwar",
+      "Saibaba",
+      "Golden temple",
+      "Palitana Jain temple"
+    ],
+    "content": "The Decentrawood Culture Zone currently features 22 cultural landmarks/experiences (count confirmed against the site's own entity data), unchanged in number from the previous crawl. Full current list: Maha Kumbh, Decentrawood Cha Raja, Dahi Handi, Red Fort, Ram Temple, Khatushyam Baba, Jagannath Temple, Tirupati Temple, Prem Mandir, Mahakaleshwar, Saibaba Temple (Shirdi), Church, Masjid, Golden Temple, Kamtanath, Palitana Jain Temple, Ballaleshwar, Varadvinayak, Vighnahar, Mahaganapati, Moreshwar, and Siddhivinayak. This mixes actual temples (including the full Ashtavinayak set: Vighnahar, Mahaganapati, Moreshwar, Ballaleshwar, Varadvinayak, Siddhivinayak, plus others like Mahakaleshwar and Tirupati), festival/event experiences (Maha Kumbh, Dahi Handi, Decentrawood Cha Raja), a historical monument (Red Fort), and other faiths' places of worship (Church, Masjid, Golden Temple). So if a user asks 'kitne temples hain', clarify that Culture Zone has 22 total cultural landmarks, of which the strict temple subset (Hindu temples specifically) is the larger portion; give the full breakdown on request rather than a single ambiguous number."
+  },
+  {
+    "chunk_id": "chunk-culture-zone-store-subset",
+    "document_id": "doc-culture-zone-store",
+    "title": "Culture Zone Store — Featured Temples & Pooja Items",
+    "section": "Store Filters",
+    "domain": "culture.decentrawood.com",
+    "category": "culture_zone",
+    "url": "https://culture.decentrawood.com/store",
+    "route": "/store",
+    "keywords": [
+      "culture store",
+      "temple filters",
+      "Ram Mandir",
+      "Tirupathi Balaji",
+      "Mahakaleshwar",
+      "Khatushyam",
+      "Moreshwar",
+      "Shirdi",
+      "Aarti Diya",
+      "Pushpa Thali",
+      "Ramlalla",
+      "pooja items"
+    ],
+    "content": "The Culture Zone's Store page (culture.decentrawood.com/store) offers a curated, filterable subset of 6 temples for browsing digital pooja/devotional items: Ram Mandir, Tirupathi Balaji Temple, Mahakaleshwar Temple, Khatushyam Temple, Moreshwar Temple, and Shirdi Temple. Purchasable in-store items include RamMandir Aarti-Diya, RamMandir Pushpa-Thali, Ramlalla (idol), Balroop, and Raghav — these are devotional/decorative NFT-style items tied to the temples rather than the temples themselves. This store list is a smaller curated set for shopping purposes, distinct from the full 22-landmark Culture Zone shown on the main culture.decentrawood.com homepage."
+  },
+  {
+    "chunk_id": "chunk-glamour-zone-platforms-confirmed",
+    "document_id": "doc-glamour-zone",
+    "title": "Decentrawood Glamour Zone — Per-Venue Platform Compatibility (Corrected)",
+    "section": "Venues and Platform Compatibility",
+    "domain": "glamour.decentrawood.com",
+    "category": "glamour_zone",
+    "url": "https://glamour.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "glamour zone platforms",
+      "Cupid Hub Android",
+      "per-venue platform",
+      "VR PC Mac",
+      "which venue supports Android",
+      "platform compatibility corrected"
+    ],
+    "content": "The Glamour Zone (glamour.decentrawood.com) lists exactly 9 virtual venues: Burj Khalifa, Cupid Hub, Marriage Hall, Celebrity Palace, Dwood Shop, Gold Souk, Restaurant, Villa, and Muse of Erotica. Platform compatibility is NOT uniform across venues (corrected from an earlier assumption) — verified directly from the site's per-card platform icons: 8 of the 9 venues (Burj Khalifa, Marriage Hall, Celebrity Palace, Dwood Shop, Gold Souk, Restaurant, Villa, Muse of Erotica) support Windows (PC), Mac/Apple, and VR only. Cupid Hub is the ONLY venue that additionally supports Android, making it the most widely cross-platform venue (Windows, Mac, VR, and Android). No venue currently shows an iOS-specific icon. Each venue's card shows both a 'Join' and a 'VR' button, with VR treated as a distinct quick-access mode alongside the general Join action."
+  },
+  {
+    "chunk_id": "chunk-cupid-hub-dedicated-detail",
+    "document_id": "doc-decentrawood-socialzone",
+    "title": "Cupid Hub — The Social Soul of Decentrawood",
+    "section": "Cupid Hub Deep Dive",
+    "domain": "decentrawood.com",
+    "category": "social_zone",
+    "url": "https://decentrawood.com/socialzone",
+    "route": "/socialzone",
+    "keywords": [
+      "Cupid Hub",
+      "social soul",
+      "dating metaverse",
+      "Valentine",
+      "avatars",
+      "virtual dating"
+    ],
+    "content": "Cupid Hub is highlighted on the Social Zone page as 'The Social Soul of Decentrawood' — a dedicated social/dating space blending metaverse avatars with romance and connection features. Blog coverage frames it as a Web3 Valentine's experience and virtual dating destination, distinct from being just one more Glamour Zone venue; it gets recurring blog features (e.g., 'Top 10 CupidHub Features', 'Inside CupidHub: The Web3 Valentine Experience') suggesting it's one of the platform's more actively promoted social experiences."
+  },
+  {
+    "chunk_id": "chunk-tunehub-trending-and-collections",
+    "document_id": "doc-decentrawood-tunehub-live",
+    "title": "TuneHub — Trending Tracks & Collections",
+    "section": "Live Music Platform Content",
+    "domain": "music.decentrawood.com",
+    "category": "decentrawood_overview",
+    "url": "https://music.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "TuneHub",
+      "trending tracks",
+      "Arijit Singh",
+      "Ed Sheeran",
+      "music collections",
+      "guest portal"
+    ],
+    "content": "TuneHub (music.decentrawood.com) is live with a Guest Portal for browsing without full login. Trending Now tracks currently featured include 'Tum Hi Ho' (Arijit Singh), 'Perfect' (Ed Sheeran), 'Raabta' (Arijit Singh), and 'All of Me' (John Legend). Browsable collections include Romantic Hindi, English Love Songs, Arijit Singh Hits, Ed Sheeran Collection, and Bollywood Romance. This confirms TuneHub functions as an active streaming/NFT music discovery platform with curated playlists, not just a placeholder page."
+  },
+  {
+    "chunk_id": "chunk-ai-platform-status-down",
+    "document_id": "doc-ai-platform-status",
+    "title": "AI Platform Link — Broken (ai.decentrawood.com) vs Correct (deod.ai)",
+    "section": "Known Issue",
+    "domain": "ai.decentrawood.com",
+    "category": "deod_ai",
+    "url": "https://ai.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "AI platform link",
+      "ai.decentrawood.com broken",
+      "deod.ai correct link",
+      "404 deployment error",
+      "navbar vs footer link mismatch"
+    ],
+    "content": "IMPORTANT STATUS NOTE: ai.decentrawood.com currently returns a 404 'DEPLOYMENT_NOT_FOUND' error. It has NOT been removed from the site's linking structure though — it's a partial/inconsistent migration. Verified from the live homepage (decentrawood.com): the TOP NAVIGATION BAR's 'DEOD.Ai' link already points to the correct, working domain https://deod.ai/. However, the HOMEPAGE HERO SECTION's AI card and the FOOTER's 'AI' link still point to the old, broken https://ai.decentrawood.com/. So depending on where a user clicks from, they may hit either the working deod.ai or the broken ai.decentrawood.com. When answering users about the AI platform, always give them https://deod.ai/ as the correct link, and mention that ai.decentrawood.com is currently broken if they ask about it specifically or report an error."
+  },
+  {
+    "chunk_id": "chunk-dao-proposal-system",
+    "document_id": "doc-decentrawood-dao-proposal",
+    "title": "DAO Proposal System — Categories & Live Activity",
+    "section": "Proposal Categories",
+    "domain": "decentrawood.com",
+    "category": "dao",
+    "url": "https://decentrawood.com/dao/submit",
+    "route": "/dao/submit",
+    "keywords": [
+      "submit proposal",
+      "proposal categories",
+      "Model Build",
+      "Point of Interest",
+      "Name Ban",
+      "Hiring",
+      "Grant Request",
+      "Poll",
+      "DAO governance"
+    ],
+    "content": "Decentrawood DAO members can submit proposals under 6 categories via decentrawood.com/dao/submit: (1) Model Build — add/remove a node to the decentralized network of community-run content servers; (2) Point of Interest — highlight a noteworthy Decentrawood location on the map; (3) Name Ban — ban an offensive username; (4) Hiring — request a community member be added/removed from a Committee (e.g., SAB Committee, DAO Committee); (5) Grant Request — request DAO funding for a project/contribution; (6) Poll — create a community poll to gather member opinions. The live proposals page (decentrawood.com/dao/proposal) showed 15 active/recent proposals in the latest crawl, including requests to add locations like Ram Mandir, Burj Khalifa, and newly-proposed points of interest such as 'Verdant Dreamscape' and 'Spiral Marvel' to the map, plus committee membership and name-ban votes."
+  },
+  {
+    "chunk_id": "chunk-ambassador-program",
+    "document_id": "doc-decentrawood-ambassador",
+    "title": "Decentrawood Ambassador Program",
+    "section": "Program Overview",
+    "domain": "decentrawood.com",
+    "category": "community",
+    "url": "https://decentrawood.com/ambassador",
+    "route": "/ambassador",
+    "keywords": [
+      "Ambassador Program",
+      "earn DEOD",
+      "30 ambassadors",
+      "apply",
+      "community role"
+    ],
+    "content": "Decentrawood runs an Ambassador Program (decentrawood.com/ambassador) for community members, creators, developers, marketers, gamers, and Web3 enthusiasts. The program selects 30 ambassadors to represent the ecosystem across communities, social platforms, events, and content. Benefits: earn $DEOD based on contribution/activity/consistency/impact, grow Web3 network, get recognition, access ecosystem opportunities, and build a portfolio. Ambassador responsibilities span 6 areas: Community (introduce Decentrawood to relevant Web3 communities), Content (create posts/threads/articles/videos/tutorials), Social Media (drive authentic engagement), Events & Campaigns (support community initiatives), Regional Growth (introduce Decentrawood in specific countries/regions), and Product & Ecosystem (communicate product features/updates to audiences). Process: Apply -> Selection (team reviews and picks 30 based on skills/activity/creativity) -> Onboarding -> Contribute -> Earn $DEOD."
+  },
+  {
+    "chunk_id": "chunk-recent-news-highlights-2026",
+    "document_id": "doc-decentrawood-news-recent",
+    "title": "Recent DEOD News & Announcements",
+    "section": "Latest Updates",
+    "domain": "decentrawood.com",
+    "category": "deod_token",
+    "url": "https://decentrawood.com/news",
+    "route": "/news",
+    "keywords": [
+      "DEOD news",
+      "CoinDCX listing",
+      "smart contract upgrade",
+      "DEOD giveaway",
+      "DEOD airdrop",
+      "recent announcements"
+    ],
+    "content": "Recent news/blog highlights found in the latest crawl: DEOD is now live on CoinDCX, described as one of Asia's top crypto exchanges (new exchange listing beyond the previously known MEXC, BitMart, Toobit, PancakeSwap, and WEEX). An official announcement covers a DEOD smart contract upgrade. Decentrawood launched an '800 DEOD giveaway' for decentralized wallet holders. There are also multiple 2026-dated blog posts on DEOD price outlook/predictions, DEOD airdrop tips, and DEOD's expanding token utility — these are time-sensitive marketing/analysis posts and should be treated as informational blog content rather than guaranteed financial outcomes; do not restate price predictions as facts."
+  },
+  {
+    "chunk_id": "chunk-governance-terms-pages-exist",
+    "document_id": "doc-decentrawood-legal-pages",
+    "title": "Governance & Terms and Conditions Pages",
+    "section": "Site Structure Note",
+    "domain": "decentrawood.com",
+    "category": "legal",
+    "url": "https://decentrawood.com/termscondition",
+    "route": "/termscondition",
+    "keywords": [
+      "governance page",
+      "terms and conditions",
+      "termscondition"
+    ],
+    "content": "Decentrawood.com has dedicated /governance and /termscondition routes in its navigation. As of the latest crawl these pages did not return readable content (they loaded with no headings/paragraphs, likely client-side-rendered content not captured by the crawler) — so their existence is confirmed but their detailed text content is not yet available in this knowledge base. Flag for a follow-up scrape with JS rendering/wait time if the full legal text is needed."
+  },
+  {
+    "chunk_id": "chunk-gaming-deod-hunt-most-popular",
+    "document_id": "doc-manual-knowledge-gaming",
+    "title": "DEOD HUNT — Most Popular Game (Internal Data)",
+    "section": "Game Popularity",
+    "domain": "gaming.decentrawood.com",
+    "category": "gaming",
+    "url": "https://gaming.decentrawood.com/",
+    "route": null,
+    "keywords": [
+      "most popular game",
+      "DEOD Hunt popularity",
+      "top game",
+      "best game",
+      "which game is popular"
+    ],
+    "content": "DEOD HUNT is the most popular game on the Decentrawood Gaming Hub, based on Decentrawood's internal team/analytics data. SOURCING NOTE: this is manually-supplied owner/internal knowledge, not a figure published publicly on gaming.decentrawood.com or anywhere else on the site (the live site shows no play-counts, ratings, or popularity rankings for any game). If a user asks which game is most popular, answer with DEOD HUNT, and it's fine to state this directly without needing to caveat the source in normal conversation."
+  },
+  {
+    "chunk_id": "chunk-decentrawood-contact-support",
+    "document_id": "doc-decentrawood-contact",
+    "title": "Decentrawood — Contact & Office Location",
+    "section": "Contact / Support",
+    "domain": "decentrawood.com",
+    "category": "contact",
+    "url": "https://decentrawood.com/",
+    "route": "/",
+    "keywords": [
+      "contact decentrawood",
+      "support email",
+      "office address",
+      "info@decentrawood.com",
+      "where is decentrawood located",
+      "customer support"
+    ],
+    "content": "For support or business inquiries, Decentrawood can be reached at info@decentrawood.com. Registered office address: Office 1205, Lodha Supremus, Powai, Saki Vihar Rd, Opposite MTNL Office, Tunga Village, Chandivali, Mumbai, Maharashtra 400072, India. Note: this is separate from the deod.ai contact details (deod.ai has its own dedicated contact chunk) — use this one for general Decentrawood platform queries."
   }
 ]

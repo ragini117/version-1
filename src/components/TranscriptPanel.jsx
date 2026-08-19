@@ -2,6 +2,8 @@
 
 import React, { useEffect, useRef } from "react";
 import { NavigationLinkCard } from "./NavigationLinkCard";
+import { FormattedMessageText } from "./FormattedMessageText";
+
 
 
 export const TranscriptPanel = ({ transcript }) => {
@@ -109,13 +111,20 @@ export const TranscriptPanel = ({ transcript }) => {
                   WebkitBackdropFilter: "blur(8px)"
                 }}
               >
-                {msg.text || (
+                {msg.text ? (
+                  <FormattedMessageText
+                    text={msg.text}
+                    navUrl={msg.navigation?.primary_route?.url}
+                    isUser={isUser}
+                  />
+                ) : (
                   <div style={{ display: "flex", gap: "4px", padding: "6px 0", alignItems: "center" }}>
                     <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#D4AF37", animation: "bounce 1.4s infinite" }}></span>
                     <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#D4AF37", animation: "bounce 1.4s infinite 0.2s" }}></span>
                     <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#D4AF37", animation: "bounce 1.4s infinite 0.4s" }}></span>
                   </div>
                 )}
+
                 {msg.navigation?.should_navigate === false && msg.navigation?.primary_route?.url && (
                   <NavigationLinkCard
                     route={msg.navigation.primary_route}

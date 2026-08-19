@@ -494,25 +494,6 @@
     "needs_review": false
   },
   {
-    "route_id": "ai_platform",
-    "title": "AI Platform",
-    "url": "https://ai.decentrawood.com/",
-    "route": "https://ai.decentrawood.com/",
-    "domain": "ai.decentrawood.com",
-    "type": "external_subdomain",
-    "description": "AI Platform — Decentrawood platform at ai.decentrawood.com.",
-    "aliases": [
-      "ai platform"
-    ],
-    "example_queries": [
-      "show me AI Platform",
-      "take me to AI Platform",
-      "where can I find AI Platform"
-    ],
-    "source_document_id": null,
-    "needs_review": true
-  },
-  {
     "route_id": "tunehub_music_platform",
     "title": "TuneHub — Music Platform",
     "url": "https://music.decentrawood.com/",
@@ -597,7 +578,7 @@
     "route": "https://deod.ai/",
     "domain": "deod.ai",
     "type": "external_platform",
-    "description": "DEOD AI is a Decentralized Ecosystem for creating, verifying, deploying, and monetizing autonomous AI agents at enterprise scale. Three core modules: Create Your Agent, Know Your Agent (KYA), Use Your Agent.",
+    "description": "DEOD AI is a Decentralized Ecosystem for creating, verifying, deploying, and monetizing autonomous AI agents at enterprise scale. Three core modules: Create Your Agent, Know Your Agent (KYA), Use Your Agent. NOTE: the old ai.decentrawood.com subdomain is broken (404) — deod.ai is the correct, current AI platform link; always route AI-related queries here.",
     "aliases": [
       "agent economy",
       "agent marketplace",
@@ -617,7 +598,8 @@
       "orchestration",
       "rag pipeline",
       "trust layer",
-      "use your agent"
+      "use your agent",
+      "ai platform"
     ],
     "example_queries": [
       "show me DEOD AI",
@@ -625,7 +607,8 @@
       "where can I find DEOD AI",
       "tell me about DEOD AI",
       "tell me about DEOD.AI",
-      "tell me about autonomous AI agents"
+      "tell me about autonomous AI agents",
+      "show me AI Platform"
     ],
     "source_document_id": "doc-deod-ai-home",
     "needs_review": false
@@ -1158,5 +1141,157 @@
     ],
     "source_document_id": null,
     "needs_review": true
+  },
+  {
+    "route_id": "ambassador_program",
+    "title": "Ambassador Program",
+    "url": "https://decentrawood.com/ambassador",
+    "route": "/ambassador",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "Decentrawood Ambassador Program — apply to become one of 30 ambassadors, earn DEOD for community, content, social media, events, regional growth, and product advocacy contributions.",
+    "aliases": [
+      "ambassador",
+      "ambassador program",
+      "become an ambassador",
+      "earn deod as ambassador"
+    ],
+    "example_queries": [
+      "show me the Ambassador Program",
+      "how do I become a Decentrawood ambassador",
+      "take me to Ambassador Program",
+      "how can I earn DEOD as an ambassador"
+    ],
+    "source_document_id": "doc-decentrawood-ambassador",
+    "needs_review": false,
+    "navigation": {
+      "auto_navigate": true,
+      "clickable_url": false
+    }
+  },
+  {
+    "route_id": "dao_proposals_list",
+    "title": "DAO — Proposals",
+    "url": "https://decentrawood.com/dao/proposal",
+    "route": "/dao/proposal",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "Live DAO proposals page — view active and past community proposals (points of interest, name bans, committee hiring, grant requests, polls, model builds) and their voting status.",
+    "aliases": [
+      "dao proposals",
+      "view proposals",
+      "active proposals",
+      "vote on proposals"
+    ],
+    "example_queries": [
+      "show me DAO proposals",
+      "what proposals are active",
+      "take me to DAO Proposals"
+    ],
+    "source_document_id": "doc-decentrawood-dao-proposal",
+    "needs_review": false,
+    "navigation": {
+      "auto_navigate": true,
+      "clickable_url": false
+    }
+  },
+  {
+    "route_id": "dao_submit_proposal",
+    "title": "DAO — Submit Proposal",
+    "url": "https://decentrawood.com/dao/submit",
+    "route": "/dao/submit",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "Submit a new DAO proposal under one of 6 categories: Model Build, Point of Interest, Name Ban, Hiring, Grant Request, or Poll.",
+    "aliases": [
+      "submit proposal",
+      "create proposal",
+      "submit dao proposal",
+      "new proposal"
+    ],
+    "example_queries": [
+      "how do I submit a DAO proposal",
+      "take me to Submit Proposal",
+      "I want to create a proposal"
+    ],
+    "source_document_id": "doc-decentrawood-dao-proposal",
+    "needs_review": false,
+    "navigation": {
+      "auto_navigate": true,
+      "clickable_url": false
+    }
+  },
+  {
+    "route_id": "governance",
+    "title": "Governance",
+    "url": "https://decentrawood.com/dao",
+    "route": "/dao",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "Governance page — currently an alias/footer link that points to the same content as the DAO Overview page (decentrawood.com/dao).",
+    "aliases": [
+      "governance",
+      "dao governance"
+    ],
+    "example_queries": [
+      "show me Governance",
+      "take me to Governance"
+    ],
+    "source_document_id": "doc-decentrawood-dao",
+    "needs_review": true,
+    "navigation": {
+      "auto_navigate": true,
+      "clickable_url": false
+    }
+  },
+  {
+    "route_id": "terms_and_conditions",
+    "title": "Terms & Conditions",
+    "url": "https://decentrawood.com/termscondition",
+    "route": "/termscondition",
+    "domain": "decentrawood.com",
+    "type": "internal",
+    "description": "Terms & Conditions page. NOTE: page content did not render in the last crawl (likely client-side rendered) — route exists and is linkable, but detailed legal text is not yet in the knowledge base.",
+    "aliases": [
+      "terms and conditions",
+      "terms of service",
+      "legal terms"
+    ],
+    "example_queries": [
+      "show me Terms and Conditions",
+      "where can I read the terms of service"
+    ],
+    "source_document_id": null,
+    "needs_review": true,
+    "navigation": {
+      "auto_navigate": true,
+      "clickable_url": false
+    }
+  },
+  {
+    "route_id": "culture_zone_store",
+    "title": "Culture Zone — Store",
+    "url": "https://culture.decentrawood.com/store",
+    "route": "/store",
+    "domain": "culture.decentrawood.com",
+    "type": "external_subdomain",
+    "description": "Culture Zone store — buy devotional/pooja items (Aarti-Diya, Pushpa-Thali, Ramlalla, Balroop, Raghav) tied to a curated 6-temple subset (Ram Mandir, Tirupathi Balaji, Mahakaleshwar, Khatushyam, Moreshwar, Shirdi).",
+    "aliases": [
+      "culture store",
+      "buy pooja items",
+      "temple store",
+      "aarti diya"
+    ],
+    "example_queries": [
+      "show me the Culture Zone store",
+      "where can I buy pooja items",
+      "take me to the temple store"
+    ],
+    "source_document_id": "doc-culture-zone-store",
+    "needs_review": false,
+    "navigation": {
+      "auto_navigate": false,
+      "clickable_url": true
+    }
   }
 ]

@@ -46,7 +46,7 @@ const handleUserQuery = useCallback(
           speak(fullText);
         }
       },
-      { isVoiceInput: true }   // <-- YEH NAYA THIRD ARGUMENT HAI
+      { isVoiceInput: true }
     );
   },
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -67,7 +67,11 @@ const handleUserQuery = useCallback(
     startListening,
     stopListening,
     error: speechError
-  } = useSpeechRecognition(handleSpeechResult);
+  } = useSpeechRecognition(handleSpeechResult, {
+    continuous: true,
+    silenceTimeoutMs: 3500,
+    submitOnSpeechFinal: false,
+  });
 
   // Clean up Speech on unmount
   useEffect(() => {

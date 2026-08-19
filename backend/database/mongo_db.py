@@ -16,6 +16,7 @@ def get_db():
     # Try creating indexes but ignore failures if DB is offline/readonly
     try:
         db["chat_history"].create_index([("session_id", ASCENDING), ("timestamp", ASCENDING)])
+        db["chat_history"].create_index([("expires_at", ASCENDING)], expireAfterSeconds=0)
         db["session_tokens"].create_index([("token", ASCENDING)], unique=True)
         db["session_tokens"].create_index([("expires_at", ASCENDING)])
     except Exception:
@@ -34,6 +35,9 @@ def get_tokens_collection():
 def save_chat_message(session_id, user_message, assistant_response, intent=None, navigation_route=None, decision=None, navigation=None, confidence=1.0):
     try:
         collection = get_chat_collection()
+        now = datetime.datetime.utcnow()
+        expires_at = now + datetime.timedelta(hours=1)
+        
         result = collection.insert_one(
             {
                 "session_id": session_id,
@@ -44,9 +48,17 @@ def save_chat_message(session_id, user_message, assistant_response, intent=None,
                 "decision": decision,
                 "navigation": navigation,
                 "confidence": confidence,
-                "timestamp": datetime.datetime.utcnow(),
+                "timestamp": now,
+                "expires_at": expires_at,
             }
         )
+        
+        # Update expires_at for all previous messages in this session
+        collection.update_many(
+            {"session_id": session_id},
+            {"$set": {"expires_at": expires_at}}
+        )
+        
         return str(result.inserted_id)
     except Exception:
         return None

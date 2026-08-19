@@ -10,11 +10,31 @@ def make_navigation_decision(
     nav_threshold: float = NAVIGATION_THRESHOLD,
     margin_threshold: float = NAVIGATION_MARGIN,
     rag_docs: List[Dict[str, Any]] = None,
+    voice_mode: bool = False,
 ) -> Dict[str, Any]:
-    """
-    Evaluates answer_score and semantic route similarity scores to produce decision and navigation objects.
-    Enforces strict thresholding with cross-validation for destination resolution.
-    """
+
+    # ---------------------------------------------------------
+    # 1. VOICE MODE = NEVER NAVIGATE
+    # ---------------------------------------------------------
+    if voice_mode:
+        return {
+            "decision": {
+                "type": "ANSWER",
+                "answer_required": True,
+                "navigation_required": False,
+            },
+            "navigation": {
+                "should_navigate": False,
+                "primary_route": None,
+                "related_routes": [],
+                "type": "none",
+                "route": None,
+            },
+        }
+
+    # ---------------------------------------------------------
+    # 2. NO NAVIGATION CANDIDATES = NO NAVIGATION
+    # ---------------------------------------------------------
     if not nav_routes:
         return {
             "decision": {
@@ -26,53 +46,152 @@ def make_navigation_decision(
                 "should_navigate": False,
                 "primary_route": None,
                 "related_routes": [],
+                "type": "none",
+                "route": None,
             },
         }
 
-    effective_top = nav_routes[0]
-    other_routes = nav_routes[1:]
+    # ---------------------------------------------------------
+    # 3. GET URLS ACTUALLY PRESENT IN RAG RESULTS
+    #    Normalize by stripping trailing slashes so https://deod.ai/
+    #    matches a route with url https://deod.ai
+    # ---------------------------------------------------------
+    answer_urls = {
+        doc.get("metadata", {}).get("url", "").rstrip("/")
+        for doc in (rag_docs or [])
+        if doc.get("metadata", {}).get("url")
+    }
+
+    # ---------------------------------------------------------
+    # 4. ONLY ACCEPT ROUTES WHOSE URL EXISTS IN RAG RESULTS
+    #    Exception 1: External routes rely purely on semantic score.
+    #    Exception 2: Internal routes with highly confident semantic 
+    #                 match (score >= 0.60) bypass RAG requirement.
+    # ---------------------------------------------------------
+    matched_routes = [
+        route
+        for route in nav_routes
+        if (
+            route.get("url", "").rstrip("/") in answer_urls 
+            or route.get("type", "internal") != "internal"
+            or route.get("score", 0.0) >= 0.60
+        )
+    ]
+
+    if not matched_routes:
+        answer_req = answer_score >= answer_threshold
+
+        return {
+            "decision": {
+                "type": "ANSWER",
+                "answer_required": answer_req or True,
+                "navigation_required": False,
+            },
+            "navigation": {
+                "should_navigate": False,
+                "primary_route": None,
+                "related_routes": [],
+                "type": "none",
+                "route": None,
+            },
+        }
+
+    # ---------------------------------------------------------
+    # 5. SELECT BEST MATCH ONLY FROM VALID RAG-MATCHED ROUTES
+    # ---------------------------------------------------------
+    effective_top = max(
+        matched_routes,
+        key=lambda route: route.get("score", 0.0)
+    )
+
+    # ---------------------------------------------------------
+    # 6. OTHER VALID MATCHED ROUTES
+    # ---------------------------------------------------------
+    other_routes = [
+        route
+        for route in matched_routes
+        if route is not effective_top
+    ]
 
     nav_top_score = effective_top.get("score", 0.0)
-    nav_second_score = other_routes[0].get("score", 0.0) if other_routes else 0.0
+
+    nav_second_score = (
+        other_routes[0].get("score", 0.0)
+        if other_routes
+        else 0.0
+    )
+
     margin = nav_top_score - nav_second_score
 
-    # Check if navigation confidence is sufficient and not ambiguous (sufficient margin)
-    route_reliable = (nav_top_score >= nav_threshold) and (margin >= margin_threshold)
+    # ---------------------------------------------------------
+    # 7. ROUTE CONFIDENCE
+    #
+    # External routes (open in new tab, no auto-navigation) do NOT
+    # require a wide margin — the tight margin guard exists to prevent
+    # confidently navigating the user to the WRONG internal page.
+    # For external routes the worst case is showing a slightly-less-
+    # relevant link card, which is far less disruptive.
+    # ---------------------------------------------------------
+    is_effective_external = (
+        effective_top.get("type", "internal") != "internal"
+    )
 
-    # Destination Resolution: Cross-validate with RAG answers
-    if not route_reliable and effective_top.get("url"):
-        answer_urls = {doc.get("metadata", {}).get("url") for doc in (rag_docs or []) if doc.get("metadata", {}).get("url")}
-        if effective_top.get("url") in answer_urls:
-            route_reliable = True
+    if is_effective_external:
+        # External routes: only require minimum score threshold, no margin gate
+        route_reliable = nav_top_score >= nav_threshold
+    else:
+        # Internal routes: require both score AND clear margin over runner-up
+        route_reliable = (
+            nav_top_score >= nav_threshold
+            and margin >= margin_threshold
+        )
 
     if not route_reliable:
         effective_top = None
 
+    # ---------------------------------------------------------
+    # 8. ANSWER DECISION
+    # ---------------------------------------------------------
     answer_req = answer_score >= answer_threshold
-    
+
     if effective_top:
-        is_internal_route = (effective_top.get("type") == "internal")
+
+        is_internal_route = (
+            effective_top.get("type") == "internal"
+        )
+
+        # Only internal routes auto-navigate.
         should_nav = is_internal_route
         nav_req = True
+
     else:
+
         is_internal_route = False
         should_nav = False
         nav_req = False
 
+    # ---------------------------------------------------------
+    # 9. DECISION TYPE
+    # ---------------------------------------------------------
     if answer_req and nav_req:
         decision_type = "BOTH"
+
     elif answer_req:
         decision_type = "ANSWER"
+
     elif nav_req:
-        decision_type = "BOTH"  # If navigating without a good answer, still return BOTH to let frontend handle it
+        decision_type = "BOTH"
         answer_req = False
+
     else:
-        # Neither a good answer nor a good route, but we still need to tell the LLM to try its best (Tier 2)
         decision_type = "ANSWER"
         answer_req = True
         nav_req = False
         should_nav = False
 
+    # ---------------------------------------------------------
+    # 10. PRIMARY ROUTE
+    # ---------------------------------------------------------
     primary_route = (
         {
             "route_id": effective_top.get("route_id"),
@@ -87,20 +206,31 @@ def make_navigation_decision(
         else None
     )
 
+    # ---------------------------------------------------------
+    # 11. RELATED ROUTES
+    #
+    # IMPORTANT:
+    # Only show routes that are ALSO matched against RAG URLs.
+    # ---------------------------------------------------------
     related_routes = [
         {
-            "route_id": r.get("route_id"),
-            "url": r.get("url"),
-            "route": r.get("route"),
-            "label": r.get("title"),
-            "type": r.get("type", "internal"),
-            "domain": r.get("domain"),
-            "confidence": round(r.get("score", 0.0), 4),
+            "route_id": route.get("route_id"),
+            "url": route.get("url"),
+            "route": route.get("route"),
+            "label": route.get("title"),
+            "type": route.get("type", "internal"),
+            "domain": route.get("domain"),
+            "confidence": round(
+                route.get("score", 0.0), 4
+            ),
         }
-        for r in other_routes
-        if r.get("score", 0.0) >= nav_threshold * 0.5
+        for route in other_routes
+        if route.get("score", 0.0) >= nav_threshold * 0.5
     ]
 
+    # ---------------------------------------------------------
+    # 12. FINAL RESPONSE
+    # ---------------------------------------------------------
     return {
         "decision": {
             "type": decision_type,
@@ -108,8 +238,16 @@ def make_navigation_decision(
             "navigation_required": nav_req,
         },
         "navigation": {
-            "type": "internal" if (should_nav and is_internal_route) else "external",
-            "route": effective_top.get("route") if (should_nav and is_internal_route) else None,
+            "type": (
+                "internal"
+                if should_nav and is_internal_route
+                else "none"
+            ),
+            "route": (
+                effective_top.get("route")
+                if should_nav and is_internal_route
+                else None
+            ),
             "should_navigate": should_nav,
             "primary_route": primary_route,
             "related_routes": related_routes,

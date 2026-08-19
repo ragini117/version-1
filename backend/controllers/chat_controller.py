@@ -10,16 +10,25 @@ from pydantic import BaseModel
 from config import JWT_SECRET, ROUTES_ENRICHED_PATH
 from orchestrator.chat_orchestrator import ChatOrchestrator
 from services.stream_service import StreamService
+from voice.exceptions import EmptyTranscriptError
+from voice.schemas import VoiceRequest
+from voice.service import VoiceService
+from voice.streaming import VoiceStreamService
 
 router = APIRouter()
 stream_service = StreamService()
+voice_stream_service = VoiceStreamService(stream_service)
 
 class ChatRequest(BaseModel):
     text: str
     stream: bool = False
+    voice_mode: bool = False
 
 def _get_orchestrator(request: Request) -> ChatOrchestrator:
     return request.app.state.chat_orchestrator
+
+def _get_voice_service(request: Request) -> VoiceService:
+    return VoiceService(_get_orchestrator(request))
 
 def _bearer_token(request: Request) -> str | None:
     auth_header = request.headers.get("Authorization")
@@ -46,7 +55,11 @@ async def _handle_chat(request: Request, body: ChatRequest, force_stream: bool =
         return JSONResponse({"error": "Empty message"}, status_code=400)
 
     token = _bearer_token(request)
-    result = await orchestrator.handle_message(user_message, token=token)
+    result = await orchestrator.handle_message(
+        user_message,
+        token=token,
+        voice_mode=body.voice_mode,
+    )
 
     wants_stream = force_stream or request.headers.get("Accept") == "text/event-stream" or body.stream
     if wants_stream:
@@ -57,13 +70,17 @@ async def _handle_chat(request: Request, body: ChatRequest, force_stream: bool =
             "sources": result["sources"],
             "decision": result.get("decision"),
             "navigation": result.get("navigation"),
+            "voice_mode": result.get("voice_mode", body.voice_mode),
         }
         if result.get("navigate_to"):
             metadata["navigate_to"] = result["navigate_to"]
-        return StreamingResponse(
-            stream_service.stream_result(metadata, result["response_text"]),
-            media_type="text/event-stream",
+
+        stream_generator = (
+            voice_stream_service.stream_voice_result(metadata, result["response_text"])
+            if body.voice_mode
+            else stream_service.stream_result(metadata, result["response_text"])
         )
+        return StreamingResponse(stream_generator, media_type="text/event-stream")
 
     response_data = {
         "response": result["response_text"],
@@ -73,6 +90,7 @@ async def _handle_chat(request: Request, body: ChatRequest, force_stream: bool =
         "sources": result["sources"],
         "decision": result.get("decision"),
         "navigation": result.get("navigation"),
+        "voice_mode": result.get("voice_mode", body.voice_mode),
         "timings": result.get("timings", {}),
     }
     if result.get("navigate_to"):
@@ -87,6 +105,51 @@ async def chat(request: Request, body: ChatRequest):
 @router.post("/stream")
 async def stream_chat(request: Request, body: ChatRequest):
     return await _handle_chat(request, body, force_stream=True)
+
+@router.post("/voice")
+async def voice_chat(request: Request, body: VoiceRequest):
+    """Dedicated voice endpoint — always runs with voice_mode enabled."""
+    voice_service = _get_voice_service(request)
+    user_message = body.text.strip()
+    if not user_message:
+        return JSONResponse({"error": "Empty transcript"}, status_code=400)
+
+    token = _bearer_token(request)
+    try:
+        result = await voice_service.handle_transcript(user_message, token=token)
+    except EmptyTranscriptError as exc:
+        return JSONResponse({"error": str(exc)}, status_code=400)
+
+    wants_stream = request.headers.get("Accept") == "text/event-stream" or body.stream
+    if wants_stream:
+        metadata = {
+            "type": "metadata",
+            "intent": result["intent"],
+            "token": result["token"],
+            "sources": result["sources"],
+            "decision": result.get("decision"),
+            "navigation": result.get("navigation"),
+            "voice_mode": True,
+        }
+        return StreamingResponse(
+            voice_stream_service.stream_voice_result(metadata, result["response_text"]),
+            media_type="text/event-stream",
+        )
+
+    return JSONResponse(
+        {
+            "response": result["response_text"],
+            "intent": result["intent"],
+            "session_id": result["session_id"],
+            "token": result["token"],
+            "sources": result["sources"],
+            "decision": result.get("decision"),
+            "navigation": result.get("navigation"),
+            "voice_mode": True,
+            "timings": result.get("timings", {}),
+        },
+        status_code=200,
+    )
 
 @router.get("/chat/history")
 async def chat_history(request: Request):

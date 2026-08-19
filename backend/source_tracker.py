@@ -1,28 +1,34 @@
 """
-source_tracker.py — Source tracking & structured logging for Decentrawood AI backend.
+source_tracker.py — Source tracking & structured logging
+for Decentrawood AI backend.
 """
 
 import logging
 import sys
 from datetime import datetime
 
+
 logger = logging.getLogger("source_tracker")
 logger.setLevel(logging.INFO)
 logger.propagate = False
 
+
 if not logger.handlers:
     handler = logging.StreamHandler(sys.stdout)
     handler.setLevel(logging.INFO)
+
     handler.setFormatter(
         logging.Formatter(
             fmt="%(asctime)s | %(levelname)s | %(message)s",
             datefmt="%Y-%m-%d %H:%M:%S",
         )
     )
+
     logger.addHandler(handler)
 
 
 class QuerySourceTracker:
+
     def __init__(self, query: str):
         self.query = query
         self.sources_used = []
@@ -37,48 +43,135 @@ class QuerySourceTracker:
     def set_final_source(self, source: str):
         self.final_source = source
 
-    def log_cache_hit(self, intent: str, response_preview: str):
+    # =========================================================
+    # TEMP DEBUG - DELETE AFTER ROUTE TESTING
+    # This logs ALL routes returned by the navigation Qdrant DB.
+    # =========================================================
+    def log_route_candidates(self, routes):
+        routes = routes or []
+
+        logger.info(
+            "[ROUTE CANDIDATES] count=%d",
+            len(routes)
+        )
+
+        for i, route in enumerate(routes, 1):
+            logger.info(
+                "[ROUTE %d] "
+                "title=%r | "
+                "url=%r | "
+                "type=%r | "
+                "domain=%r | "
+                "score=%.4f",
+                i,
+                route.get("title"),
+                route.get("url"),
+                route.get("type"),
+                route.get("domain"),
+                route.get("score", 0.0),
+            )
+
+    # =========================================================
+    # END TEMP DEBUG
+    # =========================================================
+
+    def log_cache_hit(
+        self,
+        intent: str,
+        response_preview: str
+    ):
         preview = (
             response_preview[:80] + "..."
             if len(response_preview) > 80
             else response_preview
         )
-        logger.info(f'[CACHE] HIT - intent="{intent}"')
+
+        logger.info(
+            f'[CACHE] HIT - intent="{intent}"'
+        )
+
         self.sources_used.append("Redis Cache")
         self.set_final_source("Redis Cache")
 
     def log_cache_miss(self):
         logger.info("[CACHE] MISS")
 
-    def log_intent(self, intent: str, confidence: float, needs_live_data: bool):
+    def log_intent(
+        self,
+        intent: str,
+        confidence: float,
+        needs_live_data: bool
+    ):
         logger.info(
-            f'[INTENT] detected="{intent}" | confidence={confidence:.2f} | needs_live_data={needs_live_data}'
+            f'[INTENT] detected="{intent}" | '
+            f'confidence={confidence:.2f} | '
+            f'needs_live_data={needs_live_data}'
         )
-        self.sources_used.append("GPT-4o Intent Detection")
+
+        self.sources_used.append(
+            "GPT-4o Intent Detection"
+        )
 
     def log_external_agent(self, query: str):
-        logger.info(f'[EXTERNAL] "{query}"')
-        self.sources_used.append("External Agent (DuckDuckGo)")
+        logger.info(
+            f'[EXTERNAL] "{query}"'
+        )
 
-    def log_external_agent_result(self, response_preview: str):
+        self.sources_used.append(
+            "External Agent (DuckDuckGo)"
+        )
+
+    def log_external_agent_result(
+        self,
+        response_preview: str
+    ):
         preview = (
             response_preview[:100] + "..."
             if len(response_preview) > 100
             else response_preview
         )
-        logger.info(f'[EXTERNAL] "{preview}"')
+
+        logger.info(
+            f'[EXTERNAL] "{preview}"'
+        )
 
     def log_rag(self, docs):
+
         if docs:
-            logger.info(f"[RAG] retrieved {len(docs)} chunks")
-            self.sources_used.append(f"Qdrant RAG ({len(docs)} chunks)")
+
+            logger.info(
+                f"[RAG] retrieved {len(docs)} chunks"
+            )
+
+            self.sources_used.append(
+                f"Qdrant RAG ({len(docs)} chunks)"
+            )
+
             for i, doc in enumerate(docs):
+
                 meta = doc.metadata or {}
-                url = meta.get("url") or "No URL"
-                domain = meta.get("domain") or "No Domain"
-                logger.info(f"  -> Chunk {i+1}: URL={url} (Domain={domain})")
+
+                url = (
+                    meta.get("url")
+                    or "No URL"
+                )
+
+                domain = (
+                    meta.get("domain")
+                    or "No Domain"
+                )
+
+                logger.info(
+                    f"  -> Chunk {i + 1}: "
+                    f"URL={url} "
+                    f"(Domain={domain})"
+                )
+
         else:
-            logger.info("[RAG] no relevant chunks found")
+
+            logger.info(
+                "[RAG] no relevant chunks found"
+            )
 
     def log_llm(
         self,
@@ -87,12 +180,22 @@ class QuerySourceTracker:
         history_count: int = 0,
     ):
         logger.info(
-            f"[LLM] {model} | context={context_length} chars | history={history_count}"
+            f"[LLM] {model} | "
+            f"context={context_length} chars | "
+            f"history={history_count}"
         )
-        self.sources_used.append(f"OpenAI {model}")
 
-    def log_llm_stream_complete(self, response_length: int):
-        logger.info(f"[LLM] response={response_length} chars")
+        self.sources_used.append(
+            f"OpenAI {model}"
+        )
+
+    def log_llm_stream_complete(
+        self,
+        response_length: int
+    ):
+        logger.info(
+            f"[LLM] response={response_length} chars"
+        )
 
     def log_navigation(
         self,
@@ -106,54 +209,128 @@ class QuerySourceTracker:
         should_navigate: bool = False,
         reason: str = None,
     ):
+
         if url:
+
             self.navigation_url = url
-    
-            logger.info("[NAVIGATION DECISION]")
-            logger.info(f'[NAV] Query: "{self.query}"')
-            logger.info(f'[NAV] Intent: "{intent}"')
-            logger.info(f"[NAV] Route: {route or 'unknown'}")
-            logger.info(f"[NAV] URL: {url}")
-            logger.info(f"[NAV] Type: {route_type or 'unknown'}")
-            logger.info(f"[NAV] Domain: {domain or 'unknown'}")
-    
+
+            logger.info(
+                "[NAVIGATION DECISION]"
+            )
+
+            logger.info(
+                f'[NAV] Query: "{self.query}"'
+            )
+
+            logger.info(
+                f'[NAV] Intent: "{intent}"'
+            )
+
+            logger.info(
+                f"[NAV] Route: "
+                f"{route or 'unknown'}"
+            )
+
+            logger.info(
+                f"[NAV] URL: {url}"
+            )
+
+            logger.info(
+                f"[NAV] Type: "
+                f"{route_type or 'unknown'}"
+            )
+
+            logger.info(
+                f"[NAV] Domain: "
+                f"{domain or 'unknown'}"
+            )
+
             if score is not None:
-                logger.info(f"[NAV] Score: {score:.4f}")
-    
-            logger.info(f"[NAV] Should Navigate: {should_navigate}")
-            logger.info(f"[NAV] Reason: {reason or 'not specified'}")
-    
+                logger.info(
+                    f"[NAV] Score: {score:.4f}"
+                )
+
+            logger.info(
+                f"[NAV] Should Navigate: "
+                f"{should_navigate}"
+            )
+
+            logger.info(
+                f"[NAV] Reason: "
+                f"{reason or 'not specified'}"
+            )
+
             if source:
-                logger.info(f"[NAV] Source: {source}")
-    
+
+                logger.info(
+                    f"[NAV] Source: {source}"
+                )
+
             self.sources_used.append(
                 f"Navigation -> {url}"
-                + (f" ({source})" if source else "")
+                + (
+                    f" ({source})"
+                    if source
+                    else ""
+                )
             )
-    
+
         else:
-            logger.info("[NAVIGATION DECISION]")
-            logger.info("[NAV] No navigation")
-            logger.info(f'[NAV] Query: "{self.query}"')
-            logger.info(f'[NAV] Reason: {reason or "No matching route"}')
+
+            logger.info(
+                "[NAVIGATION DECISION]"
+            )
+
+            logger.info(
+                "[NAV] No navigation"
+            )
+
+            logger.info(
+                f'[NAV] Query: "{self.query}"'
+            )
+
+            logger.info(
+                f"[NAV] Reason: "
+                f"{reason or 'No matching route'}"
+            )
 
     def log_cache_stored(self, query: str):
-        logger.info(f'[CACHE] STORED "{query}"')
+        logger.info(
+            f'[CACHE] STORED "{query}"'
+        )
 
     def log_db_stored(self, session_id: str):
-        logger.info(f'[DB] Saved session="{session_id}"')
+        logger.info(
+            f'[DB] Saved session="{session_id}"'
+        )
 
-    def log_error(self, stage: str, error):
-        logger.error(f"[ERROR] {stage} -> {error}")
-        self.sources_used.append(f"ERROR@{stage}")
+    def log_error(
+        self,
+        stage: str,
+        error
+    ):
+        logger.error(
+            f"[ERROR] {stage} -> {error}"
+        )
+
+        self.sources_used.append(
+            f"ERROR@{stage}"
+        )
 
     def finish(self):
+
         elapsed = (
-            datetime.utcnow() - self.start_time
+            datetime.utcnow()
+            - self.start_time
         ).total_seconds()
 
-        logger.info(f"[SOURCE] {self.final_source}")
-        logger.info(f"[TIME] {elapsed:.2f}s")
+        logger.info(
+            f"[SOURCE] {self.final_source}"
+        )
+
+        logger.info(
+            f"[TIME] {elapsed:.2f}s"
+        )
 
         return {
             "sources": self.sources_used,

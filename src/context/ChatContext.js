@@ -41,11 +41,25 @@ export const ChatProvider = ({ children }) => {
     }
     return false;
   });
-  
+
   const [page, setPage] = useState(1);
   const [hasMoreHistory, setHasMoreHistory] = useState(false);
   const [isLoadingHistory, setIsLoadingHistory] = useState(false);
   
+  const [language, setLanguage] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("decentrawood_chat_language") || "auto";
+    }
+    return "auto";
+  });
+
+  const handleSetLanguage = useCallback((lang) => {
+    setLanguage(lang);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("decentrawood_chat_language", lang);
+    }
+  }, []);
+
   const channelRef = useRef(null);
   const recognitionRef = useRef(null);
   const mockChatHistoryRef = useRef([]);
@@ -72,6 +86,13 @@ export const ChatProvider = ({ children }) => {
       const initChat = () => {
         setIsLoadingHistory(true);
         setTimeout(() => {
+          const lastActivity = localStorage.getItem("decentrawood_last_activity");
+          const now = Date.now();
+          if (lastActivity && (now - parseInt(lastActivity, 10)) > 3600 * 1000) {
+            localStorage.removeItem("decentrawood_mock_history");
+            localStorage.removeItem("decentrawood_last_activity");
+          }
+
           const storedHistory = localStorage.getItem("decentrawood_mock_history");
           if (storedHistory) {
             try {
@@ -99,6 +120,7 @@ export const ChatProvider = ({ children }) => {
   const saveHistoryToLocal = (newMessages) => {
     if (typeof window !== "undefined") {
       localStorage.setItem("decentrawood_mock_history", JSON.stringify(newMessages));
+      localStorage.setItem("decentrawood_last_activity", Date.now().toString());
     }
   };
 
@@ -134,16 +156,24 @@ export const ChatProvider = ({ children }) => {
       saveHistoryToLocal(newMessages);
       return newMessages;
     });
-    
+
     handleSetIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/chat", {
+      const endpoint = isVoiceInput
+        ? "http://localhost:5000/voice"
+        : "http://localhost:5000/chat";
+
+      const response = await fetch(endpoint, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ text: text }),
+        body: JSON.stringify(
+          isVoiceInput
+            ? { text, voice_mode: true, language: language }
+            : { text, voice_mode: false, language: language }
+        ),
       });
 
       const data = await response.json();
@@ -155,7 +185,7 @@ export const ChatProvider = ({ children }) => {
         text: botResponseText,
         sender: "bot",
         timestamp: new Date(),
-        navigation: data.navigation,
+        navigation: isVoiceInput ? null : data.navigation,
       };
 
       setMessages((prev) => {
@@ -169,7 +199,8 @@ export const ChatProvider = ({ children }) => {
         onComplete(botResponseText);
       }
 
-      if (data.navigation?.type === "internal" && data.navigation?.route) {
+      // Never auto-navigate during voice mode — backend also strips navigation.
+      if (!isVoiceInput && data.navigation?.type === "internal" && data.navigation?.route) {
         let navUrl = data.navigation.route;
         if (navUrl.startsWith("/")) {
           router.push(navUrl);
@@ -184,7 +215,7 @@ export const ChatProvider = ({ children }) => {
       }
     } catch (error) {
       console.error("Error communicating with chatbot API:", error);
-      
+
       const botMessageId = Date.now() + 1;
       const botMessage = {
         id: botMessageId,
@@ -199,7 +230,7 @@ export const ChatProvider = ({ children }) => {
         saveHistoryToLocal(newMessages);
         return newMessages;
       });
-      
+
       if (onComplete) {
         onComplete("Error connecting to the server.");
       }
@@ -241,9 +272,9 @@ export const ChatProvider = ({ children }) => {
 
           // Provide a simulated transcription
           setTimeout(() => {
-             if (onTranscript) {
-               onTranscript("This is a simulated mock voice transcription.");
-             }
+            if (onTranscript) {
+              onTranscript("This is a simulated mock voice transcription.");
+            }
           }, 500);
         };
 
@@ -296,6 +327,8 @@ export const ChatProvider = ({ children }) => {
     hasMoreHistory,
     isLoadingHistory,
     loadMoreHistory,
+    language,
+    setLanguage: handleSetLanguage,
 
   };
 

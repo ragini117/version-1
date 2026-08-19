@@ -45,6 +45,29 @@ def create_app() -> FastAPI:
 
     app.include_router(chat_router)
     app.include_router(health_router)
+
+    @app.get("/admin/clear-cache", tags=["admin"])
+    async def clear_cache():
+        """Flush both L1 (in-process memory) and L2 (Redis) caches instantly."""
+        import asyncio
+        orchestrator = app.state.chat_orchestrator
+        # Clear L1 in-process memory cache
+        l1_cleared = orchestrator.cache_service.clear_l1()
+        # Clear L2 Redis cache (db 0 only — safe, targeted)
+        l2_cleared = False
+        try:
+            rc = orchestrator.cache_service._cache.redis_client
+            if rc:
+                await asyncio.to_thread(rc.flushdb)
+                l2_cleared = True
+        except Exception:
+            pass
+        return {
+            "status": "ok",
+            "l1_entries_cleared": l1_cleared,
+            "l2_redis_flushed": l2_cleared,
+        }
+
     return app
 
 

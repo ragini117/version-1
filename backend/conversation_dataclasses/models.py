@@ -16,6 +16,8 @@ class ConversationContext:
     rewritten_query: str
     current_topic: str | None = None
     active_entity: str | None = None
+    referenced_entities: list[str] = field(default_factory=list)
+    intent: str | None = None
     follow_up_detected: bool = False
     awaiting_confirmation: bool = False
     navigation_hint: str | None = None

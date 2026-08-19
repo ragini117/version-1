@@ -9,7 +9,7 @@ import { SpeechPlayer } from "./Voice/SpeechPlayer";
 import ChatHeader from "./ChatHeader";
 import useChatWindowSize from "../hooks/useChatWindowSize";
 import { NavigationLinkCard } from "./NavigationLinkCard";
-
+import { FormattedMessageText } from "./FormattedMessageText";
 
 export const TextChat = ({
   isMobile,
@@ -42,7 +42,10 @@ export const TextChat = ({
     isListening: isMicListening,
     startListening,
     stopListening
-  } = useSpeechRecognition(handleSpeechResult);
+  } = useSpeechRecognition(handleSpeechResult, {
+    continuous: false,
+    submitOnSpeechFinal: true,
+  });
 
   const messagesEndRef = useRef(null);
 
@@ -195,27 +198,18 @@ export const TextChat = ({
                 position: "relative",
               }}
             >
-              {/* Render text, but skip URLs that are already shown in the nav card */}
-              {(() => {
-                const navUrl = msg.navigation?.primary_route?.url;
-                return msg.text.split(/(https?:\/\/[^\s]+)/g).map((part, i) => {
-                  if (/(https?:\/\/[^\s]+)/g.test(part)) {
-                    // If this URL matches the navigation card URL, suppress it
-                    if (navUrl && part.replace(/\/+$/, '') === navUrl.replace(/\/+$/, '')) {
-                      return null;
-                    }
-                    return (
-                      <a key={i} href={part} target="_blank" rel="noopener noreferrer"
-                        style={{ color: msg.sender === "user" ? "#FFFFFF" : "#8B5CFF", textDecoration: "underline" }}>
-                        {part}
-                      </a>
-                    );
-                  }
-                  return part;
-                });
-              })()}
-              {/* Navigation URL card (external routes only) */}
-              {msg.navigation?.should_navigate === false && msg.navigation?.primary_route?.url && (
+              {/* Render formatted markdown text with URL suppression */}
+              <FormattedMessageText
+                text={msg.text}
+                navUrl={msg.navigation?.primary_route?.url}
+                isUser={msg.sender === "user"}
+              />
+
+              {/* Navigation URL card — show for external routes that have a primary_route URL.
+                   Internal routes auto-navigate (router.push), so no card needed.
+                   External routes always have should_navigate===false; show the card. */}
+              {msg.navigation?.primary_route?.url &&
+                msg.navigation.primary_route.type !== "internal" && (
                 <NavigationLinkCard
                   route={msg.navigation.primary_route}
                   theme="purple"
